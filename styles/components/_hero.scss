@@ -48,15 +48,17 @@
     }
   }
   .companies {
+    h2 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
     padding: 0 0 40px 0;
     background-color: white;
     img {
       &.pad {
         padding: 10px;
       }
-      width: 90px;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      width: 80px;
     }
     p {
       width: 100%;

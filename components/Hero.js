@@ -77,50 +77,57 @@ const Hero = class extends React.Component {
                     <svg
                       width={1440}
                       height={204}
-                      viewBox="0 0 1440 200"
+                      viewBox="0 0 1440 204"
                       className="homepage-wave"
                     >
-                        <path
-                          d="M0 204c.005-.003 356.003-176 720-100 364 76 720-100 720-100H0v200V4h1440v200H0z"
-                          fill="#fff"
-                        />
+                        <g clipPath="url(#prefix__clip0)">
+                            <path
+                              d="M0 206c.005-.003 354.003-149 718-73 364 76 722-27 722-27v100H0z"
+                              fill="#fff"
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id="prefix__clip0">
+                                <path fill="#fff" d="M0 0h1440v204H0z" />
+                            </clipPath>
+                        </defs>
                     </svg>
                     <div className="companies">
                         <div className="container">
                             <div className="text-center margin-auto col-md-12 text-center">
                                 <h2>Trusted by top development teams</h2>
                                 <div className="row">
-                                    <div className="col-md-2 col-4">
+                                    <div className="col-4">
                                         <img src="/static/images/companies/aer-lingus.svg" alt="Aer Lingus" title="Aer Lingus"/>
                                     </div>
-                                    <div className="col-md-2 col-4">
+                                    <div className="col-4">
                                         <img src="/static/images/companies/amway.svg" alt="Amway" title="Amway"/>
                                     </div>
-                                    <div className="col-md-2 col-4">
+                                    <div className="col-4">
                                         <img src="/static/images/companies/axis-communications.svg" alt="Axis Communications" title="Axis Communications"/>
                                     </div>
-                                    <div className="col-md-2 col-4">
+                                    <div className="col-4">
                                         <img src="/static/images/companies/capita.svg" alt="Capita" title="Capita"/>
                                     </div>
-                                    <div className="col-md-2 col-4">
+                                    <div className="col-4">
                                         <img src="/static/images/companies/cognizant.svg" alt="Cognizant" title="Cognizant"/>
                                     </div>
-                                    <div className="col-md-2 col-4">
+                                    <div className="col-4">
                                         <img
                                           className="pad" src="/static/images/companies/financial-times.svg" alt="Financial times"
                                           title="Financial times"
                                         />
                                     </div>
-                                    <div className="col-md-2 col-4">
+                                    <div className="col-4">
                                         <img src="/static/images/companies/nike.svg" alt="Nike" title="Nike"/>
                                     </div>
-                                    <div className="col-md-2 col-4">
+                                    <div className="col-4">
                                         <img
                                           className="pad" src="/static/images/companies/starbucks.svg" alt="Starbucks"
                                           title="Starbucks"
                                         />
                                     </div>
-                                    <div className="col-md-2 col-4">
+                                    <div className="col-4">
                                         <img
                                           className="pad" src="/static/images/companies/the-home-depot.svg" alt="The Home Depot"
                                           title="The Home Depot"
