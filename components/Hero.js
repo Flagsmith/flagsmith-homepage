@@ -77,35 +77,12 @@ const Hero = class extends React.Component {
                     <svg
                       width={1440}
                       height={204}
-                      viewBox="0 0 1440 204"
+                      viewBox="0 0 1440 200"
                       className="homepage-wave"
                     >
-                        <defs>
-                            <filter
-                              x="-50%"
-                              y="-50%"
-                              width="200%"
-                              height="200%"
-                              filterUnits="objectBoundingBox"
-                              id="prefix__a"
-                            >
-                                <feOffset dy={-4} in="SourceAlpha" result="shadowOffsetOuter1" />
-                                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                                <feColorMatrix
-                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.056 0"
-                                  in="shadowBlurOuter1"
-                                  result="shadowMatrixOuter1"
-                                />
-                                <feMerge>
-                                    <feMergeNode in="shadowMatrixOuter1" />
-                                    <feMergeNode in="SourceGraphic" />
-                                </feMerge>
-                            </filter>
-                        </defs>
                         <path
                           d="M0 204c.005-.003 356.003-176 720-100 364 76 720-100 720-100H0v200V4h1440v200H0z"
-                          fill="#F9F9F9"
-                          filter="url(#prefix__a)"
+                          fill="#fff"
                         />
                     </svg>
                     <div className="companies">

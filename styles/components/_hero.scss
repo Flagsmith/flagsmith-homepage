@@ -29,8 +29,10 @@
     left: 0;
     height: 100%;
     display: block;
-    margin-top: -15%;
+    margin-top: -16%;
     path {
+      stroke-dasharray: none;
+      stroke-width: 0;
       fill: white;
     }
   }
