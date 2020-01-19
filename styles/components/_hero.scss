@@ -16,67 +16,38 @@
   }
 }
 .hero {
-  height: calc(110vh);
-  min-height: 920px;
-  max-height: 1080px;
-  padding-top: $navbar-height;
-  background-color: $bt-brand-secondary-light;
-  overflow: hidden;
+  min-height: calc(100vh);
   button {
     height: 50px;
   }
-  .container {
-    position: relative;
-    height: 100%;
-    z-index: 200000;
-    &:before {
-      display: block;
-      content: " ";
-      position: absolute;
-      z-index: -1;
-      bottom: -170rem;
-      left: -140rem;
-      width: 250rem;
-      height: 200rem;
-      -webkit-transform: rotate(-30deg);
-      transform: rotate(30deg);
-      background: $bt-brand-secondary;
-    }
+  .hero-inner {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: $bt-brand-secondary-light;
     &:after {
       content: " ";
       clear: both;
       display: table;
     }
-    .white {
-      display: block;
-      position: absolute;
-      bottom: -258rem;
-      left: -208rem;
-      width: 966rem;
-      height: 384rem;
-      background: #fff;
-      transform: rotate(-26deg) translateY(0);
-    }
   }
-  .tech {
-    z-index: 10000000;
+  .companies {
     padding: 40px 0;
-    position: absolute;
-    left: 0;
-    right:0;
-    bottom:20px;
+    background-color: white;
+    img {
+      &.pad {
+        padding: 10px;
+      }
+      width: 90px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
     p {
       width: 100%;
       color: $body-text;
     }
     .row > div {
       margin: 0 auto;
-      img {
-        width: 50px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        opacity: 0.75;
-      }
+
     }
 
     a {
@@ -88,7 +59,6 @@
 
 .hero {
   color: white;
-  padding-top: 8rem;
   button.btn {
     font-size: 1.2em !important;
   }
@@ -107,7 +77,7 @@
     .hero-example {
       font-size: 14px;
       position: absolute;
-      top: 45%;
+      top: 200px;
       right: 10%;
       z-index: 1000000;
       p {
@@ -201,6 +171,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1070px) {
+
+  .hero-example {
+    display: none;
+  }
   .hero {
     &--homepage {
       .hero-illustration {
@@ -210,11 +184,22 @@
   }
 }
 
+.collapse.show {
+  .nav-item {
+    margin-top: 20px;
+    .nav-link-featured {
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
 
-    min-height: 1180px;
-    max-height: 1180px;
+    .hero-example {
+      display: none;
+    }
     p {
       width: 100%;
     }
@@ -223,11 +208,8 @@
         left: -200rem !important;
         bottom: -240rem !important;
       }
-      .tech{
+      .companies{
         bottom: -40px;
-      }
-      .hero-example {
-        display: none;
       }
       .hero-illustration {
         display: none;

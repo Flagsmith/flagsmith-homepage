@@ -1,10 +1,12 @@
-.navbar-container {
+.navbar {
+    padding: 1.5rem;
     background-color: $bt-brand-secondary-light;
     &.homepage {
         position: absolute;
         left:0;
         right:0;
-        background-color: transparent;
+
+        background-color: #23364C;
     }
     z-index: 10;
 }
@@ -14,31 +16,9 @@
         max-width: 748px !important;
     }
 }
-
-
-.navbar {
-    .nav-open {
-        .nav-item {
-            display: block !important;
-        }
-        .d-none {
-            background-color: red;
-            display: block !important;
-        }
-    }
-    padding: 0;
-    line-height: $navbar-height;
-    background-color: transparent;
-    .navbar-brand {
-        font-size: 1.2rem;
-        padding-top: 0;
-        img {
-            height: 24px;
-            margin-bottom:10px;
-            margin-right: 1.5rem;
-        }
-    }
-
+.navbar-brand img {
+    margin-bottom: 6px;
+    margin-right: 20px;
 }
 .nav-link  {
     padding: 0;
@@ -71,20 +51,18 @@
         }
     }
 }
-.navbar-nav {
-    display: flex !important;
-    flex-basis: auto;
-    flex-direction: row !important;
-}
+
 .service-status {
     font-size: 14px;
+
     a:hover {
         color: white !important;
     }
+
     .uptime-badge {
         display: block;
         font-size: 14px;
-        margin-bottom:5px;
+        margin-bottom: 5px;
         color: #f1f1f1 !important;
         text-decoration: none !important;
 
@@ -94,12 +72,14 @@
             padding: 2px 5px;
             border-radius: 4px 0 0 4px;
         }
+
         .success {
             display: inline-block;
             background: linear-gradient(#5bc870, #4e9c4e);
             border-radius: 0 4px 4px 0;
             padding: 2px 5px;
         }
+
         .error {
             display: inline-block;
             background: linear-gradient(#dab32a, #cca417);
@@ -108,3 +88,5 @@
         }
     }
 }
+
+

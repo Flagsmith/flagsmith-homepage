@@ -56,7 +56,8 @@ const Hero = class extends React.Component {
         return (
             <div className="hero-container">
                 <div className="hero hero--homepage">
-                    <div className="container">
+                    <div className="hero-inner">
+                        <div className="container">
                         <h1 className="margin-bottom margin-top">Release features with confidence</h1>
                         <p className="">
                         Manage feature flags across web, mobile and
@@ -71,71 +72,50 @@ const Hero = class extends React.Component {
                             </Button>
                             <p className="text-small">No payment card required</p>
                         </div>
-                        <div className="white"/>
-                        <div className="tech">
+                        </div>
+                    </div>
+                    <div className="companies">
+                        <div className="container">
                             <div className="text-center margin-auto col-md-12 text-center">
-                                <h2>We currently support these popular languages</h2>
+                                <h2>Trusted by top development teams</h2>
                                 <div className="row">
-                                    <div className="col-md-1 col-sm-2 col-4">
-                                        <a href="https://docs.bullet-train.io/clients/java/">
-                                            <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
-                                        </a>
+                                    <div className="col-md-2 col-4">
+                                        <img src="/static/images/companies/aer-lingus.svg" alt="Aer Lingus" title="Aer Lingus"/>
                                     </div>
-                                    <div className="col-md-1 col-sm-2 col-4">
-                                        <a href="https://docs.bullet-train.io/clients/javascript/">
-                                            <img src="/static/images/tech-logos/javascript.png" alt="JavaScript" title="JavaScript Feature Flags"/>
-                                        </a>
+                                    <div className="col-md-2 col-4">
+                                        <img src="/static/images/companies/amway.svg" alt="Amway" title="Amway"/>
                                     </div>
-                                    <div className="col-md-1 col-sm-2 col-4">
-                                        <a href="https://docs.bullet-train.io/clients/javascript/">
-                                            <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS Feature Flags"/>
-                                        </a>
+                                    <div className="col-md-2 col-4">
+                                        <img src="/static/images/companies/axis-communications.svg" alt="Axis Communications" title="Axis Communications"/>
                                     </div>
-                                    <div className="col-md-1 col-sm-2 col-4">
-                                        <a href="https://docs.bullet-train.io/clients/node/">
-                                            <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js Feature Flags"/>
-                                        </a>
+                                    <div className="col-md-2 col-4">
+                                        <img src="/static/images/companies/capita.svg" alt="Capita" title="Capita"/>
                                     </div>
-                                    <div className="col-md-1 col-sm-2 col-4">
-                                        <a href="https://docs.bullet-train.io/clients/python/">
-                                            <img
-                                              src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python Feature Flags"
-                                              title="Python"
-                                            />
-                                        </a>
+                                    <div className="col-md-2 col-4">
+                                        <img src="/static/images/companies/cognizant.svg" alt="Cognizant" title="Cognizant"/>
                                     </div>
-                                    <div className="col-md-1 col-sm-2 col-4">
-                                        <a href="https://docs.bullet-train.io/clients/ruby/">
-                                            <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby Feature Flags"/>
-                                        </a>
+                                    <div className="col-md-2 col-4">
+                                        <img
+                                          className="pad" src="/static/images/companies/financial-times.svg" alt="Financial times"
+                                          title="Financial times"
+                                        />
                                     </div>
-                                    <div className="col-md-1 col-sm-2 col-4">
-                                        <a href="https://docs.bullet-train.io/clients/dotnet/">
-                                            <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET Feature Flags"/>
-                                        </a>
+                                    <div className="col-md-2 col-4">
+                                        <img src="/static/images/companies/nike.svg" alt="Nike" title="Nike"/>
                                     </div>
-                                    <div className="col-md-1 col-sm-2 col-4">
-                                        <a href="https://docs.bullet-train.io/clients/java/">
-                                            <img src="/static/images/tech-logos/android2x.png" alt="android" title="android Feature Flags" />
-                                        </a>
+                                    <div className="col-md-2 col-4">
+                                        <img
+                                          className="pad" src="/static/images/companies/starbucks.svg" alt="Starbucks"
+                                          title="Starbucks"
+                                        />
                                     </div>
-                                    <div className="col-md-1 col-sm-2 col-4">
-                                        <a href="https://docs.bullet-train.io/clients/ios/">
-                                            <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS Feature Flags" />
-                                        </a>
+                                    <div className="col-md-2 col-4">
+                                        <img
+                                          className="pad" src="/static/images/companies/the-home-depot.svg" alt="The Home Depot"
+                                          title="The Home Depot"
+                                        />
                                     </div>
                                 </div>
-                                <p className="text-small no-mb">
-                                    Don't worry if you don't see your
-                                    preferred tech,
-                                    {' '}
-                                    <a href="mailto:support@bullet-train.io">get in touch</a>
-                                    {' '}
-                                    and let
-                                    us know what you'd like to see.
-                                    <br/>
-                                    We also have a core RESTful API.
-                                </p>
                             </div>
                         </div>
                     </div>

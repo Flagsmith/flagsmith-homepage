@@ -8,6 +8,15 @@
     overflow-x: visible !important;
     overflow-y: visible !important;
 }
+
+a.link-dark {
+    color: $body-text;
+    font-weight: bold;
+    &:hover,&:active {
+        color: $body-text;
+    }
+}
+
 .faint {
     color: $text-muted;
     font-size: 0.8em;
