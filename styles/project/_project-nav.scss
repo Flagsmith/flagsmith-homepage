@@ -1,12 +1,12 @@
 .navbar {
     padding: 1.5rem;
+
     background-color: $bt-brand-secondary-light;
+    background: linear-gradient(to right, $bt-brand-secondary-light, #1d2d3e);
     &.homepage {
         position: absolute;
         left:0;
         right:0;
-
-        background-color: #23364C;
     }
     z-index: 10;
 }

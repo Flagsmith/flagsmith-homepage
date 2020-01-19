@@ -20,10 +20,25 @@
   button {
     height: 50px;
   }
+  h1 {
+    margin-top: 0;
+  }
+  .homepage-wave {
+    width: 100%;
+    position: relative;
+    left: 0;
+    height: 100%;
+    display: block;
+    margin-top: -15%;
+    path {
+      fill: white;
+    }
+  }
   .hero-inner {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 0.1rem;
+    padding-bottom: 12rem;
     background-color: $bt-brand-secondary-light;
+    background: linear-gradient(to right, $bt-brand-secondary-light, #1d2d3e);
     &:after {
       content: " ";
       clear: both;
@@ -31,7 +46,7 @@
     }
   }
   .companies {
-    padding: 40px 0;
+    padding: 0 0 40px 0;
     background-color: white;
     img {
       &.pad {
