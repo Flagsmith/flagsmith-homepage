@@ -6,8 +6,9 @@
 	padding-left:8px;
 	padding-right:8px;
 	margin-bottom:20px;
-
+align-self: stretch;
 	.panel{
+		height: 100%;
 		overflow:hidden;
 	}
 	.panel-content{
@@ -90,7 +91,6 @@
 	background:#f7f7f7;
 	padding:10px;
 	text-align: left;
-	min-height: 240px;
 }
 
 .panel-grey{

@@ -20,7 +20,7 @@ const PricingPanel = class extends React.Component {
                   <p className="text-center">Then increase your plan as your business grows.</p>
                   <div className="col-md-12">
                       <div className="flex-row row-center">
-                          <div className="col-md-3 pricing-panel">
+                          <div className="col-md-6 col-lg-3 pricing-panel">
                               <div className="panel panel-default">
                                   <div className="panel-content">
                                       <p className="featured"/>
@@ -60,7 +60,7 @@ const PricingPanel = class extends React.Component {
                                   </div>
                               </div>
                           </div>
-                          <div className="col-md-3 pricing-panel">
+                          <div className="col-md-6 col-lg-3 pricing-panel">
                               <div className="panel panel-default">
                                   <div className="panel-content">
                                       <p className="featured"/>
@@ -96,7 +96,7 @@ const PricingPanel = class extends React.Component {
                                   </div>
                               </div>
                           </div>
-                          <div className="col-md-3 pricing-panel">
+                          <div className="col-md-6 col-lg-3 pricing-panel">
                               <div className="panel panel-default">
                                   <div className="panel-content">
                                       <p className="featured">Most Popular</p>
@@ -130,7 +130,7 @@ const PricingPanel = class extends React.Component {
                                   </div>
                               </div>
                           </div>
-                          <div className="col-md-3 pricing-panel">
+                          <div className="col-md-6 col-lg-3 pricing-panel">
                               <div className="panel panel-default">
                                   <div className="panel-content">
                                       <p className="featured"/>
