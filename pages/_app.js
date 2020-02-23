@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import Project from '../common/project';
 
 const gtm = () => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && !document.location.origin.includes("localhost")) {
         (function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({ 'gtm.start':
           new Date().getTime(),
