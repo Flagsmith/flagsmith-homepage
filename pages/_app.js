@@ -18,6 +18,7 @@ const gtm = () => {
         }(window, document, 'script', 'dataLayer', Project.gtm));
     }
 };
+
 class MyApp extends App {
     componentWillMount() {
         if (typeof window !== 'undefined') {
