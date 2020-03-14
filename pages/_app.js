@@ -26,6 +26,11 @@ class MyApp extends App {
                 API.trackEvent(Constants.events.REFERRER(params.referrer));
                 API.setReferrer(params.referrer);
                 window.history.pushState({}, document.title, '/');
+            } else if (params.utm_source) {
+                const str = `${(params.utm_source || '')} ${(params.utm_campaign || '')} ${(params.utm_medium || '')}`;
+                API.trackEvent(Constants.events.REFERRER(str));
+                API.setReferrer(str);
+                window.history.pushState({}, document.title, '/');
             }
         }
     }
