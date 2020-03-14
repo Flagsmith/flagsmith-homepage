@@ -48,6 +48,9 @@ const API = {
         return cookies.set('t', v, { path: '', domain: '.bullet-train.io' });
     },
     setReferrer(v) {
+        if (cookies.get('r')) {
+            return;
+        }
         return cookies.set('r', v, { path: '', domain: '.bullet-train.io' });
     },
     trackEvent(data) {
@@ -132,7 +135,7 @@ const API = {
     },
     log(namespace, ...args) {
         if (!Project.logs) {
-            return
+            return;
         }
         if (Project.logs[namespace]) {
             console.log.apply(this, [namespace, ...args]);

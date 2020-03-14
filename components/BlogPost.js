@@ -22,8 +22,8 @@ export default class TheComponent extends Component {
       const {
           title,
       } = parseMarkdown(this.props.source);
-
       API.trackPage(`Post - ${title}`);
+      API.setReferrer(`Blog ${title}`);
       this.setState({ loading: false });
   }
 
