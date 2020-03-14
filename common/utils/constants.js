@@ -1,6 +1,7 @@
 const Constants = global.Constants = {
     events: {
         'LOGIN': { 'event': 'User login', 'category': 'User' },
+        'REFERRER': referrer => ({ 'event': `${referrer} referred`, 'category': 'Referrer' }),
         'REGISTER': { 'event': 'User register', 'category': 'User' },
     },
     defaultLocale: 'en',

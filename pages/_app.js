@@ -5,9 +5,11 @@ import '../styles/styles.scss';
 import '../project/polyfill';
 import Header from '../components/Header';
 import Project from '../common/project';
+import '../common/utils';
+import API from '../project/api';
 
 const gtm = () => {
-    if (typeof window !== 'undefined' && !document.location.origin.includes("localhost")) {
+    if (typeof window !== 'undefined' && !document.location.origin.includes('localhost')) {
         (function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({ 'gtm.start':
           new Date().getTime(),
@@ -17,6 +19,17 @@ const gtm = () => {
     }
 };
 class MyApp extends App {
+    componentWillMount() {
+        if (typeof window !== 'undefined') {
+            const params = Utils.fromParam();
+            if (params.referrer) {
+                API.trackEvent(Constants.events.REFERRER(params.referrer));
+                API.setReferrer(params.referrer);
+                window.history.pushState({}, document.title, '/');
+            }
+        }
+    }
+
     render() {
         const { Component } = this.props;
         return (

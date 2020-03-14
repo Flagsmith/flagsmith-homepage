@@ -47,6 +47,9 @@ const API = {
     setStoredToken(v) {
         return cookies.set('t', v, { path: '', domain: '.bullet-train.io' });
     },
+    setReferrer(v) {
+        return cookies.set('r', v, { path: '', domain: '.bullet-train.io' });
+    },
     trackEvent(data) {
         if (__DEV__) {
             // eslint-disable-next-line
