@@ -1,5 +1,5 @@
 ---
-title: Creating a realtime React Native performance monitor
+title: What I learnt creating a React Native performance monitor
 published: true
 description: Introducing react-native-performance-monitor and what it taught me
 tags: react native, showdev, javascript
@@ -69,7 +69,29 @@ Considering the above I decided to get to work in making this tool. I've been us
 3 - Whilst you are developing pause the recorder, then when you want to out your changes add a variant and click resume.
 4 - Repeat 3 as many times as you need to to reach an improvement, to reduce the noise you can always clear tests that you wish to discard. 
 
-I thought I knew React Native inside and out having worked on it since 2015, but seeing metrics for every little change opens up a rabbit hole of things you thought you knew. It's strangely addicting to play around with.
+I thought I knew React Native inside and out having worked on it since 2015, but seeing metrics for every little change opens up a rabbit hole of things you thought you knew. It's strangely addicting to play around with. 
+
+The amount of subtle changes with components and their impact has surprised me, for example: 
+
+<img src="https://github.com/BulletTrainHQ/react-native-performance-monitor/raw/master/example2.png"/>
+
+This difference was entirely down to the following code. I, of course, could understand why this would be the case however I'd not predicted the effect this change would have. 
+
+Before: 
+```
+<Text style={[this.props.style]}>
+    {this.props.children}
+</Text>
+```
+
+After:
+
+```
+<Text style={this.props.style}>
+    {this.props.children}
+</Text>
+```
+
 
 ## How it works
 
