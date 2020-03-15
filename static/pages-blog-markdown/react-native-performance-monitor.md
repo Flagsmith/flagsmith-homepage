@@ -1,5 +1,5 @@
 ---
-title: What I learnt creating a React Native performance monitor
+title: What I've learned creating a React Native performance monitor
 published: true
 description: Introducing react-native-performance-monitor and what it taught me
 tags: react native, showdev, javascript
