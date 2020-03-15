@@ -60,7 +60,7 @@ Although useful, I have a few problems with using this to test performance and i
 
 I get the best use out of this by using it to figure out a starting place of what to work on. But in my mind, I feel like making performance improvements needs a different tool, one that provides immediate, a/b comparison based feedback.
 
-## Introducing react-native-profiler
+## Introducing react-native-performance-monitor
 
 Considering the above I decided to get to work in making this tool. I've been using it for a few weeks and believe the best approach is to:
 
