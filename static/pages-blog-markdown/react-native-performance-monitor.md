@@ -10,7 +10,7 @@ date: 14-mar-2020
 
 <img src="https://github.com/BulletTrainHQ/react-native-performance-monitor/raw/master/example.gif"/>
 
-This post covers an introduction to react-native-performance monitor, a realtime performance monitor for React Native and would also work for React. The tool is completely open-source, [published on npm](https://www.npmjs.com/package/react-native-performance-monitor) and can be [checked out here](https://github.com/BulletTrainHQ/react-native-performance-monitor#readme).
+This post covers an introduction to react-native-performance monitor, a realtime performance monitor for React Native (which would also work for React). The tool is completely open-source, [published on npm](https://www.npmjs.com/package/react-native-performance-monitor) and can be [checked out here](https://github.com/BulletTrainHQ/react-native-performance-monitor#readme).
 
 ## Motivation
 
