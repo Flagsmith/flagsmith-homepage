@@ -64,10 +64,10 @@ I get the best use out of this by using it to figure out a starting place of wha
 
 Considering the above I decided to get to work in making this tool. I've been using it for a few weeks and believe the best approach is to:
 
-1 - Identify an area of the application you feel needs improving (maybe via the React Profiler).
-2 - Record your baseline by either triggering a component mount or force update, I added x5 and x10 buttons to get a better average baseline. Whether you choose to test remounting or force updates depends on the nature of what you are trying to test, if your component receives frequent updates somewhere in the tree you may see a lot of benefits just concentrating solely on updates.
-3 - Whilst you are developing pause the recorder, then when you want to out your changes add a variant and click resume.
-4 - Repeat 3 as many times as you need to to reach an improvement, to reduce the noise you can always clear tests that you wish to discard. 
+1. Identify an area of the application you feel needs improving (maybe via the React Profiler).
+2. Record your baseline by either triggering a component mount or force update, I added x5 and x10 buttons to get a better average baseline. Whether you choose to test remounting or force updates depends on the nature of what you are trying to test, if your component receives frequent updates somewhere in the tree you may see a lot of benefits just concentrating solely on updates.
+3. Whilst you are developing pause the recorder, then when you want to out your changes add a variant and click resume.
+4. Repeat 3 as many times as you need to to reach an improvement, to reduce the noise you can always clear tests that you wish to discard. 
 
 I thought I knew React Native inside and out having worked on it since 2015, but seeing metrics for every little change opens up a rabbit hole of things you thought you knew. It's strangely addicting to play around with. 
 
