@@ -109,4 +109,4 @@ The following diagram is a brief explanation of the data flow:
 
 ## Next steps
 
-Hopefully this has encouraged you to also jump into the rabbit hole of optimising your app. This project is still in its infancy but I'm open for feedback and how it could further help everyone out. [Check it out](https://github.com/BulletTrainHQ/react-native-performance-monitorhttps://github.com/BulletTrainHQ/react-native-performance-monitor) and let me know! 
+Hopefully this has encouraged you to also jump into the rabbit hole of optimising your app. This project is still in its infancy but I'm open for feedback and how it could further help everyone out. [Check it out](https://github.com/BulletTrainHQ/react-native-performance-monitor) and let me know! 
