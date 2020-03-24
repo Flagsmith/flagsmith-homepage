@@ -155,7 +155,7 @@ const PricingPanel = class extends React.Component {
                                               </p>
                                           </li>
                                           <li><p>All Startup Features</p></li>
-                                          <li><p>SAML, 2-factor and SSO options</p></li>
+                                          <li><p>SAML, 2-factor and SSO via Okta</p></li>
                                           <li><p>Fine Grained User Permissions</p></li>
                                           <li><p>Uptime SLA</p></li>
                                           <li><p>Priority Email Technical Support with SLA</p></li>
