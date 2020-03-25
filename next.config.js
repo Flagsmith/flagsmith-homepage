@@ -55,7 +55,7 @@ const nextConfig = {
             use: 'raw-loader',
         });
 
-        config.devtool = dev ? 'eval-source-map' : false;
+        config.devtool = dev ? 'eval-source-map' : config.devtool;
 
         return config;
     },
