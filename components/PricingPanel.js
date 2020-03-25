@@ -56,6 +56,7 @@ const PricingPanel = class extends React.Component {
                                           <li><p>Unlimited Environments</p></li>
                                           <li><p>Unlimited Feature Flags</p></li>
                                           <li><p>Unlimited Identities and Segments</p></li>
+                                          <li><p>Fine Grained User Permissions</p></li>
                                       </ul>
                                   </div>
                               </div>
@@ -156,7 +157,6 @@ const PricingPanel = class extends React.Component {
                                           </li>
                                           <li><p>All Startup Features</p></li>
                                           <li><p>SAML, 2-factor and SSO via Okta</p></li>
-                                          <li><p>Fine Grained User Permissions</p></li>
                                           <li><p>Uptime SLA</p></li>
                                           <li><p>Priority Email Technical Support with SLA</p></li>
                                           <li><p>Optional On Premise Installation</p></li>
