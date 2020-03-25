@@ -116,7 +116,11 @@ const Utils = {
         }
         // eslint-disable-next-line
         const urlString= (str || documentSearch).replace(/(^\?)/, '');
-        return JSON.parse(`{"${urlString.replace(/&/g, '","').replace(/=/g, '":"')}"}`, (key, value) => (key === '' ? value : decodeURIComponent(value)));
+        try {
+            return JSON.parse(`{"${urlString.replace(/&/g, '","').replace(/=/g, '":"')}"}`, (key, value) => (key === '' ? value : decodeURIComponent(value)));
+        } catch (e) {
+            return {};
+        }
     },
 
     capitalize(s) {

@@ -23,6 +23,14 @@ const API = {
         }
         return cookies.get('t');
     },
+    getReferrer(req) {
+        const r = cookies.get('r');
+        try {
+            return JSON.parse(r);
+        } catch (e) {
+            return null;
+        }
+    },
     getStoredLocale(req) {
         if (req) {
             // Attempt to get locale saved cookie

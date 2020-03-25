@@ -101,7 +101,11 @@ const HomePage = class extends React.Component {
   register = (details) => {
       const { email, password, first_name, last_name, organisation_name = 'Default Organisation' } = details;
       this.setState({ isSaving: true });
-
+      const referrer = API.getReferrer();
+      let query = '';
+      if (referrer) {
+          query = `?${Utils.toParam(Utils.fromParam())}`;
+      }
       data.post(`${Project.api}auth/register/`, {
           email,
           password1: password,
@@ -113,7 +117,7 @@ const HomePage = class extends React.Component {
               if (res && res.key) {
                   API.trackEvent(Constants.events.REGISTER);
                   API.setStoredToken(res.key);
-                  document.location = Project.appUrl;
+                  document.location = Project.appUrl+query;
               }
           })
           .catch((error) => {
@@ -177,64 +181,64 @@ const HomePage = class extends React.Component {
                   </div>
               </div>
 
-            <div className="feature-container">
-              <div className="text-center tech margin-auto col-md-12 text-center">
-                <h2>We currently support these popular languages</h2>
-                <div style={{ justifyContent: 'center' }} className="row">
-                  <div className="col-md-1 col-sm-2 col-4">
-                    <a href="https://docs.bullet-train.io/clients/java/">
-                      <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
-                    </a>
+              <div className="feature-container">
+                  <div className="text-center tech margin-auto col-md-12 text-center">
+                      <h2>We currently support these popular languages</h2>
+                      <div style={{ justifyContent: 'center' }} className="row">
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/java/">
+                                  <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/javascript/">
+                                  <img
+                                    src="/static/images/tech-logos/javascript.png" alt="JavaScript"
+                                    title="JavaScript Feature Flags"
+                                  />
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/javascript/">
+                                  <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/node/">
+                                  <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/python/">
+                                  <img
+                                    src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python Feature Flags"
+                                    title="Python"
+                                  />
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/ruby/">
+                                  <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/dotnet/">
+                                  <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/java/">
+                                  <img src="/static/images/tech-logos/android2x.png" alt="android" title="android Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/ios/">
+                                  <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS Feature Flags"/>
+                              </a>
+                          </div>
+                      </div>
                   </div>
-                  <div className="col-md-1 col-sm-2 col-4">
-                    <a href="https://docs.bullet-train.io/clients/javascript/">
-                      <img
-                        src="/static/images/tech-logos/javascript.png" alt="JavaScript"
-                        title="JavaScript Feature Flags"
-                      />
-                    </a>
-                  </div>
-                  <div className="col-md-1 col-sm-2 col-4">
-                    <a href="https://docs.bullet-train.io/clients/javascript/">
-                      <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS Feature Flags"/>
-                    </a>
-                  </div>
-                  <div className="col-md-1 col-sm-2 col-4">
-                    <a href="https://docs.bullet-train.io/clients/node/">
-                      <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js Feature Flags"/>
-                    </a>
-                  </div>
-                  <div className="col-md-1 col-sm-2 col-4">
-                    <a href="https://docs.bullet-train.io/clients/python/">
-                      <img
-                        src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python Feature Flags"
-                        title="Python"
-                      />
-                    </a>
-                  </div>
-                  <div className="col-md-1 col-sm-2 col-4">
-                    <a href="https://docs.bullet-train.io/clients/ruby/">
-                      <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby Feature Flags"/>
-                    </a>
-                  </div>
-                  <div className="col-md-1 col-sm-2 col-4">
-                    <a href="https://docs.bullet-train.io/clients/dotnet/">
-                      <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET Feature Flags"/>
-                    </a>
-                  </div>
-                  <div className="col-md-1 col-sm-2 col-4">
-                    <a href="https://docs.bullet-train.io/clients/java/">
-                      <img src="/static/images/tech-logos/android2x.png" alt="android" title="android Feature Flags"/>
-                    </a>
-                  </div>
-                  <div className="col-md-1 col-sm-2 col-4">
-                    <a href="https://docs.bullet-train.io/clients/ios/">
-                      <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS Feature Flags"/>
-                    </a>
-                  </div>
-                </div>
               </div>
-            </div>
               <div className="feature-container alt">
                   <div className="text-center text-center col-xl-4 offset-lg-4">
                       <h2>Fully Featured Platform</h2>

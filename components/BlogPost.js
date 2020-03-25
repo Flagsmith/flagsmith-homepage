@@ -23,7 +23,11 @@ export default class TheComponent extends Component {
           title,
       } = parseMarkdown(this.props.source);
       API.trackPage(`Post - ${title}`);
-      API.setReferrer(`Blog ${title}`);
+      API.setReferrer(JSON.stringify({
+          utm_source: 'bullet-train',
+          utm_medium: 'blog',
+          utm_campaign: title,
+      }));
       this.setState({ loading: false });
   }
 
