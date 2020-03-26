@@ -512,7 +512,7 @@ const HomePage = class extends React.Component {
                                       >
                       Sign Up
                                       </ButtonWhite>
-                                      <a href={`${Project.appUrl}login`} id="existing-member-btn">
+                                      <a href={`${Project.appUrl}/login`} id="existing-member-btn">
                       Already a member?
                                       </a>
                                   </div>
