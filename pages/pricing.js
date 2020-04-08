@@ -70,6 +70,14 @@ const PricingPage = class extends React.Component {
                 generated server-side, you would generally make 1 API request
                 for each page view.
                           </p>
+                          <p className="answer">
+                We don't charge for every single API call. The following endpoints count against your monthly limit:
+                          </p>
+                          <ul className="answer">
+                              <li>/flags</li>
+                              <li>/identities</li>
+                              <li>/traits</li>
+                          </ul>
                       </div>
                       <div className="panel panel-default panel-grey">
                           <p className="question">What is a Team Member?</p>
