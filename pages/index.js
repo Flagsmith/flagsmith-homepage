@@ -151,7 +151,9 @@ const HomePage = class extends React.Component {
                           </div>
                           <div className="col-md-8 text-right">
                               <Delay>
-                                  <img style={{ maxWidth: '100%' }} alt="Feature use cases" src="/static/images/homepage-features.png"/>
+                                  <img style={{ maxWidth: '100%' }} alt="Feature use cases" 
+                                    srcset="/static/images/homepage-features-1x.png 1x, /static/images/homepage-features-2x.png 2x" 
+                                    src="/static/images/homepage-features-1x.png"/>
                               </Delay>
                           </div>
                       </div>
@@ -165,7 +167,8 @@ const HomePage = class extends React.Component {
                                   <Delay>
                                       <img
                                         style={{ maxWidth: '100%' }} alt="User segmentation and ab testing"
-                                        src="/static/images/homepage-segments.png"
+                                        srcset="/static/images/homepage-segments-1x.png 1x, /static/images/homepage-segments-2x.png 2x" 
+                                        src="/static/images/homepage-segments-1x.png"
                                       />
                                   </Delay>
                               </div>
