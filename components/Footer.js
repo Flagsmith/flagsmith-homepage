@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { GeneralEnquiries } from './PricingPanel';
 
 const Footer = class extends React.Component {
   state = {
@@ -61,7 +62,15 @@ const Footer = class extends React.Component {
                       <div className="col-md-2">
                           <h5>Support</h5>
                           <ul className=" float-left nav-list">
-                              <li><a href="mailto:support@bullet-train.io">Contact Us</a></li>
+                              <li><a
+                                onClick={() => openModal(
+                                    <h3>Contact Us</h3>,
+                                    <GeneralEnquiries onComplete={() => closeModal()}/>,
+                                )}
+                                href="#"
+                              >Contact Us
+                              </a>
+                              </li>
                               <li><Link prefetch={false} href="/blog"><a>Blog</a></Link></li>
                           </ul>
                       </div>

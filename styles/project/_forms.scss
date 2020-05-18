@@ -74,9 +74,8 @@
         text-align: center;
         .btn{
             margin-bottom:10px;
-            border-radius: 25px;
-            padding:15px;
-
+            border-radius: 25px !important;
+            height: 44px;
             &:hover{
                 background:darken(#fff,5);
                 color:#000;

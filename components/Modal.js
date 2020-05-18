@@ -78,7 +78,7 @@ export const openConfirm = global.openConfirm = (title, body, onYes, onNo) => {
 };
 
 export const openModal = global.openModal = (title, body) => {
-    ReactDOM.unmountComponentAtNode(document.getElementById('confirm'));
+    ReactDOM.unmountComponentAtNode(document.getElementById('modal'));
     ReactDOM.render((
         <_ModalDefault
           isOpen
