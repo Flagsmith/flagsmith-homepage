@@ -43,7 +43,7 @@ export class GeneralEnquiries extends React.Component {
                   onChange={e => this.setState({ email: Utils.safeParseEventValue(e) })}
                 />
                 <InputGroup
-                  title="How can we help? (optional)"
+                  title="How can we help?"
                   textarea
                   inputProps={{
                       style: { height: 100 },
@@ -113,7 +113,7 @@ export class ContactForm extends React.Component {
                   onChange={e => this.setState({ numberOfSeats: Utils.safeParseEventValue(e) })}
                 />
                 <InputGroup
-                  title="How can we help? (optional)"
+                  title="How can we help?"
                   textarea
                   inputProps={{
                       style: { height: 100 },
