@@ -106,10 +106,9 @@ const HomePage = class extends React.Component {
       if (referrer) {
           query = `?${Utils.toParam(Utils.fromParam())}`;
       }
-      data.post(`${Project.api}auth/register/`, {
+      data.post(`${Project.api}auth/users/`, {
           email,
-          password1: password,
-          password2: password,
+          password: password,
           first_name,
           last_name,
       })
