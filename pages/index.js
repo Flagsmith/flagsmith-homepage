@@ -101,6 +101,7 @@ const HomePage = class extends React.Component {
   };
 
   google = () => {
+      API.trackEvent(Constants.events.REGISTER_GOOGLE);
       Google.login().then((res) => {
           if (res) {
               document.location = `https://app.bullet-train.io/oauth/google?code=${res}`;
@@ -451,9 +452,9 @@ const HomePage = class extends React.Component {
                               </Row>
 
                               <Row style={{ justifyContent: 'center' }}>
-                                <h4>
+                                  <h4>
                                   Or
-                                </h4>
+                                  </h4>
                               </Row>
 
                               <fieldset id="details" className="col-lg-6 offset-lg-3">

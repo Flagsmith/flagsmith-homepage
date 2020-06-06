@@ -2,7 +2,9 @@ const Constants = global.Constants = {
     events: {
         'LOGIN': { 'event': 'User login', 'category': 'User' },
         'REFERRER': referrer => ({ 'event': `${referrer} referred`, 'category': 'Referrer' }),
+        'REGISTER_GOOGLE': referrer => ({ 'event': `${referrer} referred`, 'category': 'Referrer' }),
         'REGISTER': { 'event': 'User register', 'category': 'User' },
+        'GOOGLE_REGISTER': { 'event': 'User Google register', 'category': 'User' },
     },
     defaultLocale: 'en',
     simulate: {
