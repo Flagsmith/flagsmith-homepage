@@ -28,6 +28,7 @@ button.btn {
 		color: #000 !important;
 		font-weight: bold;
 		width: 260px;
+		text-transform: none !important;
 		&:hover {
 			text-decoration: none;
 		}
