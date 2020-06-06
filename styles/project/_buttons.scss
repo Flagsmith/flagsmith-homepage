@@ -34,7 +34,7 @@ a, .btn, button{
         box-shadow: none;
     }
     &:active,&:focus{
-        background: #098783 !important;
+        background: #098783;
         box-shadow:0 0 10px rgba(0,0,0,0.5);
     }
     &.white{

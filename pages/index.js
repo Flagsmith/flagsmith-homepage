@@ -6,7 +6,7 @@ import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import { ButtonWhite } from '../components/base/forms/Button';
 import data from '../common/utils/_data';
-
+import { Google } from '../project/auth';
 
 class Delay extends React.Component {
   static displayName = 'Delay';
@@ -71,6 +71,7 @@ const Guide = props => (
     </div>
 );
 
+
 const HomePage = class extends React.Component {
   static displayName = 'HomePage';
 
@@ -81,6 +82,7 @@ const HomePage = class extends React.Component {
 
   componentDidMount() {
       API.trackPage(Constants.pages.HOME);
+      Google.init(Project.google.apiKey, Project.google.clientId);
       this.checkSignup();
   }
 
@@ -98,6 +100,14 @@ const HomePage = class extends React.Component {
       }
   };
 
+  google = () => {
+      Google.login().then((res) => {
+          if (res) {
+              document.location = `https://app.bullet-train.io/oauth/google?code=${res}`;
+          }
+      });
+  }
+
   register = (details) => {
       const { email, password, first_name, last_name, organisation_name = 'Default Organisation' } = details;
       this.setState({ isSaving: true });
@@ -108,7 +118,7 @@ const HomePage = class extends React.Component {
       }
       data.post(`${Project.api}auth/users/`, {
           email,
-          password: password,
+          password,
           first_name,
           last_name,
       })
@@ -116,7 +126,7 @@ const HomePage = class extends React.Component {
               if (res && res.key) {
                   API.trackEvent(Constants.events.REGISTER);
                   API.setStoredToken(res.key);
-                  document.location = Project.appUrl+query;
+                  document.location = Project.appUrl + query;
               }
           })
           .catch((error) => {
@@ -150,9 +160,11 @@ const HomePage = class extends React.Component {
                           </div>
                           <div className="col-md-8 text-right">
                               <Delay>
-                                  <img style={{ maxWidth: '100%' }} alt="Feature use cases"
-                                    srcset="/static/images/homepage-features-1x.png 1x, /static/images/homepage-features-2x.png 2x"
-                                    src="/static/images/homepage-features-1x.png"/>
+                                  <img
+                                    style={{ maxWidth: '100%' }} alt="Feature use cases"
+                                    srcSet="/static/images/homepage-features-1x.png 1x, /static/images/homepage-features-2x.png 2x"
+                                    src="/static/images/homepage-features-1x.png"
+                                  />
                               </Delay>
                           </div>
                       </div>
@@ -166,7 +178,7 @@ const HomePage = class extends React.Component {
                                   <Delay>
                                       <img
                                         style={{ maxWidth: '100%' }} alt="User segmentation and ab testing"
-                                        srcset="/static/images/homepage-segments-1x.png 1x, /static/images/homepage-segments-2x.png 2x"
+                                        srcSet="/static/images/homepage-segments-1x.png 1x, /static/images/homepage-segments-2x.png 2x"
                                         src="/static/images/homepage-segments-1x.png"
                                       />
                                   </Delay>
@@ -429,6 +441,21 @@ const HomePage = class extends React.Component {
                                       </Link>
                                   </p>
                               </div>
+                              <Row style={{ justifyContent: 'center' }}>
+                                  <button
+                                    type="button" key="google" className="btn btn__oauth btn__oauth--google"
+                                    onClick={this.google}
+                                  >
+                                      <img src="/static/images/oauth/google.svg"/> Sign up with Google
+                                  </button>
+                              </Row>
+
+                              <Row style={{ justifyContent: 'center' }}>
+                                <h4>
+                                  Or
+                                </h4>
+                              </Row>
+
                               <fieldset id="details" className="col-lg-6 offset-lg-3">
                                   <InputGroup
                                     title="First Name"
