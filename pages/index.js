@@ -19,7 +19,7 @@ class Delay extends React.Component {
   }
 
   componentWillMount() {
-      setTimeout(() => {
+    setTimeout(() => {
           this.setState({ visible: true });
       }, 100);
   }
@@ -82,7 +82,9 @@ const HomePage = class extends React.Component {
 
   componentDidMount() {
       API.trackPage(Constants.pages.HOME);
-      Google.init(Project.google.apiKey, Project.google.clientId);
+      if (Project.gaAPIKey) {
+          Google.init(Project.gaAPIKey, Project.gaClientId);
+      }
       this.checkSignup();
   }
 
@@ -442,20 +444,24 @@ const HomePage = class extends React.Component {
                                       </Link>
                                   </p>
                               </div>
-                              <Row style={{ justifyContent: 'center' }}>
-                                  <button
-                                    type="button" key="google" className="btn btn__oauth btn__oauth--google"
-                                    onClick={this.google}
-                                  >
-                                      <img src="/static/images/oauth/google.svg"/> Sign up with Google
-                                  </button>
-                              </Row>
+                              {Project.gaAPIKey && (
+                                <>
+                                    <Row style={{ justifyContent: 'center' }}>
+                                        <button
+                                          type="button" key="google" className="btn btn__oauth btn__oauth--google"
+                                          onClick={this.google}
+                                        >
+                                            <img src="/static/images/oauth/google.svg"/> Sign up with Google
+                                        </button>
+                                    </Row>
 
-                              <Row style={{ justifyContent: 'center' }}>
-                                  <h4>
-                                  Or
-                                  </h4>
-                              </Row>
+                                    <Row style={{ justifyContent: 'center' }}>
+                                        <h4>
+                                      Or
+                                        </h4>
+                                    </Row>
+                                </>
+                              )}
 
                               <fieldset id="details" className="col-lg-6 offset-lg-3">
                                   <InputGroup

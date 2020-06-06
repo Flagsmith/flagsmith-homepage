@@ -7,6 +7,7 @@ const props = {
 };
 
 module.exports = [
+§    new webpack.DefinePlugin(require('../environment')),
 
     new webpack.DefinePlugin(props),
 

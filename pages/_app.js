@@ -19,6 +19,11 @@ const gtm = () => {
     }
 };
 
+global.Project = {
+  ...global.Project,
+  ...projectOverrides, // environment.js
+};
+
 class MyApp extends App {
     componentWillMount() {
         if (typeof window !== 'undefined') {
