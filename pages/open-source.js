@@ -83,6 +83,19 @@ Python REST API for Bullet-Train.
                                     </div>
                                 </a>
 
+                                <a className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-docker">
+                                    <div className="panel panel-default panel--open-source mt-4">
+                                        <div className="panel-content">
+                                            <h2>bullet-train-docker</h2>
+                                            <p className="m-0">
+Docker Compose file to run the entire Bullet Train stack locally.
+                                            </p>
+                                            <div className="colour-block colour-block--small colour-block--javascript"/>
+                                            <small className="technology-name">Docker</small>
+                                        </div>
+                                    </div>
+                                </a>
+
                                 <a
                                   className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-docs" target="_blank"
                                   rel="noopener noreferrer"
