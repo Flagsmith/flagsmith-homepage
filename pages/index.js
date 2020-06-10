@@ -19,7 +19,7 @@ class Delay extends React.Component {
   }
 
   componentWillMount() {
-    setTimeout(() => {
+      setTimeout(() => {
           this.setState({ visible: true });
       }, 100);
   }
@@ -150,6 +150,151 @@ const HomePage = class extends React.Component {
                   <link rel="canonical" href="https://bullet-train.io/"/>
               </Head>
               <Hero redirect={redirect}/>
+              <div className="pt-5">
+                  <div className="offset-md-3 col-md-6">
+                      <h2 className="text-center">How can Bullet Train accelerate your development process? Here's how.</h2>
+                  </div>
+
+                  <div className="section--grey section--wave">
+                      <div className="container">
+                          <div className="flex-row mt-5 mb-5">
+                              <div className="col-md-5">
+                                  <h3><span className="text--green">1.</span> Create a new Feature Flag and Feature
+                                      Branch</h3>
+                                  <p>You've been tasked with building out a new feature for your product: showing a chat
+                                      widget in your app and on your website for customers to get real-time support. Two
+                                      tasks:
+                                  </p>
+                              </div>
+                              <div className="col-md-6 offset-md-1">
+                                  <img
+                                      alt="Create a new Feature"
+                                      srcSet="/static/images/workflow/workflow-1.png 1x, /static/images/workflow/workflow-1@2x.png 2x"
+                                      src="/static/images/workflow/workflow-1.png"
+                                      className="img-fluid img__shadow"
+                                  />
+                              </div>
+                          </div>
+
+                          <div className="flex-row mt-5 mb-5">
+                              <div className="col-md-5">
+                                  <img
+                                      alt="Deploy the feature"
+                                      srcSet="/static/images/workflow/workflow-2.png 1x, /static/images/workflow/workflow-2@2x.png 2x"
+                                      src="/static/images/workflow/workflow-2.png"
+                                      className="img-fluid img__shadow mb-5 mb-sm-0"
+                                  />
+                              </div>
+                              <div className="col-md-6 offset-md-1">
+                                  <h3><span className="text--green">2.</span> Deploy the feature behind the feature flag
+                                  </h3>
+                                  <p>Once you've tested your code locally, place it behind a feature flag and deploy
+                                      your code straight to production.</p>
+                              </div>
+                          </div>
+
+                          <div className="mt-5 mb-5 pt-5">
+                              <div className="offset-md-3 col-md-6">
+                                  <h3 className="text-center">
+                                      <span className="text--green">3.</span> Enable the feature for your own account
+                                  </h3>
+                                  <p className="text-center">Your code is now live, but the chat widget is hidden to
+                                      everybody. You can now test the widget using your own account. Select your own
+                                      user within Bullet Train and override the flag for your account.
+                                  </p>
+                              </div>
+                              <div className="d-flex justify-content-center">
+                                  <img
+                                      alt="Enable the feature"
+                                      srcSet="/static/images/workflow/workflow-3.png 1x, /static/images/workflow/workflow-3@2x.png 2x"
+                                      src="/static/images/workflow/workflow-3.png"
+                                      className="img-fluid img__shadow"
+                                  />
+                              </div>
+                              <p className="text-center mt-5 mb-5">The widget will now show up for your own account.
+                                  It's still hidden for everybody else.</p>
+                              <div className="d-flex justify-content-center">
+                                  <img
+                                      alt="Enable the feature"
+                                      srcSet="/static/images/workflow/workflow-3.2.png 1x, /static/images/workflow/workflow-3.2@2x.png 2x"
+                                      src="/static/images/workflow/workflow-3.2.png"
+                                      className="img-fluid"
+                                  />
+                              </div>
+                          </div>
+
+                          <div className="flex-row mt-5 mb-5">
+                              <div className="col-md-5">
+                                  <h3><span className="text--green">4.</span> Bring in the rest of your team</h3>
+                                  <p>We can now create a Segment that includes all your company team members, so they
+                                      can test out the new widget and make sure all the integration points work nicely.
+                                      Now we can override that flag for this segment of users.</p>
+                                  <img
+                                      alt="Bring in the rest of your team"
+                                      srcSet="/static/images/workflow/workflow-4.1.png 1x, /static/images/workflow/workflow-4.1@2x.png 2x"
+                                      src="/static/images/workflow/workflow-4.1.png"
+                                      className="img-fluid img__shadow mt-5 mb-5 mb-sm-0"
+                                  />
+                              </div>
+                              <div className="col-md-6 offset-md-1">
+                                  <img
+                                      alt="Create a new Feature"
+                                      srcSet="/static/images/workflow/workflow-4.2.png 1x, /static/images/workflow/workflow-4.2@2x.png 2x"
+                                      src="/static/images/workflow/workflow-4.2.png"
+                                      className="img-fluid img__shadow"
+                                  />
+                              </div>
+                          </div>
+
+                          <div className="row mt-5 pt-5 mb-5">
+                              <div className="col-md-4">
+                                  <h3><span className="text--green">5.</span> Stage the rollout of feature to your
+                                      entire userbase</h3>
+                              </div>
+                              <div className="col-md-4">
+                                  <p>Once we're happy that everything is good to go, we have two options. We can either
+                                      flick the switch on the flag, enabling it instantly throughout the app for all
+                                      your users, or we can do a staged rollout. Lets do a staged rollout, so that we
+                                      can be sure that there are no unexpected issues when deploying the feature to
+                                      everyone.
+                                  </p>
+                              </div>
+                              <div className="col-md-4">
+                                  <p>We will update the segment, removing the emailAddress filter and replacing it with
+                                      a % Split. Once this is Segment is updated, 5% of our user base will see the chat
+                                      widget, and 95% won't. If we're happy that we aren't seeing any increase in error
+                                      rates within the app, we can either up that percentage figure or deploy the
+                                      feature entirely.
+                                  </p>
+                              </div>
+                          </div>
+
+                          <div className="d-flex justify-content-center">
+                              <img
+                                  alt="Enable the feature"
+                                  srcSet="/static/images/workflow/workflow-5.png 1x, /static/images/workflow/workflow-5@2x.png 2x"
+                                  src="/static/images/workflow/workflow-5.png"
+                                  className="img-fluid img__shadow"
+                              />
+                          </div>
+
+                          <div className="mt-5 mb-5 pt-5 pb-5">
+                              <div className="offset-md-3 col-md-6">
+                                  <h3 className="text-center">
+                                      <span className="text--green">6.</span> Finish Up
+                                  </h3>
+                                  <p className="text-center">The chat widget has been live for a few weeks, and
+                                      everything is working nicely. The team have decided that they want to keep the
+                                      widget in the application, so we can now remove the feature flag entirely. We edit
+                                      the code to remove the optional display of the widget, and delete the flag from
+                                      Bullet Train.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
               <div className="feature-container ">
                   <div className="container">
                       <div className="row">

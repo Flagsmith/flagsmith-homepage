@@ -7,6 +7,19 @@
     &--grey {
         background-color: #f9f9f9;
     }
+    &--wave {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: url(/static/images/workflow/wave.svg) bottom center;
+            background-size: cover;
+            z-index: -1;
+        }
+    }
     &--blue {
         background-color: $bt-brand-secondary;
         //-webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
@@ -17,6 +30,13 @@
         p {
             color: #A1AEB7;
         }
+    }
+}
+
+.svg {
+    &__wave {
+        position: absolute;
+        top: 30em;
     }
 }
 

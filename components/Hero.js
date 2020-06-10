@@ -56,7 +56,7 @@ const Hero = class extends React.Component {
         return (
             <div className="hero-container">
                 <div className="hero hero--homepage">
-                    <div className="hero-inner">
+                    <div className="hero-inner pt-4">
                         <div className="container">
                         <h1 className="margin-bottom margin-top">Release features with confidence</h1>
                         <p className="">
