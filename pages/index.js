@@ -171,21 +171,21 @@ const HomePage = class extends React.Component {
                                       alt="Create a new Feature"
                                       srcSet="/static/images/workflow/workflow-1.png 1x, /static/images/workflow/workflow-1@2x.png 2x"
                                       src="/static/images/workflow/workflow-1.png"
-                                      className="img-fluid img__shadow"
+                                      className="img-fluid"
                                   />
                               </div>
                           </div>
 
-                          <div className="flex-row mt-5 mb-5">
-                              <div className="col-md-5">
+                          <div className="flex-row mt-5">
+                              <div className="col-md-6">
                                   <img
                                       alt="Deploy the feature"
                                       srcSet="/static/images/workflow/workflow-2.png 1x, /static/images/workflow/workflow-2@2x.png 2x"
                                       src="/static/images/workflow/workflow-2.png"
-                                      className="img-fluid img__shadow mb-5 mb-sm-0"
+                                      className="img-fluid mb-5 mb-sm-0"
                                   />
                               </div>
-                              <div className="col-md-6 offset-md-1">
+                              <div className="col-md-5 offset-md-1">
                                   <h3><span className="text--green">2.</span> Deploy the feature behind the feature flag
                                   </h3>
                                   <p>Once you've tested your code locally, place it behind a feature flag and deploy
@@ -193,7 +193,7 @@ const HomePage = class extends React.Component {
                               </div>
                           </div>
 
-                          <div className="mt-5 mb-5 pt-5">
+                          <div className="mt-5 mb-5">
                               <div className="offset-md-3 col-md-6">
                                   <h3 className="text-center">
                                       <span className="text--green">3.</span> Enable the feature for your own account
@@ -208,10 +208,10 @@ const HomePage = class extends React.Component {
                                       alt="Enable the feature"
                                       srcSet="/static/images/workflow/workflow-3.png 1x, /static/images/workflow/workflow-3@2x.png 2x"
                                       src="/static/images/workflow/workflow-3.png"
-                                      className="img-fluid img__shadow"
+                                      className="img-fluid"
                                   />
                               </div>
-                              <p className="text-center mt-5 mb-5">The widget will now show up for your own account.
+                              <p className="text-center">The widget will now show up for your own account.
                                   It's still hidden for everybody else.</p>
                               <div className="d-flex justify-content-center">
                                   <img
@@ -233,7 +233,7 @@ const HomePage = class extends React.Component {
                                       alt="Bring in the rest of your team"
                                       srcSet="/static/images/workflow/workflow-4.1.png 1x, /static/images/workflow/workflow-4.1@2x.png 2x"
                                       src="/static/images/workflow/workflow-4.1.png"
-                                      className="img-fluid img__shadow mt-5 mb-5 mb-sm-0"
+                                      className="img-fluid mt-5 mb-5 mb-sm-0"
                                   />
                               </div>
                               <div className="col-md-6 offset-md-1">
@@ -241,7 +241,7 @@ const HomePage = class extends React.Component {
                                       alt="Create a new Feature"
                                       srcSet="/static/images/workflow/workflow-4.2.png 1x, /static/images/workflow/workflow-4.2@2x.png 2x"
                                       src="/static/images/workflow/workflow-4.2.png"
-                                      className="img-fluid img__shadow"
+                                      className="img-fluid"
                                   />
                               </div>
                           </div>
@@ -274,7 +274,7 @@ const HomePage = class extends React.Component {
                                   alt="Enable the feature"
                                   srcSet="/static/images/workflow/workflow-5.png 1x, /static/images/workflow/workflow-5@2x.png 2x"
                                   src="/static/images/workflow/workflow-5.png"
-                                  className="img-fluid img__shadow"
+                                  className="img-fluid"
                               />
                           </div>
 
