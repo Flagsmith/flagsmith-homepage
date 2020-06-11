@@ -54,7 +54,7 @@ const Footer = class extends React.Component {
                       <div className="col-md-2 offset-md-2">
                           <h5>Product</h5>
                           <ul className=" float-left nav-list">
-                              <li><a href={`${Project.appUrl}demo`}>Demo Account</a></li>
+                              <li><a href={`${Project.appUrl}/demo`}>Demo Account</a></li>
                               <li><a href="https://docs.bullet-train.io/">Documentation</a></li>
                               <li><Link prefetch={false} href="/pricing#pricing"><a>Pricing</a></Link></li>
                           </ul>
