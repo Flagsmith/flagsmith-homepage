@@ -151,11 +151,13 @@ const HomePage = class extends React.Component {
               </Head>
               <Hero redirect={redirect}/>
               <div className="pt-5">
-                  <div className="offset-md-3 col-md-6">
-                      <h2 className="text-center">How can Bullet Train accelerate your development process? Here's how.</h2>
-                  </div>
 
-                  <div className="section--grey section--wave">
+                  <div className="section--wave">
+                      <div className="offset-md-3 col-md-6">
+                          <h2 className="text-center section--wave__title">How can Bullet Train accelerate your development process? Here's how.</h2>
+                      </div>
+                  </div>
+                  <div className="section--grey">
                       <div className="container">
                           <div className="flex-row mt-5 mb-5">
                               <div className="col-md-5">
@@ -199,20 +201,19 @@ const HomePage = class extends React.Component {
                           </div>
 
                           <div className="flex-row mt-5 mb-5">
-                              <div className="col-md-4">
+                              <div className="col-md-5">
                                   <h3><span className="text--green">3.</span> Enable the feature for your own account
-                                      Branch
                                   </h3>
                                   <p>You can now test the widget using your own account. Select your own user within Bullet Train and override the flag for your account.
                                   </p>
                                   <p>The widget will now show up for your own account. It's still hidden for everybody else.</p>
                               </div>
-                              <div className="col-md-8 pr-0">
+                              <div className="col-md-7">
                                   <img
-                                      alt="Enable the feature"
-                                      srcSet="/static/images/workflow/workflow-3.png 1x, /static/images/workflow/workflow-3@2x.png 2x"
-                                      src="/static/images/workflow/workflow-3.png"
-                                      className="img-fluid img__large"
+                                    alt="Enable the feature"
+                                    srcSet="/static/images/workflow/workflow-3.png 1x, /static/images/workflow/workflow-3@2x.png 2x"
+                                    src="/static/images/workflow/workflow-3.png"
+                                    className="img-fluid img__large"
                                   />
                               </div>
                           </div>
@@ -220,10 +221,10 @@ const HomePage = class extends React.Component {
                           <div className="flex-row mt-5 mb-5">
                               <div className="col-md-5">
                                   <img
-                                      alt="Create a new Feature"
-                                      srcSet="/static/images/workflow/workflow-4.2.png 1x, /static/images/workflow/workflow-4.2@2x.png 2x"
-                                      src="/static/images/workflow/workflow-4.2.png"
-                                      className="img-fluid"
+                                    alt="Create a new Feature"
+                                    srcSet="/static/images/workflow/workflow-4.2.png 1x, /static/images/workflow/workflow-4.2@2x.png 2x"
+                                    src="/static/images/workflow/workflow-4.2.png"
+                                    className="img-fluid"
                                   />
                               </div>
                               <div className="col-md-6 offset-md-1">
@@ -231,29 +232,27 @@ const HomePage = class extends React.Component {
                                   <p>Create a Segment that includes all your company team members.</p>
                                   <p>Now we can override that flag for this segment of users. They can now test out the new widget and make sure all the integration points work nicely.</p>
                                   <img
-                                      alt="Bring in the rest of your team"
-                                      srcSet="/static/images/workflow/workflow-4.1.png 1x, /static/images/workflow/workflow-4.1@2x.png 2x"
-                                      src="/static/images/workflow/workflow-4.1.png"
-                                      className="img-fluid mt-5 mb-5 mb-sm-0"
+                                    alt="Bring in the rest of your team"
+                                    srcSet="/static/images/workflow/workflow-4.1.png 1x, /static/images/workflow/workflow-4.1@2x.png 2x"
+                                    src="/static/images/workflow/workflow-4.1.png"
+                                    className="img-fluid mt-5 mb-5 mb-sm-0"
                                   />
                               </div>
                           </div>
 
                           <div className="flex-row mt-5 mb-5">
                               <div className="col-md-5">
-                                  <h3><span className="text--green">5.</span> Gradually release the feature!
-                                      Branch
-                                  </h3>
+                                  <h3><span className="text--green">5.</span> Gradually release the feature!</h3>
                                   <p>Lets do a percentage rollout so that we can be sure that there are no unexpected issues when deploying the feature to everyone.</p>
 
-                                      <p>Modify the Segment, replacing the emailAddress filter with a % Split. 5% of our users will now see the chat widget and 95% won't.</p>
+                                  <p>Modify the Segment, replacing the emailAddress filter with a % Split. 5% of our users will now see the chat widget and 95% won't.</p>
                               </div>
                               <div className="col-md-6 offset-md-1">
                                   <img
-                                      alt="Enable the feature"
-                                      srcSet="/static/images/workflow/workflow-5.png 1x, /static/images/workflow/workflow-5@2x.png 2x"
-                                      src="/static/images/workflow/workflow-5.png"
-                                      className="img-fluid"
+                                    alt="Enable the feature"
+                                    srcSet="/static/images/workflow/workflow-5.png 1x, /static/images/workflow/workflow-5@2x.png 2x"
+                                    src="/static/images/workflow/workflow-5.png"
+                                    className="img-fluid"
                                   />
                               </div>
                           </div>
@@ -273,6 +272,7 @@ const HomePage = class extends React.Component {
                           </div>
                       </div>
                   </div>
+
               </div>
 
               <div className="feature-container ">

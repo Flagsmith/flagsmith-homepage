@@ -8,14 +8,17 @@
         background-color: #f9f9f9;
     }
     &--wave {
+        &__title {
+            padding-top: 3em;
+        }
         &:before {
             content: "";
             position: absolute;
-            top: 100%;
-            left: 0;
-            height: 100%;
+            //top: 100%;
+            //left: 0;
+            height: 270px;
             width: 100%;
-            background: url(/static/images/workflow/wave.svg) bottom center;
+            background: url(/static/images/workflow/wave.svg) top center;
             background-size: cover;
             z-index: -1;
         }
@@ -48,3 +51,25 @@
         font-size: 3em;
     }
 }
+
+
+//@media (min-height: 926px) and (max-height: 1130px)  {
+//    .section {
+//        &--wave {
+//            &:before {
+//                top: 84%;
+//            }
+//        }
+//    }
+//}
+//
+//@media (min-height: 1130px) and (max-height: 3000px)  {
+//    .section {
+//        &--wave {
+//            //background-color: red;
+//            &:before {
+//                top: 65%;
+//            }
+//        }
+//    }
+//}
