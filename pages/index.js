@@ -150,8 +150,114 @@ const HomePage = class extends React.Component {
                   <link rel="canonical" href="https://bullet-train.io/"/>
               </Head>
               <Hero redirect={redirect}/>
-              <div className="pt-5">
+              <div className="feature-container ">
+                  <div className="container">
+                      <div className="row">
+                          <div className="col-md-4">
+                              <h2>Manage features without deployments</h2>
+                              <p>
+                  Bullet Train combines the concepts of feature toggles with the flexibility of remote config. Rather
+                  than just switching features on and off, you can configure them for individual segments, users and
+                  development environments.
+                              </p>
+                          </div>
+                          <div className="col-md-8 text-right">
+                              <Delay>
+                                  <img
+                                    style={{ maxWidth: '100%' }} alt="Feature use cases"
+                                    srcSet="/static/images/homepage-features-1x.png 1x, /static/images/homepage-features-2x.png 2x"
+                                    src="/static/images/homepage-features-1x.png"
+                                  />
+                              </Delay>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div className="feature-container alt">
+                  <div className="container">
+                      <div className="row">
+                          <div className="col-md-8">
+                              <div className="text-left">
+                                  <Delay>
+                                      <img
+                                        style={{ maxWidth: '100%' }} alt="User segmentation and ab testing"
+                                        srcSet="/static/images/homepage-segments-1x.png 1x, /static/images/homepage-segments-2x.png 2x"
+                                        src="/static/images/homepage-segments-1x.png"
+                                      />
+                                  </Delay>
+                              </div>
+                          </div>
+                          <div className="col-md-4">
+                              <h2>Powerful user segmentation</h2>
+                              <p>
+                  Utilise our powerful rules engine to manage your features for the users you wish to target. You can
+                  even use segments for <strong>staged rollouts</strong> or <strong>a/b testing</strong>.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
+              <div className="feature-container">
+                  <div className="text-center tech margin-auto col-md-12 text-center">
+                      <h2>We currently support these popular languages</h2>
+                      <div style={{ justifyContent: 'center' }} className="row">
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/java/">
+                                  <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/javascript/">
+                                  <img
+                                    src="/static/images/tech-logos/javascript.png" alt="JavaScript"
+                                    title="JavaScript Feature Flags"
+                                  />
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/javascript/">
+                                  <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/node/">
+                                  <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/python/">
+                                  <img
+                                    src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python Feature Flags"
+                                    title="Python"
+                                  />
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/ruby/">
+                                  <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/dotnet/">
+                                  <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/java/">
+                                  <img src="/static/images/tech-logos/android2x.png" alt="android" title="android Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/ios/">
+                                  <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS Feature Flags"/>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div className="pt-5">
                   <div className="section--wave">
                       <div className="offset-md-3 col-md-6">
                           <h2 className="text-center section--wave__title">How can Bullet Train accelerate your development process? Here's how.</h2>
@@ -272,115 +378,8 @@ const HomePage = class extends React.Component {
                           </div>
                       </div>
                   </div>
-
               </div>
 
-              <div className="feature-container ">
-                  <div className="container">
-                      <div className="row">
-                          <div className="col-md-4">
-                              <h2>Manage features without deployments</h2>
-                              <p>
-                  Bullet Train combines the concepts of feature toggles with the flexibility of remote config. Rather
-                  than just switching features on and off, you can configure them for individual segments, users and
-                  development environments.
-                              </p>
-                          </div>
-                          <div className="col-md-8 text-right">
-                              <Delay>
-                                  <img
-                                    style={{ maxWidth: '100%' }} alt="Feature use cases"
-                                    srcSet="/static/images/homepage-features-1x.png 1x, /static/images/homepage-features-2x.png 2x"
-                                    src="/static/images/homepage-features-1x.png"
-                                  />
-                              </Delay>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div className="feature-container alt">
-                  <div className="container">
-                      <div className="row">
-                          <div className="col-md-8">
-                              <div className="text-left">
-                                  <Delay>
-                                      <img
-                                        style={{ maxWidth: '100%' }} alt="User segmentation and ab testing"
-                                        srcSet="/static/images/homepage-segments-1x.png 1x, /static/images/homepage-segments-2x.png 2x"
-                                        src="/static/images/homepage-segments-1x.png"
-                                      />
-                                  </Delay>
-                              </div>
-                          </div>
-                          <div className="col-md-4">
-                              <h2>Powerful user segmentation</h2>
-                              <p>
-                  Utilise our powerful rules engine to manage your features for the users you wish to target. You can
-                  even use segments for <strong>staged rollouts</strong> or <strong>a/b testing</strong>.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div className="feature-container">
-                  <div className="text-center tech margin-auto col-md-12 text-center">
-                      <h2>We currently support these popular languages</h2>
-                      <div style={{ justifyContent: 'center' }} className="row">
-                          <div className="col-md-1 col-sm-2 col-4">
-                              <a href="https://docs.bullet-train.io/clients/java/">
-                                  <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
-                              </a>
-                          </div>
-                          <div className="col-md-1 col-sm-2 col-4">
-                              <a href="https://docs.bullet-train.io/clients/javascript/">
-                                  <img
-                                    src="/static/images/tech-logos/javascript.png" alt="JavaScript"
-                                    title="JavaScript Feature Flags"
-                                  />
-                              </a>
-                          </div>
-                          <div className="col-md-1 col-sm-2 col-4">
-                              <a href="https://docs.bullet-train.io/clients/javascript/">
-                                  <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS Feature Flags"/>
-                              </a>
-                          </div>
-                          <div className="col-md-1 col-sm-2 col-4">
-                              <a href="https://docs.bullet-train.io/clients/node/">
-                                  <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js Feature Flags"/>
-                              </a>
-                          </div>
-                          <div className="col-md-1 col-sm-2 col-4">
-                              <a href="https://docs.bullet-train.io/clients/python/">
-                                  <img
-                                    src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python Feature Flags"
-                                    title="Python"
-                                  />
-                              </a>
-                          </div>
-                          <div className="col-md-1 col-sm-2 col-4">
-                              <a href="https://docs.bullet-train.io/clients/ruby/">
-                                  <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby Feature Flags"/>
-                              </a>
-                          </div>
-                          <div className="col-md-1 col-sm-2 col-4">
-                              <a href="https://docs.bullet-train.io/clients/dotnet/">
-                                  <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET Feature Flags"/>
-                              </a>
-                          </div>
-                          <div className="col-md-1 col-sm-2 col-4">
-                              <a href="https://docs.bullet-train.io/clients/java/">
-                                  <img src="/static/images/tech-logos/android2x.png" alt="android" title="android Feature Flags"/>
-                              </a>
-                          </div>
-                          <div className="col-md-1 col-sm-2 col-4">
-                              <a href="https://docs.bullet-train.io/clients/ios/">
-                                  <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS Feature Flags"/>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
               <div className="feature-container alt">
                   <div className="text-center text-center col-xl-4 offset-lg-4">
                       <h2>Fully Featured Platform</h2>
