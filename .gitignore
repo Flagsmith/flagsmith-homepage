@@ -20,3 +20,5 @@ coverage/*
 .next
 out
 dist
+.envrc
+.tool-versions

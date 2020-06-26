@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="264px" viewBox="0 0 1440 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Walkthrough" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Walkthrough-2" transform="translate(0.000000, -951.000000)" fill="#f9f9f9" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(0.000000, 951.000000)">
+                <g id="wave-(3)">
+                    <path d="M0,19.3192407 L120,12.5650323 C240,5.30107225 480,-7.4427173 720,5.68338593 C960,19.3192407 1200,60.0993673 1320,80.4894306 L1440,100.879494 L1440,264 L1320,264 C1200,264 960,264 720,264 C480,264 240,264 120,264 L0,264 L0,19.3192407 Z" id="Path" transform="translate(720.000000, 132.000000) scale(-1, 1) translate(-720.000000, -132.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
