@@ -284,7 +284,7 @@ const HomePage = class extends React.Component {
                               </div>
                           </div>
 
-                          <div className="flex-row mt-5">
+                          <div className="flex-row mt-5 mb-5">
                               <div className="col-md-6">
                                   <img
                                     alt="Deploy the feature"
