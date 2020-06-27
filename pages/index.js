@@ -257,7 +257,7 @@ const HomePage = class extends React.Component {
                   </div>
               </div>
 
-              <div className="feature-container">
+              <div className="feature-container alt">
                   <div className="section--wave">
                       <div className="offset-md-3 col-md-6">
                           <h2 className="text-center section--wave__title">How can Bullet Train accelerate your development process? Here's how.</h2>
@@ -375,7 +375,7 @@ const HomePage = class extends React.Component {
                   </div>
               </div>
 
-              <div className="feature-container alt">
+              <div className="feature-container">
                   <div className="text-center text-center col-xl-4 offset-lg-4">
                       <h2>Fully Featured Platform</h2>
                   </div>
