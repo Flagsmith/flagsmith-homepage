@@ -563,24 +563,39 @@ const HomePage = class extends React.Component {
                                       </Link>
                                   </p>
                               </div>
-                              {Project.gaAPIKey && (
-                                <>
-                                    <Row style={{ justifyContent: 'center' }}>
-                                        <button
-                                          type="button" key="google" className="btn btn__oauth btn__oauth--google"
-                                          onClick={this.google}
-                                        >
-                                            <img src="/static/images/oauth/google.svg"/> Sign up with Google
-                                        </button>
-                                    </Row>
 
-                                    <Row style={{ justifyContent: 'center' }}>
-                                        <h4>
-                                      Or
-                                        </h4>
-                                    </Row>
-                                </>
+                              {!!Project.gaAPIKey || !!Project.githubKey && (
+                              <>
+                                  {Project.gaAPIKey && (
+                                  <Row style={{ justifyContent: 'center' }}>
+                                      <button
+                                        type="button" key="google" className="btn btn__oauth btn__oauth--google"
+                                        onClick={this.google}
+                                      >
+                                          <img src="/static/images/oauth/google.svg"/> Sign up with Google
+                                      </button>
+                                  </Row>
+                                  )}
+
+                                  {Project.githubKey && (
+                                  <Row style={{ justifyContent: 'center' }}>
+                                      <a
+                                        href={Project.githubKey}
+                                        type="button" key="google" className="btn btn__oauth btn__oauth--github"
+                                      >
+                                          <img src="/static/images/oauth/github.svg"/> Sign up with GitHub
+                                      </a>
+                                  </Row>
+                                  )
+                                }
+                                  <Row style={{ justifyContent: 'center' }}>
+                                      <h4>
+                                    Or
+                                      </h4>
+                                  </Row>
+                              </>
                               )}
+
 
                               <fieldset id="details" className="col-lg-6 offset-lg-3">
                                   <InputGroup

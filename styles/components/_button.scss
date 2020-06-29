@@ -3,7 +3,7 @@
 $google: #c53d23;
 $github: #eeefee;
 
-button.btn {
+button.btn, a.btn {
 	border-radius: $btn-border-radius;
 	box-shadow: rgba(75, 75, 75, 0.11) 0px 1px 6px, rgba(75, 75, 75, 0.11) 0px 1px 4px;
 	color: $btn-default-color;
@@ -42,23 +42,23 @@ button.btn {
 		margin-top: 10px;
 		margin-bottom: 20px;
 		&--github {
-			background-color: $github;
+			background: $github;
 			&:hover {
-				background-color: darken($github, 5);
+				background: darken($github, 5);
 			}
 		}
 		&--google {
-			background-color: $google !important;
+			background: $google !important;
 			color:white !important;
 			&:hover, &:active, &:focus {
-				background-color: lighten($google, 5) !important;
+				background: lighten($google, 5) !important;
 			}
 		}
 		&--microsoft {
-			background-color: #339af4;
+			background: #339af4;
 			color: white !important;
 			&:hover {
-				background-color: #327ed6;
+				background: #327ed6;
 			}
 			img{
 				height: 20px;
@@ -77,9 +77,9 @@ $add-btn-size: 34px;
 	align-items: center;
 	text-align: center;
 	color: #929292;
-	background-color: #f7f7f7;
+	background: #f7f7f7;
 	&:hover {
-		background-color: #aaa;
+		background: #aaa;
 		color: #929292;
 	}
 	font-size: 1em;
@@ -96,9 +96,9 @@ $add-btn-size: 34px;
 	align-items: center;
 	text-align: center;
 	color: #929292;
-	background-color: #f7f7f7;
+	background: #f7f7f7;
 	&:hover {
-		background-color: #eaeaea;
+		background: #eaeaea;
 		color: #929292;
 	}
 	font-size: 1em;
@@ -116,17 +116,17 @@ $add-btn-size: 34px;
 
 .btn-link:hover {
   color: $btn-primary-bg;
-  background-color: transparent !important;
+  background: transparent !important;
   text-decoration: none;
 }
 
 .btn-white {
-	background-color: white !important;
+	background: white !important;
 	color: $body-color !important;
 }
 
 .btn-white:hover {
-	background-color: #f9f9f9 !important;
+	background: #f9f9f9 !important;
 	text-decoration: none;
 }
 
