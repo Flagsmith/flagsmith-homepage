@@ -54,7 +54,7 @@ class MyApp extends App {
                         <meta httpEquiv="x-ua-compatible" content="ie=edge"/>
                         <meta
                           name="description"
-                          content="Manage your Feature Flags, Feature Toggles and Remote Config in your Mobile, React, React Native, Java, Javascript (Node) and Python projects."
+                          content="Cloud or Self Hosted Feature Flags, Feature Toggles &amp; Remote Config in your Mobile, React, React Native, Java, Javascript &amp; Python projects."
                         />
                         <title>
               Feature Flags and Toggles for Continuous Integration - Bullet Train
