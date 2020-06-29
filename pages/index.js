@@ -564,7 +564,7 @@ const HomePage = class extends React.Component {
                                   </p>
                               </div>
 
-                              {(!!Project.gaAPIKey || !!Project.githubKey()) && (
+                              {(!!Project.gaAPIKey || !!Project.githubKey) && (
                               <>
                                   {Project.gaAPIKey && (
                                   <Row style={{ justifyContent: 'center' }}>
@@ -580,7 +580,7 @@ const HomePage = class extends React.Component {
                                   <Row style={{ justifyContent: 'center' }}>
                                       <a
                                         href={Project.githubKey}
-                                        type="button" key="google" className="btn btn__oauth btn__oauth--github"
+                                        key="google" className="btn btn__oauth btn__oauth--github"
                                       >
                                           <img src="/static/images/oauth/github.svg"/> Sign up with GitHub
                                       </a>
