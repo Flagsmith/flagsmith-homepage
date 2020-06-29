@@ -576,7 +576,6 @@ const HomePage = class extends React.Component {
                                       </button>
                                   </Row>
                                   )}
-
                                   {Project.githubKey && (
                                   <Row style={{ justifyContent: 'center' }}>
                                       <a
