@@ -564,7 +564,7 @@ const HomePage = class extends React.Component {
                                   </p>
                               </div>
 
-                              {!!Project.gaAPIKey || !!Project.githubKey && (
+                              {(!!Project.gaAPIKey || !!Project.githubKey() && (
                               <>
                                   {Project.gaAPIKey && (
                                   <Row style={{ justifyContent: 'center' }}>
