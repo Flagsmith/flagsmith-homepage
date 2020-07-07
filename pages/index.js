@@ -175,7 +175,7 @@ const HomePage = class extends React.Component {
               </div>
               <div className="feature-container alt">
                   <div className="container">
-                      <div className="row">
+                      <div className="flex-row">
                           <div className="col-md-8">
                               <div className="text-left">
                                   <Delay>
