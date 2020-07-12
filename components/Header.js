@@ -61,9 +61,7 @@ class Header extends PureComponent {
                     </button>
 
                     <div className={`collapse navbar-collapse${this.state.showNav ? ' show' : ''}`} id="navbarSupportedContent">
-                        <ul className="navbar-nav mr-auto">
-
-                        </ul>
+                        <ul className="navbar-nav mr-auto" />
                         <ul className="navbar-nav">
                             <li className="nav-item active">
                                 <Link prefetch={false} href="/pricing"><a className="nav-link">Pricing</a></Link>
@@ -73,6 +71,9 @@ class Header extends PureComponent {
                             </li>
                             <li className="nav-item">
                                 <Link prefetch={false} href="/open-source"><a className="nav-link">Open Source</a></Link>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" rel="noopener noreferrer" target="_blank" href="https://product-hub.io/roadmap/5d81f2406180537538d99f28">Product Roadmap</a>
                             </li>
                             <li className="nav-item">
                                 <Link prefetch={false} href={`${Project.appUrl}/login`}><a className="nav-link">Log in</a></Link>
