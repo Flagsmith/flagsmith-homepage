@@ -280,6 +280,21 @@ iOS/Swift client.
                                     </div>
                                 </a>
 
+                                <a
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-php-client" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                    <div className="panel panel-default panel--open-source mt-4">
+                                        <div className="panel-content">
+                                            <h2>bullet-train-php-client</h2>
+                                            <p className="m-0">
+PHP client.
+                                            </p>
+                                            <div className="colour-block colour-block--small colour-block--java"/>
+                                            <small className="technology-name">PHP</small>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </TabItem>
                     </Tabs>

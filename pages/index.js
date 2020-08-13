@@ -250,7 +250,12 @@ const HomePage = class extends React.Component {
                           </div>
                           <div className="col-md-1 col-sm-2 col-4">
                               <a href="https://docs.bullet-train.io/clients/ios/">
-                                  <img src="/static/images/tech-logos/bt-IOS.png" alt="IOS" title="IOS Feature Flags"/>
+                                  <img src="/static/images/tech-logos/bt-IOS.png" alt="iOS" title="iOS Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/php/">
+                                  <img src="/static/images/tech-logos/php.png" alt="PHP" title="PHP Feature Flags"/>
                               </a>
                           </div>
                       </div>
