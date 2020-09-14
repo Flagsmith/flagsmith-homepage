@@ -258,6 +258,11 @@ const HomePage = class extends React.Component {
                                   <img src="/static/images/tech-logos/php.png" alt="PHP" title="PHP Feature Flags"/>
                               </a>
                           </div>
+                          <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/go/">
+                                  <img src="/static/images/tech-logos/golang.png" alt="Go" title="Go Feature Flags"/>
+                              </a>
+                          </div>
                       </div>
                   </div>
               </div>
