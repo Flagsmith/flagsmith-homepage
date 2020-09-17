@@ -295,6 +295,22 @@ PHP client.
                                         </div>
                                     </div>
                                 </a>
+
+                                <a
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-go-client" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                    <div className="panel panel-default panel--open-source mt-4">
+                                        <div className="panel-content">
+                                            <h2>bullet-train-go-client</h2>
+                                            <p className="m-0">
+Go client.
+                                            </p>
+                                            <div className="colour-block colour-block--small colour-block--java"/>
+                                            <small className="technology-name">Go</small>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </TabItem>
                     </Tabs>
