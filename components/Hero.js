@@ -67,7 +67,7 @@ const Hero = class extends React.Component {
                         <div className="hero-cta mt-1">
                             <Button onClick={Utils.scrollToSignUp}>
                                 {/* <Link href={`/${this.props.redirect}#sign-up`}> */}
-                            Sign up Now
+                            Get Started For Free
                                 {/* </Link> */}
                             </Button>
                             <p className="text-small">No payment card required</p>

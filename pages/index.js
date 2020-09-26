@@ -689,7 +689,7 @@ const HomePage = class extends React.Component {
                                         className="full-width mb-3"
                                         type="submit"
                                       >
-                      Sign Up
+                      Get Started For Free
                                       </ButtonWhite>
                                       <a href={`${Project.appUrl}/login`} id="existing-member-btn">
                       Already a member?
