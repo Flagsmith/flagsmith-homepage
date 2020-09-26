@@ -160,7 +160,7 @@ const PricingPanel = class extends React.Component {
                                       <p className="text-small text-center">more flags than the UN</p>
                                       <Link href={`/${redirect}#sign-up`}>
                                           <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
-                                        Sign up
+                                        Try It Free
                                           </a>
                                       </Link>
                                   </div>
@@ -202,7 +202,7 @@ const PricingPanel = class extends React.Component {
                                       <p className="text-small text-center">billed monthly</p>
                                       <Link href={`/${redirect}#sign-up`}>
                                           <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
-                                          Sign up
+                                          Try It Free
                                           </a>
                                       </Link>
                                   </div>
@@ -238,7 +238,7 @@ const PricingPanel = class extends React.Component {
                                       <p className="text-small text-center">billed monthly</p>
                                       <Link href={`/${redirect}#sign-up`}>
                                           <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
-                                          Sign up
+                                          Try It Free
                                           </a>
                                       </Link>
                                   </div>
