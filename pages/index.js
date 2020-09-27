@@ -254,6 +254,11 @@ const HomePage = class extends React.Component {
                               </a>
                           </div>
                           <div className="col-md-1 col-sm-2 col-4">
+                              <a href="https://docs.bullet-train.io/clients/flutter/">
+                                  <img src="/static/images/tech-logos/flutter.png" alt="Flutter" title="Flutter Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col-md-1 col-sm-2 col-4">
                               <a href="https://docs.bullet-train.io/clients/php/">
                                   <img src="/static/images/tech-logos/php.png" alt="PHP" title="PHP Feature Flags"/>
                               </a>
