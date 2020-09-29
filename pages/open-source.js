@@ -111,7 +111,7 @@ This is the documentation repository for the Docs of Bullet Train.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-examples" target="_blank"
+                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-js-client/tree/master/examples" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
