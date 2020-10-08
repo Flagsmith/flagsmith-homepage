@@ -248,4 +248,10 @@
   }
 }
 
-
+@media (min-width: 1070px) and (max-width: 1480px) {
+  .hero {
+    p {
+      width: 50%;
+    }
+  }
+}

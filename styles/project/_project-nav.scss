@@ -89,4 +89,10 @@
     }
 }
 
-
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar-nav {
+        .nav-link {
+            font-size: .95em !important;
+        }
+    }
+}
