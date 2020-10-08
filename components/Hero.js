@@ -64,6 +64,9 @@ const Hero = class extends React.Component {
                         server side applications. Deliver true Continuous Integration. Get builds out faster.
                         Control who has access to new features.
                         </p>
+                        <p className="">
+                        Use our hosted API, deploy to your own private cloud, or run on-premise.
+                        </p>
                         <div className="hero-cta mt-1">
                             <Button onClick={Utils.scrollToSignUp}>
                                 {/* <Link href={`/${this.props.redirect}#sign-up`}> */}
