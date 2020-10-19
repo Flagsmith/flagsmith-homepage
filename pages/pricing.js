@@ -103,12 +103,6 @@ const PricingPage = class extends React.Component {
                               {' '}
                           </p>
                       </div>
-                      <div className="panel panel-default panel-grey">
-                          <p className="question">Wait, what? This seems too cheap?</p>
-                          <p className="answer">
-                            This was one of the drivers for creating Bullet Train, we will always aim to offer the best value.
-                          </p>
-                      </div>
                       <div className="cta-container">
                           <h5>Didn't find an answer to your question? Get in touch</h5>
                           <div className="row">

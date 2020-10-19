@@ -182,12 +182,18 @@ const PricingPanel = class extends React.Component {
                           Team Member
                                               </p>
                                           </li>
-                                          <li><p>Unlimited Projects</p></li>
+                                          <li>
+                                              <p>
+                                                  <strong>1</strong>
+                                                  {' '}
+                          Project
+                                              </p>
+                                          </li>
                                           <li><p>Unlimited Environments</p></li>
                                           <li><p>Unlimited Feature Flags</p></li>
                                           <li><p>Unlimited Identities and Segments</p></li>
-                                          <li><p>Fine Grained User Permissions</p></li>
-                                          <li><p>2-factor and SSO Authentication</p></li>
+                                          <li><p>3rd Party Integrations</p></li>
+                                          <li><p>A/B and MVT Testing</p></li>
                                       </ul>
                                   </div>
                               </div>
@@ -198,7 +204,7 @@ const PricingPanel = class extends React.Component {
                                       <p className="featured"/>
                                       <p className="pricing-price">Start-Up</p>
                                       <img src="/static/images/startup.svg" alt="Startup icon" className="pricing-icon"/>
-                                      <p className="pricing-type">$29</p>
+                                      <p className="pricing-type">$45</p>
                                       <p className="text-small text-center">billed monthly</p>
                                       <Link href={`/${redirect}#sign-up`}>
                                           <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
@@ -209,20 +215,31 @@ const PricingPanel = class extends React.Component {
                                   <div className="panel-footer">
                                       <p className="text-small text-center link-style">What's included</p>
                                       <ul className="pricing-features">
-                                          <li>
+                                            <li>
                                               <p>
-                                                Up to <strong>250,000</strong> requests per month
+                                                    Up to {' '}
+                                                    <strong>1,000,000</strong>
+                                                    {' '}
+                                                    requests per month
+                                              </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                  <strong>3</strong>
+                                                  {' '}
+                                                Team Members
                                               </p>
                                           </li>
                                           <li>
                                               <p>
-                                                Up to <strong>3</strong> Team Members
+                                                    Unlimited Projects
                                               </p>
                                           </li>
-                                          <li><p>Unlimited Projects</p></li>
                                           <li><p>Unlimited Environments</p></li>
                                           <li><p>Unlimited Feature Flags</p></li>
                                           <li><p>Unlimited Identities and Segments</p></li>
+                                          <li><p>3rd Party Integrations</p></li>
+                                          <li><p>A/B and MVT Testing</p></li>
                                           <li><p>Email Technical Support</p></li>
                                       </ul>
                                   </div>
@@ -234,7 +251,7 @@ const PricingPanel = class extends React.Component {
                                       <p className="featured">Most Popular</p>
                                       <p className="pricing-price">Scale-Up</p>
                                       <img src="/static/images/layers2.svg" alt="Scale-up icon" className="pricing-icon"/>
-                                      <p className="pricing-type">$99</p>
+                                      <p className="pricing-type">$200</p>
                                       <p className="text-small text-center">billed monthly</p>
                                       <Link href={`/${redirect}#sign-up`}>
                                           <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
@@ -245,20 +262,31 @@ const PricingPanel = class extends React.Component {
                                   <div className="panel-footer">
                                       <p className="text-small text-center link-style">What's included</p>
                                       <ul className="pricing-features">
-                                          <li>
+                                        <li>
                                               <p>
-                                                Up to <strong>2 million</strong> requests per month
+                                                    Up to {' '}
+                                                    <strong>5,000,000</strong>
+                                                    {' '}
+                                                    requests per month
+                                              </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                  <strong>5</strong>
+                                                  {' '}
+                                                Team Members - extra seats at <strong>$25 per seat</strong>
                                               </p>
                                           </li>
-                                          <li>
-                                              <p>
-                                                Up to <strong>10</strong> Team Members
-                                              </p>
-                                          </li>
-                                          <li><p>All Startup Features</p></li>
+                                          <li><p>Unlimited Projects</p></li>
+                                          <li><p>Unlimited Environments</p></li>
+                                          <li><p>Unlimited Feature Flags</p></li>
+                                          <li><p>Unlimited Identities and Segments</p></li>
+                                          <li><p>3rd Party Integrations</p></li>
+                                          <li><p>A/B and MVT Testing</p></li>
                                           <li><p>Priority Email Technical Support</p></li>
+                                          <li><p>User Roles and Permissions</p></li>
+                                          <li><p>2FA and SAML Authentication</p></li>
                                       </ul>
-
                                   </div>
                               </div>
                           </div>
@@ -278,24 +306,31 @@ const PricingPanel = class extends React.Component {
                                       >Contact Sales
                                       </a>
                                   </div>
-
                                   <div className="panel-footer">
                                       <p className="text-small text-center link-style">What's included</p>
                                       <ul className="pricing-features">
                                           <li>
                                               <p>
-                                                Over <strong>2 million</strong> requests per month
+                                                <strong>Unlimited</strong> requests per month
                                               </p>
                                           </li>
                                           <li>
                                               <p>
-                                                Over <strong>10</strong> Team Members
+                                                Over <strong>5</strong> Team Members
                                               </p>
                                           </li>
-                                          <li><p>All Scale Up Features</p></li>
-                                          <li><p>SAML authentication via Okta</p></li>
-                                          <li><p>Uptime SLA</p></li>
-                                          <li><p>Priority Email Technical Support with SLA</p></li>
+                                          <li><p>Unlimited Projects</p></li>
+                                          <li><p>Unlimited Environments</p></li>
+                                          <li><p>Unlimited Feature Flags</p></li>
+                                          <li><p>Unlimited Identities and Segments</p></li>
+                                          <li><p>3rd Party Integrations</p></li>
+                                          <li><p>A/B and MVT Testing</p></li>
+                                          <li><p>Priority Email Technical Support</p></li>
+                                          <li><p>User Roles and Permissions</p></li>
+                                          <li><p>2FA and SAML Authentication</p></li>
+                                          <li><p>Uptime and Support SLA</p></li>
+                                          <li><p>On-Boarding &amp; Training</p></li>
+                                          <li><p>Amendable MSA</p></li>
                                           <li><p>Optional On Premise Installation</p></li>
                                       </ul>
                                   </div>
