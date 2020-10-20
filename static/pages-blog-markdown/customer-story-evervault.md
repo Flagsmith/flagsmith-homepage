@@ -8,6 +8,8 @@ avatar: /static/images/blog/ben.png
 date: 20-oct-2020
 ---
 
+<img width="100%" src="/static/images/blog/post_images/evervault-logo.svg"/>
+
 At Bullet Train, we love to share how our customers are using feature flagging in their day-to-day. We caught up with Jonny over at Evervault to learn more about his company and the ins-and-outs of how they use feature flags.
 
 ## Please tell us a little bit about yourself and your company:
