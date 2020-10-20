@@ -228,7 +228,7 @@ const HomePage = class extends React.Component {
                           <div className="col">
                               <a href="https://docs.bullet-train.io/clients/python/">
                                   <img
-                                    src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python Feature Flags"
+                                    src="/static/images/tech-logos/python.png" alt="Python Feature Flags"
                                     title="Python"
                                   />
                               </a>
