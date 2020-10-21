@@ -202,12 +202,12 @@ const HomePage = class extends React.Component {
                   <div className="text-center tech margin-auto col-md-12 text-center">
                       <h2>We currently support these popular languages</h2>
                       <div style={{ justifyContent: 'center' }} className="row">
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/java/">
                                   <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
                               </a>
                           </div>
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/javascript/">
                                   <img
                                     src="/static/images/tech-logos/javascript.png" alt="JavaScript"
@@ -215,57 +215,62 @@ const HomePage = class extends React.Component {
                                   />
                               </a>
                           </div>
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/javascript/">
                                   <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS Feature Flags"/>
                               </a>
                           </div>
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/node/">
                                   <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js Feature Flags"/>
                               </a>
                           </div>
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/python/">
                                   <img
-                                    src="/static/images/tech-logos/python.png" className="img-fluid" alt="Python Feature Flags"
+                                    src="/static/images/tech-logos/python.png" alt="Python Feature Flags"
                                     title="Python"
                                   />
                               </a>
                           </div>
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/ruby/">
                                   <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby Feature Flags"/>
                               </a>
                           </div>
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/dotnet/">
                                   <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET Feature Flags"/>
                               </a>
                           </div>
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/java/">
                                   <img src="/static/images/tech-logos/android2x.png" alt="android" title="android Feature Flags"/>
                               </a>
                           </div>
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/ios/">
                                   <img src="/static/images/tech-logos/bt-IOS.png" alt="iOS" title="iOS Feature Flags"/>
                               </a>
                           </div>
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/flutter/">
                                   <img src="/static/images/tech-logos/flutter.png" alt="Flutter" title="Flutter Feature Flags"/>
                               </a>
                           </div>
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/php/">
                                   <img src="/static/images/tech-logos/php.png" alt="PHP" title="PHP Feature Flags"/>
                               </a>
                           </div>
-                          <div className="col-md-1 col-sm-2 col-4">
+                          <div className="col">
                               <a href="https://docs.bullet-train.io/clients/go/">
                                   <img src="/static/images/tech-logos/golang.png" alt="Go" title="Go Feature Flags"/>
+                              </a>
+                          </div>
+                          <div className="col">
+                              <a href="https://docs.bullet-train.io/clients/rust/">
+                                  <img src="/static/images/tech-logos/rust.png" alt="Rust" title="Rust Feature Flags"/>
                               </a>
                           </div>
                       </div>
