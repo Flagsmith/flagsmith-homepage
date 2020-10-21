@@ -272,23 +272,17 @@ const PricingPanel = class extends React.Component {
                                                     requests per month
                                               </p>
                                             </li>
-                                            <li>
-                                                <p>
-                                                  <strong>5</strong>
-                                                  {' '}
-                                                Team Members - extra seats at <strong>$25 per seat</strong>
-                                              </p>
-                                          </li>
-                                          <li><p>Unlimited Projects</p></li>
-                                          <li><p>Unlimited Environments</p></li>
-                                          <li><p>Unlimited Feature Flags</p></li>
-                                          <li><p>Unlimited Identities and Segments</p></li>
-                                          <li><p>3rd Party Integrations</p></li>
-                                          <li><p>A/B and MVT Testing</p></li>
-                                          <li><p>Priority Email Technical Support</p></li>
-                                          <li><p>User Roles and Permissions</p></li>
-                                          <li><p>2FA and SAML Authentication</p></li>
-                                          <li><p>Online Ts and Cs</p></li>
+                                            <li><p><strong>5</strong>{' '}Team Members</p></li>
+                                            <li><p>Unlimited Projects</p></li>
+                                            <li><p>Unlimited Environments</p></li>
+                                            <li><p>Unlimited Feature Flags</p></li>
+                                            <li><p>Unlimited Identities and Segments</p></li>
+                                            <li><p>3rd Party Integrations</p></li>
+                                            <li><p>A/B and MVT Testing</p></li>
+                                            <li><p>Priority Email Technical Support</p></li>
+                                            <li><p>User Roles and Permissions</p></li>
+                                            <li><p>2FA and SAML Authentication</p></li>
+                                            <li><p>Online Ts and Cs</p></li>
                                       </ul>
                                   </div>
                               </div>
