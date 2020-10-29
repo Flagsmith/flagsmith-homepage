@@ -34,7 +34,6 @@ export default class TheComponent extends Component {
       const dateFormatted = moment(post.data.date).format('MMM DD YYYY');
       const author = this.props.author ? this.props.author.data.name : 'Unknown';
       const avatar = this.props.author ? (this.props.author.data.avatar && this.props.author.data.avatar.url) || '' : '';
-      console.log(post);
       return (
         <>
             <div className="container blog pt-5 pb-5">

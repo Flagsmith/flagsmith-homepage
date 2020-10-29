@@ -4,11 +4,17 @@ import Prismic from 'prismic-javascript';
 import _ from 'lodash';
 import BlogPost from '../../components/blog/BlogPost';
 import { queryRepeatableDocuments, Client } from '../../prismic-functions';
+import usePreview from '../../components/blog/usePreview';
+import LoadingPreview from '../../components/blog/LoadingPreview';
 
 /**
  * Post page component
  */
-const Post = ({ post, related, author }) => {
+const Post = (props) => {
+    const { post, related, author, isLoading } = usePreview(props, getPost);
+    if (isLoading) {
+        return <LoadingPreview/>;
+    }
     if (post && post.data) {
         return (
             <div>
@@ -24,8 +30,7 @@ const Post = ({ post, related, author }) => {
     );
 };
 
-export async function getStaticProps({ params, preview = null, previewData = {} }) {
-    const { ref } = previewData;
+const getPost = async (ref, params) => {
     const post = await Client().getByUID('post', params.id, { ref }) || {};
     const related = post.data.related ? await Client().getByIDs(post.data.related.map(item => item.post.id)) : [];
     const authors = await Client().query(
@@ -40,12 +45,16 @@ export async function getStaticProps({ params, preview = null, previewData = {} 
 
     return {
         props: {
-            preview,
             author,
             related,
             post,
         },
     };
+};
+
+export async function getStaticProps({ params }) {
+    const res = await getPost(null, params);
+    return res;
 }
 
 export async function getStaticPaths() {

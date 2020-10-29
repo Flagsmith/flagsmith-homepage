@@ -1,5 +1,6 @@
 import Prismic from 'prismic-javascript';
-import Link from 'next/link';
+import Link from 'next/link'
+import cookie from 'cookie';
 import {
     apiEndpoint,
     accessToken,
@@ -68,4 +69,11 @@ export const queryTags = async (filter) => {
 export const homePageQuery = async () => {
     const allRoutes = await fetchDocs();
     return allRoutes.filter(doc => doc.type === 'post').slice(0, 100);
+};
+
+export const getPreview = async (req) => {
+    console.log("REQ IS", req)
+    const preview = cookie.parse(req.cookies);
+    console.log(preview);
+    return preview;
 };
