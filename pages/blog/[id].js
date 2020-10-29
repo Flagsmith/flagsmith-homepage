@@ -32,7 +32,7 @@ const Post = (props) => {
 
 const getPost = async (ref, params) => {
     const post = await Client().getByUID('post', params.id, { ref }) || {};
-    const related = post.data.related ? await Client().getByIDs(post.data.related.map(item => item.post.id)) : [];
+    const related = post.data && post.data.related ? await Client().getByIDs(post.data.related.map(item => item.post.id)) : [];
     const authors = await Client().query(
         [
             Prismic.Predicates.at('document.type', 'author'),
@@ -41,7 +41,7 @@ const getPost = async (ref, params) => {
         },
     );
 
-    const author = post.data.author ? _.find(authors && authors.results, { id: post.data.author.id }) : null;
+    const author = post.data && post.data.author ? _.find(authors && authors.results, { id: post.data.author.id }) : null;
 
     return {
         props: {
