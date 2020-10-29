@@ -24,7 +24,7 @@ const LoadingPreview = () => (
                 />
             </path>
         </svg>
-    Loading Prismic Preview
+        Loading Prismic Preview
     </div>
 
 );

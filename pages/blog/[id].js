@@ -6,6 +6,7 @@ import BlogPost from '../../components/blog/BlogPost';
 import { queryRepeatableDocuments, Client } from '../../prismic-functions';
 import usePreview from '../../components/blog/usePreview';
 import LoadingPreview from '../../components/blog/LoadingPreview';
+import Footer from '../../components/Footer';
 
 /**
  * Post page component
@@ -19,13 +20,14 @@ const Post = (props) => {
         return (
             <div>
                 <BlogPost post={post} related={related} author={author}/>
+                <Footer className="homepage"/>
             </div>
         );
     }
 
     return (
-        <div>
-           I think you are a bit lost.
+        <div className="mt-4 text-center">
+           This blog post cannot be found, it may not be published.
         </div>
     );
 };
