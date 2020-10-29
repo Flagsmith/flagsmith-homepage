@@ -58,8 +58,8 @@ const getBlogByTag = async (ref, params) => {
     };
 };
 
-export async function getStaticProps() {
-    const res = await getBlogByTag(null);
+export async function getStaticProps({ params }) {
+    const res = await getBlogByTag(null, params);
     return res;
 }
 
