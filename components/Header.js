@@ -78,6 +78,9 @@ class Header extends PureComponent {
                                 </a>
                             </li>
                             <li className="nav-item">
+                                <Link prefetch={false} href="/blog"><a className="nav-link">Blog</a></Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link prefetch={false} href={`${Project.appUrl}/login`}><a className="nav-link">Log in</a></Link>
                             </li>
                             <li className="nav-item active">
