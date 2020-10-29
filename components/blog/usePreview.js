@@ -2,7 +2,7 @@ import cookie from 'js-cookie';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 
-export default function (props, func) {
+export default function usePreview(props, func) {
     const router = useRouter();
     const query = router.query;
 
