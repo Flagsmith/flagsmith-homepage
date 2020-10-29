@@ -24,7 +24,7 @@ const BlogPage = (props) => {
     );
 };
 
-const getBlogByTag = async (ref) => {
+const getBlogByTag = async (ref, params) => {
     const client = Client();
 
     const doc = await client.getSingle('blog_home', ref ? { ref } : null) || {};
