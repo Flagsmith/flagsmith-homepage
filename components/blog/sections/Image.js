@@ -11,7 +11,7 @@ const Image = ({ data }) => {
 
     return (
         <div className="post-part single container">
-            <div className={`block-img ${slice.slice_label}`}>
+            <div className={`block-img`}>
                 <img src={imageUrl} alt={imageAlt} />
                 <p>
                     <span className="image-label">
