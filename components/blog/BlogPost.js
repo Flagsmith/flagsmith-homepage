@@ -81,7 +81,7 @@ export default class TheComponent extends Component {
                         </div>
                     </Row>
                 </div>
-                {image && <img src={image}/>}
+                {image && <div className="text-center"><img src={image}/></div>}
                 <BlogBody sections={post.data.body}/>
             </div>
             <div className="container pb-3">
