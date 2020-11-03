@@ -16,7 +16,6 @@ class Header extends PureComponent {
 
   componentDidMount() {
       const els = document.getElementsByClassName('nav-link');
-      console.log(els);
       for (let i = 0; i < els.length; i++) {
           els[i].addEventListener('mouseleave', () => {
               for (let x = 0; x < els.length; x++) {
@@ -36,7 +35,6 @@ class Header extends PureComponent {
 
     render() {
         const addedClass = this.state.menuOpen ? 'd-block' : ' d-none ';
-
         return (
             <nav className="navbar navbar-expand-lg">
                 <div className="container">
@@ -73,7 +71,14 @@ class Header extends PureComponent {
                                 <Link prefetch={false} href="/open-source"><a className="nav-link">Open Source</a></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" rel="noopener noreferrer" target="_blank" href="https://product-hub.io/roadmap/5d81f2406180537538d99f28">Product Roadmap</a>
+                                <a
+                                  className="nav-link" rel="noopener noreferrer" target="_blank"
+                                  href="https://product-hub.io/roadmap/5d81f2406180537538d99f28"
+                                >Product Roadmap
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <Link prefetch={false} href="/blog"><a className="nav-link">Blog</a></Link>
                             </li>
                             <li className="nav-item">
                                 <Link prefetch={false} href={`${Project.appUrl}/login`}><a className="nav-link">Log in</a></Link>

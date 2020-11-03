@@ -1,13 +1,14 @@
 import React from 'react';
 import Prismic from 'prismic-javascript';
-import { Client } from '../../prismic-functions';
-import Footer from '../../components/Footer';
-import BlogList from '../../components/blog/BlogList';
-import usePreview from '../../components/blog/usePreview';
-import LoadingPreview from '../../components/blog/LoadingPreview';
+// Project components & functions
+import { Client, queryTags } from '../../../prismic-functions';
+import Footer from '../../../components/Footer';
+import BlogList from '../../../components/blog/BlogList';
+import usePreview from '../../../components/blog/usePreview';
+import LoadingPreview from '../../../components/blog/LoadingPreview';
 
 const BlogPage = (props) => {
-    const { doc, authors, posts, isLoading } = usePreview(props, getBlog);
+    const { doc, authors, posts, isLoading } = usePreview(props, getBlogByTag);
 
     if (isLoading) {
         return <LoadingPreview/>;
@@ -23,8 +24,7 @@ const BlogPage = (props) => {
     );
 };
 
-
-const getBlog = async (ref) => {
+const getBlogByTag = async (ref, params) => {
     const client = Client();
 
     const doc = await client.getSingle('blog_home', ref ? { ref } : null) || {};
@@ -32,11 +32,13 @@ const getBlog = async (ref) => {
     const posts = await client.query(
         [
             Prismic.Predicates.at('document.type', 'post'),
+            Prismic.Predicates.at('document.tags', [params.id.toLowerCase()]),
         ], {
             orderings: '[my.post.date desc]',
             ...(ref ? { ref } : null),
         },
     );
+
 
     const authors = await client.query(
         [
@@ -45,6 +47,7 @@ const getBlog = async (ref) => {
             ...(ref ? { ref } : null),
         },
     );
+
 
     return {
         props: {
@@ -55,9 +58,17 @@ const getBlog = async (ref) => {
     };
 };
 
-export async function getStaticProps() {
-    const res = await getBlog(null);
+export async function getStaticProps({ params }) {
+    const res = await getBlogByTag(null, params);
     return res;
+}
+
+export async function getStaticPaths() {
+    const tags = await queryTags(doc => doc.type === 'post');
+    return {
+        paths: tags.map(tag => `/blog/tag/${tag}`),
+        fallback: true,
+    };
 }
 
 export default BlogPage;
