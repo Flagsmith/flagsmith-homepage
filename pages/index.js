@@ -97,7 +97,9 @@ const HomePage = class extends React.Component {
           const isSignup = document.location.href.includes('?signup');
           if (isSignup) {
               this.signup = true;
-              Utils.scrollToSignUp();
+              setTimeout(() => {
+                  Utils.scrollToSignUp();
+              }, 200);
           }
       }
   };
