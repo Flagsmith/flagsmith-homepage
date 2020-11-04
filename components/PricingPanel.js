@@ -194,6 +194,7 @@ const PricingPanel = class extends React.Component {
                                           <li><p>Unlimited Identities and Segments</p></li>
                                           <li><p>3rd Party Integrations</p></li>
                                           <li><p>A/B and MVT Testing</p></li>
+                                          <li><p>Online Ts and Cs</p></li>
                                       </ul>
                                   </div>
                               </div>
@@ -241,6 +242,7 @@ const PricingPanel = class extends React.Component {
                                           <li><p>3rd Party Integrations</p></li>
                                           <li><p>A/B and MVT Testing</p></li>
                                           <li><p>Email Technical Support</p></li>
+                                          <li><p>Online Ts and Cs</p></li>
                                       </ul>
                                   </div>
                               </div>
@@ -270,22 +272,17 @@ const PricingPanel = class extends React.Component {
                                                     requests per month
                                               </p>
                                             </li>
-                                            <li>
-                                                <p>
-                                                  <strong>5</strong>
-                                                  {' '}
-                                                Team Members - extra seats at <strong>$25 per seat</strong>
-                                              </p>
-                                          </li>
-                                          <li><p>Unlimited Projects</p></li>
-                                          <li><p>Unlimited Environments</p></li>
-                                          <li><p>Unlimited Feature Flags</p></li>
-                                          <li><p>Unlimited Identities and Segments</p></li>
-                                          <li><p>3rd Party Integrations</p></li>
-                                          <li><p>A/B and MVT Testing</p></li>
-                                          <li><p>Priority Email Technical Support</p></li>
-                                          <li><p>User Roles and Permissions</p></li>
-                                          <li><p>2FA and SAML Authentication</p></li>
+                                            <li><p><strong>5</strong>{' '}Team Members</p></li>
+                                            <li><p>Unlimited Projects</p></li>
+                                            <li><p>Unlimited Environments</p></li>
+                                            <li><p>Unlimited Feature Flags</p></li>
+                                            <li><p>Unlimited Identities and Segments</p></li>
+                                            <li><p>3rd Party Integrations</p></li>
+                                            <li><p>A/B and MVT Testing</p></li>
+                                            <li><p>Priority Email Technical Support</p></li>
+                                            <li><p>User Roles and Permissions</p></li>
+                                            <li><p>2FA and SAML Authentication</p></li>
+                                            <li><p>Online Ts and Cs</p></li>
                                       </ul>
                                   </div>
                               </div>
@@ -293,7 +290,7 @@ const PricingPanel = class extends React.Component {
                           <div className="col-md-6 col-lg-3 pricing-panel">
                               <div className="panel panel-default">
                                   <div className="panel-content">
-                                      <p className="featured"/>
+                                      <p className="featured">Optional On-Prem Install</p>
                                       <p className="pricing-price">Enterprise</p>
                                       <img src="/static/images/cubes.svg" alt="Enterprise icon" className="pricing-icon"/>
                                       <p className="pricing-type">Contact Us</p>
@@ -309,29 +306,29 @@ const PricingPanel = class extends React.Component {
                                   <div className="panel-footer">
                                       <p className="text-small text-center link-style">What's included</p>
                                       <ul className="pricing-features">
-                                          <li>
-                                              <p>
-                                                <strong>Unlimited</strong> requests per month
-                                              </p>
-                                          </li>
-                                          <li>
-                                              <p>
+                                      <li>
+                                            <p>
+                                                <strong>5,000,000 +</strong> requests per month
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
                                                 Over <strong>5</strong> Team Members
-                                              </p>
-                                          </li>
-                                          <li><p>Unlimited Projects</p></li>
-                                          <li><p>Unlimited Environments</p></li>
-                                          <li><p>Unlimited Feature Flags</p></li>
-                                          <li><p>Unlimited Identities and Segments</p></li>
-                                          <li><p>3rd Party Integrations</p></li>
-                                          <li><p>A/B and MVT Testing</p></li>
-                                          <li><p>Priority Email Technical Support</p></li>
-                                          <li><p>User Roles and Permissions</p></li>
-                                          <li><p>2FA and SAML Authentication</p></li>
-                                          <li><p>Uptime and Support SLA</p></li>
-                                          <li><p>On-Boarding &amp; Training</p></li>
-                                          <li><p>Amendable MSA</p></li>
-                                          <li><p>Optional On Premise Installation</p></li>
+                                            </p>
+                                        </li>
+                                        <li><p>Unlimited Projects</p></li>
+                                        <li><p>Unlimited Environments</p></li>
+                                        <li><p>Unlimited Feature Flags</p></li>
+                                        <li><p>Unlimited Identities and Segments</p></li>
+                                        <li><p>3rd Party Integrations</p></li>
+                                        <li><p>A/B and MVT Testing</p></li>
+                                        <li><p>Priority Email Technical Support</p></li>
+                                        <li><p>User Roles and Permissions</p></li>
+                                        <li><p>2FA and SAML Authentication</p></li>
+                                        <li><p>Uptime and Support SLA</p></li>
+                                        <li><p>On-Boarding &amp; Training</p></li>
+                                        <li><p>Amendable MSA</p></li>
+                                        <li><p>Optional On Premise Installation</p></li>
                                       </ul>
                                   </div>
                               </div>

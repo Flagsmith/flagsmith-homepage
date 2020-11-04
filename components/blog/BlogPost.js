@@ -3,15 +3,12 @@ import React, { Component } from 'react';
 import propTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import Head from 'next/head';
-import Footer from './Footer';
-import parseMarkdown from '../common/parse-markdown';
+import { RichText } from 'prismic-reactjs';
+import moment from 'moment/min/moment.min';
+import BlogBody from './BlogBody';
 
 export default class TheComponent extends Component {
   static displayName = 'BlogPost';
-
-  static propTypes = {
-      source: propTypes.string.isRequired,
-  };
 
   constructor(props) {
       super(props);
@@ -19,9 +16,7 @@ export default class TheComponent extends Component {
   }
 
   componentDidMount() {
-      const {
-          title,
-      } = parseMarkdown(this.props.source);
+      const title = RichText.asText(this.props.post.data.title);
       API.trackPage(`Post - ${title}`);
       API.setReferrer(JSON.stringify({
           utm_source: 'bullet-train',
@@ -32,15 +27,13 @@ export default class TheComponent extends Component {
   }
 
   render() {
-      const {
-          title,
-          date,
-          avatar,
-          description,
-          content,
-          author,
-          dateFormatted,
-      } = parseMarkdown(this.props.source);
+      const { props: { post } } = this;
+      const title = RichText.asText(post.data.title);
+      const image = post.data.image && post.data.image.url;
+      const description = RichText.asText(post.data.description);
+      const dateFormatted = moment(post.data.date).format('MMM DD YYYY');
+      const author = this.props.author ? this.props.author.data.name : 'Unknown';
+      const avatar = this.props.author ? (this.props.author.data.avatar && this.props.author.data.avatar.url) || '' : '';
       return (
         <>
             <div className="container blog pt-5 pb-5">
@@ -60,12 +53,12 @@ export default class TheComponent extends Component {
                     <meta data-rh="true" property="article:author" content={author}/>
                     <meta data-rh="true" name="author" content={author}/>
                     <meta data-rh="true" name="robots" content="index,follow"/>
-                    <meta data-rh="true" property="article:published_time" content={date}/>
-                    {typeof window !== 'undefined' && (
+                    <meta data-rh="true" property="article:published_time" content={dateFormatted}/>
+                    {typeof window !== 'undefined' && Project.isso && (
                     <script
                       src="/static/comments.js"
                       data-isso-require-author="true"
-                      data-isso="https://isso.bullet-train.io/"
+                      data-isso={Project.isso}
                     />
                     )}
                     <title>
@@ -77,7 +70,7 @@ export default class TheComponent extends Component {
                 </h1>
                 <div className="author mb-5 mt-3">
                     <Row>
-                        <img alt={author} className="avatar" src={avatar}/>
+                        <img alt={author} className="avatar" src={avatar || '/static/images/default-avatar'}/>
                         <div className="ml-2">
                             <div className="author">
                                 {author}
@@ -88,17 +81,14 @@ export default class TheComponent extends Component {
                         </div>
                     </Row>
                 </div>
-                <ReactMarkdown
-                  escapeHtml={false}
-                  source={content}
-                />
+                {image && <div className="text-center blog-image"><img src={image}/></div>}
+                <BlogBody sections={post.data.body}/>
             </div>
             <div className="container pb-3">
                 {!this.state.loading && (
-                <section id="isso-thread" />
+                    <section id="isso-thread" />
                 )}
             </div>
-            <Footer className="homepage"/>
       </>
       );
   }
