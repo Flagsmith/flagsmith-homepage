@@ -1,7 +1,7 @@
 ---
 title: Our Tools - 2019 Edition
 published: true
-description: The development tools Bullet Train can't live without in 2019
+description: The development tools Flagsmith can't live without in 2019
 tags: bullet-train, productivity, python, javascript, ci
 author: Ben Rometsch
 avatar: /static/images/blog/ben.png
@@ -9,7 +9,7 @@ date: 24-jun-2019
 
 ---
 
-Here's what we are using to build [Bullet Train, our Feature Flag platform](https://bullet-train.io). With some careful VPS purchases, most of this stuff can be run completely free of charge! 
+Here's what we are using to build [Flagsmith, our Feature Flag platform](https://bullet-train.io). With some careful VPS purchases, most of this stuff can be run completely free of charge! 
 
 ## GitLab All The Things
 
@@ -42,14 +42,14 @@ We're using the amazing [Dokku](http://dokku.viewdocs.io/dokku/) to run dev and 
 
 ## Production Hosting
 
-This really depends on the application you are working on. For [Bullet Train, our Feature Flag platform](https://bullet-train.io), we actually split out the hosting:
+This really depends on the application you are working on. For [Flagsmith, our Feature Flag platform](https://bullet-train.io), we actually split out the hosting:
 
 - Our Web front-end is written in Node/JS and deployed to [Standard AppEngine](https://cloud.google.com/appengine/docs/standard/). It's mega-cheap (as in practically free) and rock solid. 
 - Our API is written in [Django/DRF](https://www.django-rest-framework.org/) and uses a Postgres database as its data store. We host this on AWS and Elastic Beanstalk. This gives us decent automated scaling options and a simple deployment process. 
 
 ## Feature Flags
 
-Well, we definitely use our Feature Flags to help build our Feature Flags! To ensure a smooth CI/CD process, and to reduce the amount of code that is committed but not deployed, we use our [Bullet Train Feature Flags](https://bullet-train.io) platform within Bullet Train itself. Meta. We have a decent free tier too, so we don't have to pay ourselves to run our feature flags. 
+Well, we definitely use our Feature Flags to help build our Feature Flags! To ensure a smooth CI/CD process, and to reduce the amount of code that is committed but not deployed, we use our [Flagsmith Feature Flags](https://bullet-train.io) platform within Flagsmith itself. Meta. We have a decent free tier too, so we don't have to pay ourselves to run our feature flags. 
 
 ## Support, Email Etc
 

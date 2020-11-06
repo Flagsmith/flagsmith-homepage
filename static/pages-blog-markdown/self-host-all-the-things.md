@@ -8,7 +8,7 @@ avatar: /static/images/blog/ben.png
 date: 02-jan-2020
 ---
 
-We're big proponents of Open Source here at [Bullet Train](https://bullet-train.io/) towers. One of the strengths of open source is that you're free to run services yourself. 
+We're big proponents of Open Source here at [Flagsmith](https://bullet-train.io/) towers. One of the strengths of open source is that you're free to run services yourself. 
 
 This post will guide you through getting a [Dokku](http://dokku.viewdocs.io/dokku/) server set up and deploying the [Bitwarden](https://bitwarden.com/) password manager onto the platform.
 
@@ -35,7 +35,7 @@ This command will take a while to run as there is a fair amount of software to i
 
 ## Bitwarden Setup
 
-OK so now we're good to get an application set up. One tool we rely on a lot here whilst [serving millions of feature flags a day](https://bullet-train.io/) is Bitwarden; a password manager that allows us to store and share private information securely. Like [Bullet Train](https://bullet-train.io/), Bitwarden is open source. So what we're going to do is install a Bitwarden compatible server that is written in Rust: [Bitwarden_rs](https://github.com/dani-garcia/bitwarden_rs). 
+OK so now we're good to get an application set up. One tool we rely on a lot here whilst [serving millions of feature flags a day](https://bullet-train.io/) is Bitwarden; a password manager that allows us to store and share private information securely. Like [Flagsmith](https://bullet-train.io/), Bitwarden is open source. So what we're going to do is install a Bitwarden compatible server that is written in Rust: [Bitwarden_rs](https://github.com/dani-garcia/bitwarden_rs). 
 
 We're going to download the bitwarden_rs docker image, deploy it to Dokku, set up the subdomain virtualhost, generate a free Letsencrypt SSL certificate and then connect to the application. 
 

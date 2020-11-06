@@ -23,14 +23,14 @@ export default class OpenSource extends Component {
             <div>
                 <Head>
                     <title>
-                      Open Source Projects - Bullet Train
+                      Open Source Projects - Flagsmith
                     </title>
                     <link rel="canonical" href="https://bullet-train.io/open-source" />
                 </Head>
                 <div className="pt-5 hero__open-source text-center">
                     <h1 className="text-center margin-bottom">Open Source</h1>
                     <p className="pb-3">
-                        Bullet Train is 100% Open Source Software.
+                        Flagsmith is 100% Open Source Software.
                         We welcome pull requests!
                     </p>
                 </div>
@@ -75,7 +75,7 @@ Python REST API for Bullet-Train.
                                         <div className="panel-content">
                                             <h2>bullet-train-frontend</h2>
                                             <p className="m-0">
-                                              The admininstration interface for Bullet Train.
+                                              The admininstration interface for Flagsmith.
                                             </p>
                                             <div className="colour-block colour-block--small colour-block--javascript"/>
                                             <small className="technology-name">JavaScript</small>
@@ -88,7 +88,7 @@ Python REST API for Bullet-Train.
                                         <div className="panel-content">
                                             <h2>bullet-train-docker</h2>
                                             <p className="m-0">
-Docker Compose file to run the entire Bullet Train stack locally.
+Docker Compose file to run the entire Flagsmith stack locally.
                                             </p>
                                             <div className="colour-block colour-block--small colour-block--javascript"/>
                                             <small className="technology-name">Docker</small>
@@ -104,7 +104,7 @@ Docker Compose file to run the entire Bullet Train stack locally.
                                         <div className="panel-content">
                                             <h2>bullet-train-docs</h2>
                                             <p className="m-0">
-This is the documentation repository for the Docs of Bullet Train.
+This is the documentation repository for the Docs of Flagsmith.
                                             </p>
                                         </div>
                                     </div>
@@ -118,7 +118,7 @@ This is the documentation repository for the Docs of Bullet Train.
                                         <div className="panel-content">
                                             <h2>bullet-train-examples</h2>
                                             <p className="m-0">
-A collection of integrations to Bullet Train in a number of different frameworks.
+A collection of integrations to Flagsmith in a number of different frameworks.
                                             </p>
                                             <div className="colour-block colour-block--small colour-block--typescript"/>
                                             <small className="technology-name">TypeScript</small>

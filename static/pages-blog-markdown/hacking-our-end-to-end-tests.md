@@ -1,14 +1,14 @@
 ---
 title: Hacking our e2e tests to make them more useful
 published: true
-description: How Bullet Train adjusted their nightwatch e2e tests to provide API error reporting.
+description: How Flagsmith adjusted their nightwatch e2e tests to provide API error reporting.
 tags: bullet-train, webdev, javascript, testing
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
 date: 22-nov-2018
 ---
 
-In this post, we're going to run through an overview of my experience using e2e tests for the [feature flag platform, Bullet Train](https://bullet-train.io/). I'll discuss the pros and cons of adding e2e coverage to your project, and how I eventually improved their usefulness with a bit of clever JavaScript. I'll also provide a code example that's used in production for all of you to play with.
+In this post, we're going to run through an overview of my experience using e2e tests for the [feature flag platform, Flagsmith](https://bullet-train.io/). I'll discuss the pros and cons of adding e2e coverage to your project, and how I eventually improved their usefulness with a bit of clever JavaScript. I'll also provide a code example that's used in production for all of you to play with.
 
 ## What are end-to-end tests
 Unlike unit tests which verify individual segments of code are working, end-to-end (e2e) testing is a methodology that is more of a high-level run-through of your project, which tests whether automated interactions against the UI work as expected.
@@ -32,7 +32,7 @@ This last point brings us to our topic at hand.
 
 ## Better Root Cause Identification
 
-In the strive for achieving fault tolerance and redundancy, we recently we migrated the [Bullet Train API](https://bullet-train.io) over to AWS. The move went pretty well, however we hit a brief issue where users were unable to create organisations. Straight away the E2E tests started shouting at us:
+In the strive for achieving fault tolerance and redundancy, we recently we migrated the [Flagsmith API](https://bullet-train.io) over to AWS. The move went pretty well, however we hit a brief issue where users were unable to create organisations. Straight away the E2E tests started shouting at us:
 
 <img src="https://image.ibb.co/mg2OhA/download.png"/>
 

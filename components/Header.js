@@ -45,9 +45,9 @@ class Header extends PureComponent {
                     >
                         <a className="nav-link navbar-brand">
                             <img
-                              title="Bullet Train" height={24}
+                              title="Flagsmith" height={60}
                               src="/static/images/bullet-train-1.svg"
-                              className="brand " alt="Bullet Train logo"
+                              className="brand " alt="Flagsmith logo"
                             />
                         </a>
                     </Link>
@@ -67,7 +67,7 @@ class Header extends PureComponent {
                                 <Link prefetch={false} href="/pricing"><a className="nav-link">Pricing</a></Link>
                             </li>
                             <li className="nav-item">
-                                <Link prefetch={false} href="https://docs.bullet-train.io/"><a className="nav-link">Documentation</a></Link>
+                                <Link prefetch={false} href="https://docs.bullet-train.io/"><a className="nav-link">Docs</a></Link>
                             </li>
                             <li className="nav-item">
                                 <Link prefetch={false} href="/open-source"><a className="nav-link">Open Source</a></Link>

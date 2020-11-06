@@ -1,7 +1,7 @@
 ---
 title: Customer Story: Evervault
 published: true
-description: Evervault speeds up their release cadence and delivers better product uptime with Bullet Train.
+description: Evervault speeds up their release cadence and delivers better product uptime with Flagsmith.
 tags: bullet-train, customer-story
 author: Ben Rometsch
 avatar: /static/images/blog/ben.png
@@ -10,7 +10,7 @@ date: 20-oct-2020
 
 <img width="100%" src="/static/images/blog/post_images/evervault-logo.svg"/>
 
-At Bullet Train, we love to share how our customers are using feature flagging in their day-to-day. We caught up with Jonny over at Evervault to learn more about his company and the ins-and-outs of how they use feature flags.
+At Flagsmith, we love to share how our customers are using feature flagging in their day-to-day. We caught up with Jonny over at Evervault to learn more about his company and the ins-and-outs of how they use feature flags.
 
 ## Please tell us a little bit about yourself and your company:
 
@@ -30,7 +30,7 @@ We run in two week cycles, where we plan each cycle at the beginning of the two 
 
 ## How did you discover feature flags?
 
-I used to work at Intercom (https://www.intercom.com/) where we had an in-house feature flagging system. When I joined Evervault I pushed to get ourselves into a similar position where we could safely ship to production. I spent a few weeks exploring different options of feature flagging products and landed on Bullet Train after comparing a few based on price and ease of integration.
+I used to work at Intercom (https://www.intercom.com/) where we had an in-house feature flagging system. When I joined Evervault I pushed to get ourselves into a similar position where we could safely ship to production. I spent a few weeks exploring different options of feature flagging products and landed on Flagsmith after comparing a few based on price and ease of integration.
 
 ## What was the first flag you implemented and why?
 

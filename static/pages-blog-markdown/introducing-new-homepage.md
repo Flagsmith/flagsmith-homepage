@@ -1,16 +1,16 @@
 ---
 title: Introducing: Our new homepage
 published: true
-description: How we split our homepage from the Bullet Train application 
+description: How we split our homepage from the Flagsmith application 
 tags: bullet-train, new-feature
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
 date: 17-dec-2019
 ---
 
-<img alt="Introducing Bullet Train's new homepage" src="/static/images/blog/new-feature/new-homepage.svg"/>
+<img alt="Introducing Flagsmith's new homepage" src="/static/images/blog/new-feature/new-homepage.svg"/>
 
-As we often boast, Bullet Train is completely open-source, which is why combining our homepage with our application was perhaps the wrong decision. A very helpful user of Bullet Train raised [this issue](https://github.com/BulletTrainHQ/bullet-train-frontend/issues/6) and rightly so, for many of our customers that self-host the application it was quite strange that they were greeted with a marketing page.
+As we often boast, Flagsmith is completely open-source, which is why combining our homepage with our application was perhaps the wrong decision. A very helpful user of Flagsmith raised [this issue](https://github.com/BulletTrainHQ/bullet-train-frontend/issues/6) and rightly so, for many of our customers that self-host the application it was quite strange that they were greeted with a marketing page.
 
 Not only this, but there's also a rather selfish aspect to this on our part (Sorry!). By splitting our marketing page from our application we get the chance to fully zone in on SEO and leverage the performance benefits we can get by having fully static / server-rendered pages without the weight of our single-page app.
 
@@ -34,7 +34,7 @@ Before going further, here's a brief list of the libraries the site uses and the
 
 One of the main goals for this homepage was not just SEO, but also achieving great accessibility and performance. Lighthouse is an audit tool by google that generates a report on how your page is doing within all these areas.
 
-<img alt="Bullet Train Lighthouse score" src="/static/images/blog/new-feature/lighthouse.png"/>
+<img alt="Flagsmith Lighthouse score" src="/static/images/blog/new-feature/lighthouse.png"/>
 
 Following the results of these tests and their recommendations has helped with this a lot, and has lead to a great performance as well as improving our Moz statistics week by week.
 

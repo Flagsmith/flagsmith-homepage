@@ -1,7 +1,7 @@
 ---
-title: Bullet Train - November release
+title: Flagsmith - November release
 published: true
-description: Our Bullet Train November Release 
+description: Our Flagsmith November Release 
 tags: bullet-train, new-feature
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png

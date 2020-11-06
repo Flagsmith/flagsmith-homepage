@@ -58,7 +58,7 @@ class MyDocument extends Document {
                       content="Cloud or Self Hosted Feature Flags, Feature Toggles &amp; Remote Config in your Mobile, React, React Native, Java, Javascript &amp; Python projects."
                     />
                     <title>
-                  Feature Flags and Toggles for Continuous Integration - Bullet Train
+                  Feature Flags and Toggles for Continuous Integration - Flagsmith
                     </title>
                     <link rel="icon" sizes="192x192" href="/static/icons-192.png"/>
                     <link rel="apple-touch-icon" href="/static/icons-192.png"/>

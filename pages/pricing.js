@@ -29,7 +29,7 @@ const PricingPage = class extends React.Component {
           <div>
               <Head>
                   <title>
-                    Pricing - Bullet Train
+                    Pricing - Flagsmith
                   </title>
                   <link rel="canonical" href="https://bullet-train.io/pricing" />
               </Head>
@@ -41,7 +41,7 @@ const PricingPage = class extends React.Component {
                       <div className="panel panel-default panel-grey">
                           <p className="question">So how does this all work?</p>
                           <p className="answer">
-                First off, you're free to host Bullet Train yourself, without charge. We're 100% open source,
+                First off, you're free to host Flagsmith yourself, without charge. We're 100% open source,
                 and totally fine with you doing that.
                           </p>
                           <p className="answer">
@@ -50,7 +50,7 @@ const PricingPage = class extends React.Component {
                           </p>
                           <p className="answer">
                 The only metrics you need to consider when deciding on your plan is the number of API calls
-                you plan on making, and the number of team members you have that need access to Bullet Train.
+                you plan on making, and the number of team members you have that need access to Flagsmith.
                 You can create as many projects, environments, flags and segments as you like. We feel that this is
                 the fairest measure of usage.
                           </p>

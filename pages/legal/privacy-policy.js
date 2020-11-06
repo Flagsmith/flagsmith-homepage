@@ -6,7 +6,7 @@ const PrivacyPolicyPage = props => (
 
         <Head>
             <title>
-                Privacy Policy - Bullet Train
+                Privacy Policy - Flagsmith
             </title>
             <link rel="canonical" href="https://bullet-train.io/legal/privacy-policy/" />
         </Head>
@@ -25,17 +25,17 @@ const PrivacyPolicyPage = props => (
 
                 <h5>Who Are We?</h5>
                 <p>
-            Bullet Train is a Software-as-a-Service (SaaS) platform provider that serves companies looking to
+            Flagsmith is a Software-as-a-Service (SaaS) platform provider that serves companies looking to
             implement feature flags in their overall software development lifecycle. Feature flags allow software
             developers to change application behavior from outside of the application without redeploying their
             code. This has a number of benefits including a separation of risks, ability to deliver different
-            experiences in a targeted manner, and the lower administrative burden of software release. Bullet Train
+            experiences in a targeted manner, and the lower administrative burden of software release. Flagsmith
             provides a turnkey robust feature management solution that offers high availability, scalability, and
             audit control.
                 </p>
 
                 <p>
-            Because Bullet Train customers themselves have customers, language can get very confusing. In this
+            Because Flagsmith customers themselves have customers, language can get very confusing. In this
             document, we refer to our customers (Companies who utilize our platform in their software) as members
             (team members). We refer to the customers of those members to be "users" or "end-users". When the
             generic pronoun "you" is used, it is meant to refer to anyone reading this policy and can generically
@@ -87,7 +87,7 @@ const PrivacyPolicyPage = props => (
                         <p>
                             <b>Service Data.</b>
                             {' '}
-                We call data that our members send to us about their users "Service data". Bullet Train's core
+                We call data that our members send to us about their users "Service data". Flagsmith's core
                 service allows our members to submit details about their end-users to enrich their experiences
                 through our platform. Our members have a responsibility to understand the data they send to us
                 and to take the appropriate disclosures, precautions, and responsibilities regarding the content
@@ -194,19 +194,19 @@ const PrivacyPolicyPage = props => (
 
                 <h5>How We Disclose Data</h5>
                 <p>
-            Bullet Train does not sell Personal Data or Service Data to marketers or unaffiliated third parties. Data
-            collected by Bullet Train will only used for the purposes of furthering, improving, and expanding the
-            Bullet Train business. We share Personal and Service Data with the following third parties:
+            Flagsmith does not sell Personal Data or Service Data to marketers or unaffiliated third parties. Data
+            collected by Flagsmith will only used for the purposes of furthering, improving, and expanding the
+            Flagsmith business. We share Personal and Service Data with the following third parties:
                 </p>
 
                 <ol>
                     <li>
                         <p>
-                            <b>To Bullet Train Service Providers.</b>
+                            <b>To Flagsmith Service Providers.</b>
                             {' '}
-                In order to deliver the services that make up the Bullet Train Product, we rely on service
+                In order to deliver the services that make up the Flagsmith Product, we rely on service
                 providers (e.g. infrastructure providers, and affiliated) to provide key functionality both in
-                the operation of our product as well as the operation of the Bullet Train company.
+                the operation of our product as well as the operation of the Flagsmith company.
                         </p>
                     </li>
                     <li>
@@ -239,7 +239,7 @@ const PrivacyPolicyPage = props => (
 
                 <h5>Security and Notification of Breaches</h5>
                 <p>
-            Bullet Train takes security very seriously, and if you have reason to believe that your data or someone
+            Flagsmith takes security very seriously, and if you have reason to believe that your data or someone
             elses data is no longer secure, please contact
                     <a href="mailto:security@bullettrain.io">security@bullettrain.io.</a>
                 </p>
@@ -263,7 +263,7 @@ const PrivacyPolicyPage = props => (
 
                 <h5>User of Service by Minors</h5>
                 <p>
-            Bullet Train's core services are not directed to minors and we request that minors do not provide to us
+            Flagsmith's core services are not directed to minors and we request that minors do not provide to us
             any Personal Data. We rely on our members, when acting in the role of a Data controller, to take
             responsibility for making sure their users' privacy rights are respected and ensuring that the
             appropriate disclosures are made about third party collection and use.
@@ -272,7 +272,7 @@ const PrivacyPolicyPage = props => (
                 <h5>Right to Access, View, or Remove Your Information</h5>
                 <p>
             You have a right to access the personal information we hold about you. Whenever you use our site or
-            Bullet Train Services, we strive to make sure that your Personal Information is correct. If that
+            Flagsmith Services, we strive to make sure that your Personal Information is correct. If that
             information is wrong, we give you tools and methods to update it quickly or delete it, unless that
             information is necessary for legal or business purposes. When updating your Personal Information, we may
             ask you to verify your identity before making changes. We may reject requests that are unreasonably
@@ -284,7 +284,7 @@ const PrivacyPolicyPage = props => (
                 </p>
                 <p>
             To request removal of your Personal Information from our site or services, contact us at
-            privacy@bullettrain.io. Bullet Train cares deeply about the sanctity of your data and our privacy team
+            privacy@bullettrain.io. Flagsmith cares deeply about the sanctity of your data and our privacy team
             will manage each request on a case by case basis.
                 </p>
                 <p>
@@ -303,20 +303,20 @@ const PrivacyPolicyPage = props => (
                 <p>
             Our services are global and Data (of all classifications) may be stored and processed anywhere where we
             or one of our service providers has services. We may transfer data to countries outside of your country
-            of residence, which may have different rules applicable to your data. Bullet Train will take measures to
+            of residence, which may have different rules applicable to your data. Flagsmith will take measures to
             ensure that any transfers comply with applicable laws and your data remains protected as per this
             policy.
                 </p>
 
-                <h5>How do I contact the Bullet Train Data Privacy Officer?</h5>
+                <h5>How do I contact the Flagsmith Data Privacy Officer?</h5>
                 <p>
-            Bullet Train's Data Privacy Officer is Matthew Elwell, and you can contact him at
+            Flagsmith's Data Privacy Officer is Matthew Elwell, and you can contact him at
                     <a href="mailto:privacy@bullet-train.io">privacy@bullet-train.io.</a>
                 </p>
 
-                <h5>Is Bullet Train compliant with the General Data Protection Regulation (GDPR)?</h5>
+                <h5>Is Flagsmith compliant with the General Data Protection Regulation (GDPR)?</h5>
                 <p>
-            Bullet Train has taken steps to elect a Data Privacy Officer, to ensure that we have adequate data
+            Flagsmith has taken steps to elect a Data Privacy Officer, to ensure that we have adequate data
             protection policies, procedures, and practices. We believe that we are fully in compliance with the
             provisions and principles of GDPR.
                 </p>

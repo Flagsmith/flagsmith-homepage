@@ -145,7 +145,7 @@ const HomePage = class extends React.Component {
 
               <Head>
                   <title>
-            Feature Flags and Toggles for Continuous Integration - Bullet Train
+            Feature Flags and Toggles for Continuous Integration - Flagsmith
                   </title>
                   <link rel="canonical" href="https://bullet-train.io/"/>
               </Head>
@@ -156,7 +156,7 @@ const HomePage = class extends React.Component {
                           <div className="col-md-4">
                               <h2>Manage features without deployments</h2>
                               <p>
-                  Bullet Train combines the concepts of feature toggles with the flexibility of remote config. Rather
+                  Flagsmith combines the concepts of feature toggles with the flexibility of remote config. Rather
                   than just switching features on and off, you can configure them for individual segments, users and
                   development environments.
                               </p>
@@ -280,7 +280,7 @@ const HomePage = class extends React.Component {
               <div className="feature-container">
                   <div className="section--wave">
                       <div className="offset-md-3 col-md-6">
-                          <h2 className="text-center section--wave__title">How can Bullet Train accelerate your development process? Here's how.</h2>
+                          <h2 className="text-center section--wave__title">How can Flagsmith accelerate your development process? Here's how.</h2>
                       </div>
                   </div>
                   <div className="section--grey">
@@ -291,7 +291,7 @@ const HomePage = class extends React.Component {
                                       Branch
                                   </h3>
                                   <p>
-                                    Create a feature branch in git and a corresponding Feature Flag in Bullet Train.
+                                    Create a feature branch in git and a corresponding Feature Flag in Flagsmith.
                                   </p>
                               </div>
                               <div className="col-md-6 offset-md-1">
@@ -325,7 +325,7 @@ const HomePage = class extends React.Component {
                               <div className="col-md-5">
                                   <h3><span className="text--green">3.</span> Enable the feature for your own account
                                   </h3>
-                                  <p>You can now test the widget using your own account. Select your own user within Bullet Train and override the flag for your account.
+                                  <p>You can now test the widget using your own account. Select your own user within Flagsmith and override the flag for your account.
                                   </p>
                                   <p>The widget will now show up for your own account. It's still hidden for everybody else.</p>
                               </div>
@@ -387,7 +387,7 @@ const HomePage = class extends React.Component {
                                       everything is working nicely. The team have decided that they want to keep the
                                       widget in the application, so we can now remove the feature flag entirely. We edit
                                       the code to remove the optional display of the widget, and delete the flag from
-                                      Bullet Train.
+                                      Flagsmith.
                                   </p>
                               </div>
                           </div>
@@ -530,7 +530,7 @@ const HomePage = class extends React.Component {
                           <div className="col-xl-4">
                               <Guide
                                 href="https://www.youtube.com/watch?v=_lyNzKLZ8rc"
-                                description="A tutorial on how to use Bullet Train using React Native."
+                                description="A tutorial on how to use Flagsmith using React Native."
                                 image="/static/images/tech-logos/react.png"
                                 title="React Feature Flags Guide"
                               />
@@ -538,14 +538,14 @@ const HomePage = class extends React.Component {
                           <div className="col-xl-4">
                               <Guide
                                 href="https://www.youtube.com/watch?v=GPkCLO0F-5g"
-                                description="A quick introduction to Bullet Train."
+                                description="A quick introduction to Flagsmith."
                                 image="/static/images/90seconds.jpg"
                               />
                           </div>
                           <div className="col-xl-4">
                               <Guide
                                 href="https://www.youtube.com/watch?v=8cD-t7KKitU"
-                                description="A tutorial on how to use Bullet Train using vanilla JavaScript."
+                                description="A tutorial on how to use Flagsmith using vanilla JavaScript."
                                 image="/static/images/tech-logos/javascript.png"
                                 title="JavaScript Feature Flags Guide"
                               />

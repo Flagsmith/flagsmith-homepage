@@ -8,9 +8,9 @@ avatar: /static/images/blog/ben.png
 date: 06-jan-2020
 ---
 
-<img alt="Bullet Train and Freshchat" src="/static/images/blog/new-feature/freshchat.png"/>
+<img alt="Flagsmith and Freshchat" src="/static/images/blog/new-feature/freshchat.png"/>
 
-After some brief discussion between the members of Bullet Train, we concluded that it was time to say goodbye to Intercom.
+After some brief discussion between the members of Flagsmith, we concluded that it was time to say goodbye to Intercom.
 
 It never hurts to keep an open mind with SaaS tooling, especially around price. Strangely enough, there aren't that many competitors to Intercom, Freshchat was really the only one that stood out, and the price difference for our use-case was rather big!
 

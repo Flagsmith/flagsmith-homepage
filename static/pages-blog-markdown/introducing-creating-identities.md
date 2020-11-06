@@ -1,7 +1,7 @@
 ---
 title: Introducing: Creating identities
 published: true
-description: With Bullet Train you can now create identities from the dashboard 
+description: With Flagsmith you can now create identities from the dashboard 
 tags: bullet-train, new-feature
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
@@ -10,13 +10,13 @@ date: 9-dec-2019
 
 <img alt="Introducing Creating Identities" src="/static/images/blog/new-feature/creating-identities.svg"/>
 
-We are excited to announce a new feature, creating identities from the Bullet Train Dashboard! This is a feature requested from of our new customers.
+We are excited to announce a new feature, creating identities from the Flagsmith Dashboard! This is a feature requested from of our new customers.
 
-Identity management has been around in Bullet Train for a long time now, you can manage feature flags and remote config for individual identities as well as segments. This means you can control the experience of a particular user, which is very useful for testing in production!
+Identity management has been around in Flagsmith for a long time now, you can manage feature flags and remote config for individual identities as well as segments. This means you can control the experience of a particular user, which is very useful for testing in production!
 
-This new feature is useful if you want to add users to Bullet Train from day 1 so that you can start managing features for them before they use your application.
+This new feature is useful if you want to add users to Flagsmith from day 1 so that you can start managing features for them before they use your application.
  
- Without this feature, identities would only be created within Bullet Train by using one of our SDKs identify functions.
+ Without this feature, identities would only be created within Flagsmith by using one of our SDKs identify functions.
 
 ## How do I use this?
 

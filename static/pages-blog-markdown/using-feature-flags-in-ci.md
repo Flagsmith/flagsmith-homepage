@@ -1,7 +1,7 @@
 ---
-title: Bullet Train: Using feature flags and remote config in CI
+title: Flagsmith: Using feature flags and remote config in CI
 published: true
-description: Why we developed and open sourced Bullet Train, the remote feature management tool.
+description: Why we developed and open sourced Flagsmith, the remote feature management tool.
 tags: ci, java, javascript, showdev
 author: Kyle Johnson
 avatar: /static/images/blog/kyle.png
@@ -14,7 +14,7 @@ This post explains what I found when using feature flags and why Solid State Gro
 
 ## Reducing release cycles and stress
 <p align="center">
-<img alt="Reduce stress with Bullet Train" height="400" src="https://cdn2.stylecraze.com/wp-content/uploads/2015/07/2798-How-To-Make-A-Stress-Ball-At-Home-ss.jpg"/>
+<img alt="Reduce stress with Flagsmith" height="400" src="https://cdn2.stylecraze.com/wp-content/uploads/2015/07/2798-How-To-Make-A-Stress-Ball-At-Home-ss.jpg"/>
 </p>
 
 Having worked on projects with release cycles in the months, I found great relief employing this approach. Previously, I found the following:
@@ -47,17 +47,17 @@ There are a few feature flag services out there boasting several benefits:
 It's great being able to turn features on and off without doing a build, but with some features, it's not as simple as that.  This is where **remote config** comes in. 
 Often there's a need to configure feature properties, for example updating some text to promote an in-app currency sale. For mobile apps, I'd previously used Firebase's remote config, which often meant the difference between waiting for a 2 days or more collaborating iOS and Android builds.
 
-## Introducing Bullet Train
+## Introducing Flagsmith
 
 Since we'd seen great benefits in using both feature flags and remote config we decided to build our own internal product. This would mean we could take our existing websites/mobile apps and use a more consistent/formal approach to the work we'd done.
 
 We couldn't find any system that combines the two approaches we'd been using. Products that came close like LaunchDarkly were way out of our price range and didn't really offer what we wanted.
 
-The platform is 100% Open Source and has JavaScript, React Native, NodeJS and Java SDKs, so you can self-host all of it if you want. We're also hosting an API and admin front end for people for people to try out. We even used it to develop Bullet Train!
+The platform is 100% Open Source and has JavaScript, React Native, NodeJS and Java SDKs, so you can self-host all of it if you want. We're also hosting an API and admin front end for people for people to try out. We even used it to develop Flagsmith!
 Feel free to give some feedback on the site at bullettrain@solidstategroup.com.
 
 Happy Developing!
 
 <a href="https://bullet-train.io">
-<img alt="Bullet Train - Ship features with confidence" src="https://raw.githubusercontent.com/SolidStateGroup/bullet-train-frontend/master/hero.png"/>
+<img alt="Flagsmith - Ship features with confidence" src="https://raw.githubusercontent.com/SolidStateGroup/bullet-train-frontend/master/hero.png"/>
 </a>

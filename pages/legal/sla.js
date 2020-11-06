@@ -4,7 +4,7 @@ const ServiceLevelAgreement = props => (
     <div>
         <Head>
             <title>
-              Service Level Agreement - Bullet Train
+              Service Level Agreement - Flagsmith
             </title>
             <link rel="canonical" href="https://bullet-train.io/legal/sla/" />
         </Head>
@@ -12,7 +12,7 @@ const ServiceLevelAgreement = props => (
             <div className="container">
                 <h2>Service Level Agreement</h2>
                 <p>
-          This Bullet Train Service Level Agreement (
+          This Flagsmith Service Level Agreement (
                     <b>“SLA”</b>
           ) between Solid State Group Ltd (
                     <b>"Solid State Group"</b>
@@ -21,10 +21,10 @@ const ServiceLevelAgreement = props => (
                     {' '}
           or
                     <b>“we”</b>
-          ) and users of the Bullet Train Services (
+          ) and users of the Flagsmith Services (
                     <b>“you”</b>
-          ) governs the use of Bullet Train Services under the provisions of the
-                    <a target="_blank" href="/legal/tos">Bullet Train Terms of Service</a>
+          ) governs the use of Flagsmith Services under the provisions of the
+                    <a target="_blank" href="/legal/tos">Flagsmith Terms of Service</a>
                     {' '}
           (the
                     <b>“Terms”</b>
@@ -34,9 +34,9 @@ const ServiceLevelAgreement = props => (
 
                 <ol className="sla-list">
                     <li>
-                        <h5>Bullet Train Service Commitment: 99.95% Uptime</h5>
+                        <h5>Flagsmith Service Commitment: 99.95% Uptime</h5>
                         <p>
-              Bullet Train will use commercially reasonable efforts to ensure your Bullet Train Services are
+              Flagsmith will use commercially reasonable efforts to ensure your Flagsmith Services are
               running in Dedicated Environments available with a Monthly Uptime Percentage of at least 99.95%
               during any monthly billing cycle (the
                             <b>“Service Commitment”</b>
@@ -53,14 +53,14 @@ const ServiceLevelAgreement = props => (
                         <p>
                             <b>“Maintenance”</b>
                             {' '}
-              means scheduled Unavailability of Bullet Train Services, as announced by us prior to Bullet
+              means scheduled Unavailability of Flagsmith Services, as announced by us prior to Bullet
               Train Services becoming Unavailable.
                         </p>
                         <p>
                             <b>“Monthly Uptime Percentage”</b>
                             {' '}
               is calculated by subtracting from 100% the percentage of minutes during the month in which
-              Bullet Train Services were Unavailable. Monthly Uptime Percentage measurements exclude downtime
+              Flagsmith Services were Unavailable. Monthly Uptime Percentage measurements exclude downtime
               resulting directly or indirectly from any SLA Exclusion.
                         </p>
                         <p>
@@ -84,7 +84,7 @@ const ServiceLevelAgreement = props => (
                     <li>
                         <h5>Service Commitments and Service Credits</h5>
                         <p>
-              Service Credits are calculated as a percentage of the total charges due on your Bullet Train
+              Service Credits are calculated as a percentage of the total charges due on your Flagsmith
               invoice for the monthly billing cycle in which the Unavailability occurred, applied
               proportionally to the Services that were Unavailable, in accordance with the schedule below:
                         </p>
@@ -128,7 +128,7 @@ const ServiceLevelAgreement = props => (
               after which the incident occurred and must include:
                         </p>
                         <ul>
-                            <li>the words “Bullet Train SLA Credit Request” in the subject line;</li>
+                            <li>the words “Flagsmith SLA Credit Request” in the subject line;</li>
                             <li>the dates and times of each Unavailability incident that you are claiming;</li>
                             <li>the account handle(s); and</li>
                             <li>
@@ -150,7 +150,7 @@ const ServiceLevelAgreement = props => (
                             <li>That results from a suspension or Remedial Action, as described in the Terms;</li>
                             <li>
                 Caused by factors outside of our reasonable control, including any force majeure event,
-                Internet access, or problems beyond the demarcation point of the Bullet Train network;
+                Internet access, or problems beyond the demarcation point of the Flagsmith network;
                             </li>
                             <li>That results from any actions or inactions of you or any third party;</li>
                             <li>

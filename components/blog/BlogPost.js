@@ -45,7 +45,7 @@ export default class TheComponent extends Component {
                       name="description"
                       content="Manage your Feature Flags, Feature Toggles and Remote Config in your Mobile, React, React Native, Java, Javascript (Node) and Python projects."
                     />
-                    <meta data-rh="true" property="og:site_name" content="Bullet Train"/>
+                    <meta data-rh="true" property="og:site_name" content="Flagsmith"/>
                     <meta data-rh="true" property="og:type" content="article"/>
                     <meta data-rh="true" property="og:title" content={title}/>
                     <meta data-rh="true" property="og:description" content={description}/>
