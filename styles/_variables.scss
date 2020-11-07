@@ -82,6 +82,7 @@ $bt-brand-primary: #6633ff;
 $bt-brand-primary-light: lighten($bt-brand-primary,0.3);
 $bt-brand-primary-lighter: lighten($bt-brand-primary,0.7);
 $bt-brand-faint: #f3ecff;
+$bt-brand-faint-alt: #fcfaff;
 $bt-brand-faint-hover: #eee7f6;
 
 
@@ -101,7 +102,7 @@ $nav-link-color: $body-text;
 $nav-link-color-hover: $bt-brand-primary;
 
 $navbar-height: 5rem;
-
+$navbar-background: $bt-brand-faint-alt;
 
 $alert-danger-bg: $bt-brand-secondary-light;
 $alert-danger-border: $bt-brand-secondary-light;
@@ -179,8 +180,7 @@ $border-radius-default: 8px;
 //TRANSITIONS
 $button-transition: background-color 400ms cubic-bezier(0.23, 1, 0.32, 1);
 //Hero
-$navbar-background: 'transparent';
-$hero-bg:#ffffff;
+$hero-bg:$bt-brand-faint-alt;
 
 //Aside
 $aside-bg:#22354a;

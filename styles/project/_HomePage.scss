@@ -57,7 +57,7 @@ h2 {
 .feature-container {
     padding: 2rem 0;
     &.alt {
-        background-color: #f8f8f8;
+        background-color: $bt-brand-faint-alt;
     }
     p {
         font-size:18px;

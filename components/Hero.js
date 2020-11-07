@@ -96,7 +96,7 @@ const Hero = class extends React.Component {
                     <div className="companies">
                         <div className="container">
                             <div className="text-center margin-auto col-md-12 text-center">
-                                <h2>Trusted by top development teams</h2>
+                                <p>Trusted by top development teams.</p>
                                 <div className="row">
                                     <div className="col-4">
                                         <img src="/static/images/companies/aer-lingus.svg" alt="Aer Lingus" title="Aer Lingus"/>
