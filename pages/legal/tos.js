@@ -64,8 +64,7 @@ const TermsOfService = props => (
                         <strong>"Documentation"</strong>
                         {' '}
                     means the published specifications of the Flagsmith Service, as may be updated or amended from
-                    time to time as necessary due to updates and enhancements, as determined and provided by Bullet
-                    Train to Customer.
+                    time to time as necessary due to updates and enhancements, as determined and provided by Flagsmith to Customer.
                     </li>
                     <li>
                         <strong>"Extension Term"</strong>
@@ -91,8 +90,7 @@ const TermsOfService = props => (
                     <li>
                         <strong>"Order Form"</strong>
                         {' '}
-                    means a paper-based or online ordering document for the Flagsmith Service accepted by Bullet
-                    Train and Customer.
+                    means a paper-based or online ordering document for the Flagsmith Service accepted by Flagsmith and Customer.
                     </li>
                     <li>
                         <strong>"Flagsmith Service"</strong>
@@ -137,8 +135,7 @@ const TermsOfService = props => (
                 <p>
 Flagsmith shall make the Flagsmith Service available to Customer and its Affiliates in accordance
                 with this Agreement, and each Order Form mutually entered into and, to the extent not in conflict with
-                this Agreement or an Order Form or the Documentation. Subject to the terms of this Agreement, Bullet
-                Train grants Customer and its Affiliates a world-wide, fully-paid, royalty-free, limited term,
+                this Agreement or an Order Form or the Documentation. Subject to the terms of this Agreement, Flagsmith grants Customer and its Affiliates a world-wide, fully-paid, royalty-free, limited term,
                 non-sublicensable, non-transferable (except as otherwise provided herein), and non-exclusive license to
                 access, use, and download (for the SDK only) the Flagsmith Service solely for its internal business
                 purposes. The license granted hereunder is limited to the maximum number of Users specified in each
@@ -295,8 +292,7 @@ Receiving Party shall not disclose any Confidential Information of Disclosing Pa
                     Flagsmith represents and warrants that it will maintain the confidentiality of Customer Data and,
                     except as required by applicable law, will not disclose Customer Data to any third party for any
                     purpose other than to provide the Flagsmith Service and to otherwise improve the Flagsmith
-                    Service. However, Flagsmith may compile aggregate data related to Customer' s usage of the Bullet
-                    Train Service and may use and/or disclose such aggregate data to third parties, to the extent that
+                    Service. However, Flagsmith may compile aggregate data related to Customer' s usage of the Flagsmith Service and may use and/or disclose such aggregate data to third parties, to the extent that
                     Customer is not identified as the source of such data and as long as the data does not reveal the
                     identity, whether directly or indirectly, of any individual, or specific data entered by or relating
                     to any individual. Receiving Party shall promptly notify Disclosing Party if it becomes aware of any

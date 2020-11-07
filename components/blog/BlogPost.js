@@ -19,7 +19,7 @@ export default class TheComponent extends Component {
       const title = RichText.asText(this.props.post.data.title);
       API.trackPage(`Post - ${title}`);
       API.setReferrer(JSON.stringify({
-          utm_source: 'bullet-train',
+          utm_source: 'flagsmith',
           utm_medium: 'blog',
           utm_campaign: title,
       }));

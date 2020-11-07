@@ -59,7 +59,7 @@ export default class OpenSource extends Component {
                                         <div className="panel-content">
                                             <h2>bullet-train-api</h2>
                                             <p className="m-0">
-Python REST API for Bullet-Train.
+Python REST API for Flagsmith.
                                             </p>
                                             <div className="colour-block colour-block--small colour-block--python"/>
                                             <small className="technology-name">Python</small>

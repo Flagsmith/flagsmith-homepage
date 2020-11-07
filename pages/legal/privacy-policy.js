@@ -14,7 +14,7 @@ const PrivacyPolicyPage = props => (
             <div className="container">
                 <h2>Privacy Policy</h2>
                 <p>
-            By using the BulletTrain.io website ("service"), or any services of Solid State Group Ltd, you are
+            By using the BulletTrain.io website ("service"), or any services of Bullet Train Ltd, you are
             agreeing to be bound by the following privacy policy ("privacy policy"). If you are entering into this
             agreement on behalf of a company or other legal entity, you represent that you have the authority to
             bind such entity, its affiliates and all users who access our services through your account to these
@@ -46,8 +46,7 @@ const PrivacyPolicyPage = props => (
                 <p>
             This policy largely deals with members, how we keep their data safe, and how we are allowed to use their
             data. If you are an end-user of one of our member's services, then you should consult their privacy
-            policy instead, as the member policy applies to the information collected instead of this policy. Bullet
-            Train collects data from our members about their user under their direction, but we do not have a direct
+            policy instead, as the member policy applies to the information collected instead of this policy. Flagsmith collects data from our members about their user under their direction, but we do not have a direct
             relationship with users themselves. This policy applies to the data as long as we retain the data.
                 </p>
 
