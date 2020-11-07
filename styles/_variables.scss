@@ -78,6 +78,8 @@ $font-family-headers: 'OpenSans', sans-serif;
 // COLORS
 
 $brand-primary: #6633ff;
+$bt-brand-primary-dark: #17103a;
+
 $bt-brand-primary: #6633ff;
 $bt-brand-primary-light: lighten($bt-brand-primary,0.3);
 $bt-brand-primary-lighter: lighten($bt-brand-primary,0.7);
@@ -90,16 +92,19 @@ $bt-brand-secondary: #f27157;
 $bt-brand-secondary-light: #f6a999;
 $bt-brand-secondary-hover: #e3674d;
 $bt-brand-secondary-active: #e3674d;
-$primary-dark: #17103a;
 
 $body-text: #242039;
 $body-text-faint: #716E86;
 
 $header-color: $body-text;
 $link-color: $body-text;
-$link-color-hover: $bt-brand-primary;
+$link-hover-color: $bt-brand-primary;
 $nav-link-color: $body-text;
 $nav-link-color-hover: $bt-brand-primary;
+
+$bt-input-border: lighten($bt-brand-primary, 30);
+$bt-input-border-active: $bt-brand-primary;
+$bt-input-background: $bt-brand-faint-alt;
 
 $navbar-height: 5rem;
 $navbar-background: $bt-brand-faint-alt;
@@ -109,6 +114,12 @@ $alert-danger-border: $bt-brand-secondary-light;
 $alert-danger-text: rgb(255, 255, 255);
 
 $body-bg: #f9f9f9;
+
+
+$bt-gradient-text: $body-text;
+$bt-gradient-start: $bt-brand-faint-alt;
+$bt-gradient-end: #fff;
+
 
 //Nav
 
@@ -135,7 +146,6 @@ $btn-primary-bg: #009de2;
 $btn-primary-color-hover: white;
 $btn-primary-bg-hover: #008fd0;
 $btn-primary-light-bg: #61d0de;
-$link-hover-color: #f1f1f1;
 $link-color-secondary: rgb(90, 90 , 90);
 $btn-default-color: white;
 $hover-bg: rgb(240, 240, 240);

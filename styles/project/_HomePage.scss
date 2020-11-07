@@ -16,7 +16,7 @@ h2 {
 }
 
 .signup-form {
-    color: #fff;
+    color: $bt-gradient-text;
     padding: 20px;
     margin-bottom: 0;
     background: none;
@@ -74,19 +74,13 @@ h2 {
 }
 
 .sign-up {
-    background: linear-gradient(#407a7d, #22354a);
+    background: linear-gradient($bt-gradient-start, $bt-gradient-end);
+    color: $bt-gradient-text;
 }
 
 footer.homepage {
-    background: $hero-bg;
-    color: white;
+    background: $bt-gradient-end;
     padding: 50px;
-
-    .brand-footer {
-    }
-    &__content {
-        background-color: red;
-    }
 }
 
 .footer {
@@ -102,9 +96,6 @@ footer.homepage {
                     display: block;
                     line-height: 44px;
                     font-size: 16px;
-                    &:hover {
-                        color: white;
-                    }
                 }
             }
         }

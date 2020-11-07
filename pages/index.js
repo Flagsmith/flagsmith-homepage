@@ -573,7 +573,7 @@ const HomePage = class extends React.Component {
                           >
                               <div className="form-intro text-center">
                                   <h3>It's free to get started.</h3>
-                                  <p className="text-white">
+                                  <p>
                     We have a 100% free for life plan for smaller projects.
                                       {' '}
                                       <Link href="/pricing">
@@ -692,7 +692,7 @@ const HomePage = class extends React.Component {
 
                                   <div className="form-cta margin-top">
 
-                                      <ButtonWhite
+                                      <Button
                                         data-test="signup-btn"
                                         name="signup-btn"
                                         disabled={isLoading || isSaving}
@@ -700,7 +700,7 @@ const HomePage = class extends React.Component {
                                         type="submit"
                                       >
                       Get Started For Free
-                                      </ButtonWhite>
+                                      </Button>
                                       <a href={`${Project.appUrl}/login`} id="existing-member-btn">
                       Already a member?
                                       </a>
