@@ -521,47 +521,46 @@ const HomePage = class extends React.Component {
                   </div>
               </div>
 
-              <div style={{ padding: '1rem' }} className="feature-container">
-                  <div className="container">
-                      <div className="text-center">
-                          <h2>Resources</h2>
-                      </div>
-                      <div className="row">
-                          <div className="col-xl-4">
-                              <Guide
-                                href="https://www.youtube.com/watch?v=_lyNzKLZ8rc"
-                                description="A tutorial on how to use Flagsmith using React Native."
-                                image="/static/images/tech-logos/react.png"
-                                title="React Feature Flags Guide"
-                              />
-                          </div>
-                          <div className="col-xl-4">
-                              <Guide
-                                href="https://www.youtube.com/watch?v=GPkCLO0F-5g"
-                                description="A quick introduction to Flagsmith."
-                                image="/static/images/90seconds.jpg"
-                              />
-                          </div>
-                          <div className="col-xl-4">
-                              <Guide
-                                href="https://www.youtube.com/watch?v=8cD-t7KKitU"
-                                description="A tutorial on how to use Flagsmith using vanilla JavaScript."
-                                image="/static/images/tech-logos/javascript.png"
-                                title="JavaScript Feature Flags Guide"
-                              />
-                          </div>
-                      </div>
-                      <div className="text-center">
-                          <a
-                            style={{ color: '#1c2b3d', fontSize: 18 }}
-                            href="https://www.youtube.com/channel/UCki7GZrOdZZcsV9rAIRchCw"
-                          >
-                View all
-                          </a>
-                      </div>
-                  </div>
-              </div>
-
+              {/*<div style={{ padding: '1rem' }} className="feature-container">*/}
+              {/*    <div className="container">*/}
+              {/*        <div className="text-center">*/}
+              {/*            <h2>Resources</h2>*/}
+              {/*        </div>*/}
+              {/*        <div className="row">*/}
+              {/*            <div className="col-xl-4">*/}
+              {/*                <Guide*/}
+              {/*                  href="https://www.youtube.com/watch?v=_lyNzKLZ8rc"*/}
+              {/*                  description="A tutorial on how to use Flagsmith using React Native."*/}
+              {/*                  image="/static/images/tech-logos/react.png"*/}
+              {/*                  title="React Feature Flags Guide"*/}
+              {/*                />*/}
+              {/*            </div>*/}
+              {/*            <div className="col-xl-4">*/}
+              {/*                <Guide*/}
+              {/*                  href="https://www.youtube.com/watch?v=GPkCLO0F-5g"*/}
+              {/*                  description="A quick introduction to Flagsmith."*/}
+              {/*                  image="/static/images/90seconds.jpg"*/}
+              {/*                />*/}
+              {/*            </div>*/}
+              {/*            <div className="col-xl-4">*/}
+              {/*                <Guide*/}
+              {/*                  href="https://www.youtube.com/watch?v=8cD-t7KKitU"*/}
+              {/*                  description="A tutorial on how to use Flagsmith using vanilla JavaScript."*/}
+              {/*                  image="/static/images/tech-logos/javascript.png"*/}
+              {/*                  title="JavaScript Feature Flags Guide"*/}
+              {/*                />*/}
+              {/*            </div>*/}
+              {/*        </div>*/}
+              {/*        <div className="text-center">*/}
+              {/*            <a*/}
+              {/*              style={{ color: '#1c2b3d', fontSize: 18 }}*/}
+              {/*              href="https://www.youtube.com/channel/UCki7GZrOdZZcsV9rAIRchCw"*/}
+              {/*            >*/}
+              {/*  View all*/}
+              {/*            </a>*/}
+              {/*        </div>*/}
+              {/*    </div>*/}
+              {/*</div>*/}
               <div className="sign-up" id="sign-up">
                   <div>
                       <div className="card signup-form container animated fadeIn col-md-8 col-xl-8">
