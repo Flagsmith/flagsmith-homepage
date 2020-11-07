@@ -1,5 +1,5 @@
 h1,h2,h3,h4,h5,h6{
-    font-weight:400!important;
+    font-weight:500!important;
     font-family: $font-family-headers, sans-serif;
 }
 
@@ -11,14 +11,8 @@ h1,h2,h3,h4,h5,h6{
     color: white;
 }
 
-.text {
-    &--green {
-        color: #2CA69D;
-    }
-}
-
 p{
-    color: $body-text;
+    color: $body-text-faint;
     line-height: 1.58;
 }
 
@@ -35,15 +29,15 @@ p{
     font-weight:bold!important;
 }
 
-.feature {
-    &--off {
-        color: $bt-brand-red;
-    }
-    &--on {
-        color: $bt-brand-primary;
-    }
-}
+.code {
 
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    color: white;
+}
+.code--green {
+    color: #2cd6ca; }
+.code--red {
+    color: #ff93aa; }
 
 .features-page {
     h1,h2,h3,h4,h5,h6{

@@ -39,7 +39,7 @@
   .hero-inner {
     padding-top: 0.1rem;
     padding-bottom: 10%;
-    background-color: $bt-brand-secondary-light;
+    background-color: $hero-bg;
     //background: linear-gradient(to right, $bt-brand-secondary-light, #1d2d3e);
     &:after {
       content: " ";
@@ -71,19 +71,16 @@
     }
 
     a {
-      color: #22354a;
       font-weight: bold;
     }
   }
 }
 
 .hero {
-  color: white;
   button.btn {
     font-size: 1.2em !important;
   }
   h1,p {
-    color: white;
   }
   h1 {
     font-size: 46px;
@@ -129,8 +126,8 @@
       }
       @keyframes typewriter{
         from{width: 9em;}
-        50%{width: 24.75em;}
-        70%{width: 24.75em;}
+        50%{width: 23.75em;}
+        70%{width: 23.75em;}
         90%{width: 9em;}
         to{width: 9em;}
       }

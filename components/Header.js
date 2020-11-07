@@ -45,8 +45,8 @@ class Header extends PureComponent {
                     >
                         <a className="nav-link navbar-brand">
                             <img
-                              title="Flagsmith" height={60}
-                              src="/static/images/bullet-train-1.svg"
+                              title="Flagsmith" height={32}
+                              src="/static/images/nav-logo.svg"
                               className="brand " alt="Flagsmith logo"
                             />
                         </a>

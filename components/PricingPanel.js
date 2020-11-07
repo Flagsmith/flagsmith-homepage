@@ -233,7 +233,7 @@ const PricingPanel = class extends React.Component {
                                   <div className="panel-content">
                                       <p className="featured">Most Popular</p>
                                       <p className="pricing-price">Scale-Up</p>
-                                      <img src="/static/images/layers2.svg" alt="Scale-up icon" className="pricing-icon"/>
+                                      <img src="/static/images/pricing-scale-up.svg" alt="Scale-up icon" className="pricing-icon"/>
                                       <p className="pricing-type">$99</p>
                                       <p className="text-small text-center">billed monthly</p>
                                       <Link href={`/${redirect}#sign-up`}>

@@ -109,11 +109,11 @@ a.dark{
     justify-content: center;
     align-self: center;
     &__icon {
-        color: $bt-brand-orange;
+        color: $brand-primary;
         font-size: 2em;
     }
     &__text {
-        color: $bt-brand-orange;
+        color: $brand-primary;
         font-weight: bold;
     }
 }

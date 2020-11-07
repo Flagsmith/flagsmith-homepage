@@ -287,7 +287,7 @@ const HomePage = class extends React.Component {
                       <div className="container">
                           <div className="flex-row mt-5 mb-5">
                               <div className="col-md-5">
-                                  <h3><span className="text--green">1.</span> Start on a new Feature
+                                  <h3>1. Start on a new Feature
                                       Branch
                                   </h3>
                                   <p>
@@ -314,7 +314,7 @@ const HomePage = class extends React.Component {
                                   />
                               </div>
                               <div className="col-md-5 offset-md-1">
-                                  <h3><span className="text--green">2.</span> Deploy the feature behind the feature flag
+                                  <h3>2. Deploy the feature behind the feature flag
                                   </h3>
                                   <p>Write your code, place it behind a feature flag and deploy it straight to production. Don't worry! It's hidden for everyone.
                                   </p>
@@ -349,7 +349,7 @@ const HomePage = class extends React.Component {
                                   />
                               </div>
                               <div className="col-md-6 offset-md-1">
-                                  <h3><span className="text--green">4.</span> Bring in the rest of your team</h3>
+                                  <h3>4. Bring in the rest of your team</h3>
                                   <p>Create a Segment that includes all your company team members.</p>
                                   <p>Now we can override that flag for this segment of users. They can now test out the new widget and make sure all the integration points work nicely.</p>
                                   <img
@@ -363,7 +363,7 @@ const HomePage = class extends React.Component {
 
                           <div className="flex-row mt-5 mb-5">
                               <div className="col-md-5">
-                                  <h3><span className="text--green">5.</span> Gradually release the feature!</h3>
+                                  <h3>5. Gradually release the feature!</h3>
                                   <p>Lets do a percentage rollout so that we can be sure that there are no unexpected issues when deploying the feature to everyone.</p>
 
                                   <p>Modify the Segment, replacing the emailAddress filter with a % Split. 5% of our users will now see the chat widget and 95% won't.</p>
@@ -381,7 +381,7 @@ const HomePage = class extends React.Component {
                           <div className="mt-5 mb-5 pb-5">
                               <div className="offset-md-3 col-md-6">
                                   <h3 className="text-center">
-                                      <span className="text--green">6.</span> Finish Up
+                                      6. Finish Up
                                   </h3>
                                   <p className="text-center">The chat widget has been live for a few weeks, and
                                       everything is working nicely. The team have decided that they want to keep the
