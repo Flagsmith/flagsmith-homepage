@@ -52,9 +52,12 @@ class Header extends PureComponent {
                         </a>
                     </Link>
                     <button
-                      onClick={() => this.setState({ showNav: !this.state.showNav })}
+                      onClick={() => {
+                          debugger
+                          this.setState({ showNav: !this.state.showNav })
+                      }}
                       className="navbar-toggler" type="button" data-toggle="collapse"
-                      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                      aria-expanded="false"
                       aria-label="Toggle navigation"
                     >
                         <img width={32} src="/static/images/menu.svg"/>
