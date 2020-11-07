@@ -113,7 +113,7 @@ $alert-danger-bg: $bt-brand-secondary-light;
 $alert-danger-border: $bt-brand-secondary-light;
 $alert-danger-text: rgb(255, 255, 255);
 
-$body-bg: #f9f9f9;
+$body-bg: $bt-brand-faint-alt;
 
 
 $bt-gradient-text: $body-text;
@@ -190,22 +190,8 @@ $border-radius-default: 8px;
 //TRANSITIONS
 $button-transition: background-color 400ms cubic-bezier(0.23, 1, 0.32, 1);
 //Hero
-$hero-bg:$bt-brand-faint-alt;
+$hero-bg:white;
 
-//Aside
-$aside-bg:#22354a;
-$aside-bg-alt: #2cd6ca;
-$aside-bg-brand:#22354a;
-$aside-bg-project: #14635d;
-$aside-brand-color:#fff;
-$aside-link-bg:#283d56;
-$aside-link-bg-hover:#384f68;
-$aside-link-bg-active:#384f68;
-$aside-link-color:#fff;
-$aside-link-active:#fff;
-$aside-width:250px;
-
-//Toast
 $toast-bg:rgba(0,0,0,.9);
 $toast-color:white;
 

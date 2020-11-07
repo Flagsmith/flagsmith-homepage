@@ -1,5 +1,5 @@
 .pricing {
-	background: #f9f9f9;
+	background: $bt-brand-faint-alt;
 }
 
 .pricing-panel {
@@ -9,6 +9,7 @@
 	align-self: stretch;
 
 	.panel {
+		position: relative;
 		height: 100%;
 		overflow: hidden;
 	}
@@ -48,7 +49,7 @@
 }
 
 .featured {
-	color: #2cd6ca;
+	color: $bt-brand-primary;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: bold;
@@ -61,21 +62,17 @@
 .pricing-cta {
 	width: 80%;
 	min-width: 170px;
-	background: #2cd6ca;
+	background: $bt-brand-secondary;
 	margin: 0 auto;
 	height: 40px;
 	border-radius: 25px;
-	color: #fff;
+	color: #fff !important;
 	padding: 8px 30px 10px;
 	display: block;
 	text-align: center;
 
-	&.blue {
-		background: #22354a;
-		color: #fff !important;
-	}
-
 	&:hover {
+		background: $bt-brand-secondary-hover;
 		color: #fff;
 		text-decoration: none;
 		box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
@@ -88,13 +85,14 @@
 }
 
 .panel-footer {
-	background: #f7f7f7;
+	background: $bt-brand-faint;
+	height: 100%;
 	padding: 10px;
 	text-align: left;
 }
 
 .panel-grey {
-	background: #F5F8FD;
+	background: $bt-brand-faint-alt;
 	border-radius: 8px;
 	padding: 20px;
 	margin-bottom: 20px;

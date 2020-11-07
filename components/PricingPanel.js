@@ -159,7 +159,7 @@ const PricingPanel = class extends React.Component {
                                       <p className="pricing-type">Free</p>
                                       <p className="text-small text-center">more flags than the UN</p>
                                       <Link href={`/${redirect}#sign-up`}>
-                                          <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
+                                          <a className="pricing-cta" onClick={Utils.scrollToSignUp}>
                                         Try It Free
                                           </a>
                                       </Link>
@@ -201,7 +201,7 @@ const PricingPanel = class extends React.Component {
                                       <p className="pricing-type">$29</p>
                                       <p className="text-small text-center">billed monthly</p>
                                       <Link href={`/${redirect}#sign-up`}>
-                                          <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
+                                          <a className="pricing-cta" onClick={Utils.scrollToSignUp}>
                                           Try It Free
                                           </a>
                                       </Link>
@@ -237,7 +237,7 @@ const PricingPanel = class extends React.Component {
                                       <p className="pricing-type">$99</p>
                                       <p className="text-small text-center">billed monthly</p>
                                       <Link href={`/${redirect}#sign-up`}>
-                                          <a className="pricing-cta blue" onClick={Utils.scrollToSignUp}>
+                                          <a className="pricing-cta" onClick={Utils.scrollToSignUp}>
                                           Try It Free
                                           </a>
                                       </Link>
@@ -274,7 +274,7 @@ const PricingPanel = class extends React.Component {
                                         onClick={() => openModal(
                                             <h3>Contact Sales</h3>,
                                             <ContactForm onComplete={() => closeModal()}/>,
-                                        )} className="pricing-cta blue"
+                                        )} className="pricing-cta"
                                       >Contact Sales
                                       </a>
                                   </div>

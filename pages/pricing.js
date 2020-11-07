@@ -39,7 +39,7 @@ const PricingPage = class extends React.Component {
                   <div className="container">
                       <h2 className="text-center margin-bottom">FAQs</h2>
                       <div className="panel panel-default panel-grey">
-                          <p className="question">So how does this all work?</p>
+                          <h4>So how does this all work?</h4>
                           <p className="answer">
                 First off, you're free to host Flagsmith yourself, without charge. We're 100% open source,
                 and totally fine with you doing that.
@@ -56,7 +56,7 @@ const PricingPage = class extends React.Component {
                           </p>
                       </div>
                       <div className="panel panel-default panel-grey">
-                          <p className="question">How do you calculate API calls per month?</p>
+                          <h4>How do you calculate API calls per month?</h4>
                           <p className="answer">
                 This is simply the total number of API requests you make for each calendar month, across
                 all the projects in your organisation.
@@ -80,14 +80,14 @@ const PricingPage = class extends React.Component {
                           </ul>
                       </div>
                       <div className="panel panel-default panel-grey">
-                          <p className="question">What is a Team Member?</p>
+                          <h4>What is a Team Member?</h4>
                           <p className="answer">
                 Each Team Member can log in with their own email address. Audit logs record activities per
                 logged in Team Member.
                           </p>
                       </div>
                       <div className="panel panel-default panel-grey">
-                          <p className="question">What happens if I go over my plan limit?</p>
+                          <h4>What happens if I go over my plan limit?</h4>
                           <p className="answer">
                 Don't worry; we'll carry on serving your flags to your users. We realise that this is
                 important to your application.
@@ -95,7 +95,7 @@ const PricingPage = class extends React.Component {
                           </p>
                       </div>
                       <div className="panel panel-default panel-grey">
-                          <p className="question">What about an annual discount?</p>
+                          <h4>What about an annual discount?</h4>
                           <p className="answer">
                             If this sort of pricing is important to you - please
                               {' '}
