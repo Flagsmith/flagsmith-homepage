@@ -9,8 +9,14 @@ import '../common/utils';
 import API from '../project/api';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+    return (
+  <>
+    <Header/>
+      <Component {...pageProps} />
+
+  </>
+    );
 }
 
 
-export default MyApp
+export default MyApp;

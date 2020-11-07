@@ -10,6 +10,7 @@ import { Container } from 'next/app';
 import React from 'react';
 import Project from '../common/project';
 import Header from '../components/Header';
+import Button from '../components/base/forms/Button';
 
 const gtm = () => {
     if (typeof window !== 'undefined' && !document.location.origin.includes('localhost')) {
@@ -70,7 +71,6 @@ class MyDocument extends Document {
                     </script>
                 </Head>
                 <body>
-                    <Header/>
                     <Main />
                     <div id="confirm"/>
                     <div id="alert"/>
