@@ -116,7 +116,7 @@ const API = {
         }
 
         if (Project.mixpanel && typeof window !== 'undefined') {
-            mixpanel.track('Page View', {
+            mixpanel.track(`Page View - ${title}`, {
                 title,
                 location: document.location.href,
                 page: document.location.pathname,
