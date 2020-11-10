@@ -129,15 +129,10 @@ const HomePage = class extends React.Component {
           last_name,
       })
           .then((res) => {
-              if (res && res.key) {
-                  data.post('https://app.bullet-train.io/api/event', { tag: 'registrations', event: `User register${email} ${first_name} ${last_name}` })
-                      .catch((e) => {})
-                      .finally(() => {
-                          API.trackEvent(Constants.events.REGISTER);
-                          API.setStoredToken(res.key);
-                          document.location = Project.appUrl + query;
-                      });
-              }
+              API.setEvent(JSON.stringify({ tag: 'registrations', event: `User register${email} ${first_name} ${last_name}` }));
+              API.trackEvent(Constants.events.REGISTER);
+              API.setStoredToken(res.key);
+              document.location = Project.appUrl + query;
           })
           .catch((error) => {
               this.setState({ error, isSaving: false });
