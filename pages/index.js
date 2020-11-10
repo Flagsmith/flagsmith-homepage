@@ -121,6 +121,7 @@ const HomePage = class extends React.Component {
       if (referrer) {
           query = `?${Utils.toParam(Utils.fromParam())}`;
       }
+
       data.post(`${Project.api}auth/users/`, {
           email,
           password,
@@ -129,9 +130,13 @@ const HomePage = class extends React.Component {
       })
           .then((res) => {
               if (res && res.key) {
-                  API.trackEvent(Constants.events.REGISTER);
-                  API.setStoredToken(res.key);
-                  document.location = Project.appUrl + query;
+                  data.post('https://app.bullet-train.io/api/event', { tag: 'registrations', event: `User register${email} ${first_name} ${last_name}` })
+                      .catch((e) => {})
+                      .finally(() => {
+                          API.trackEvent(Constants.events.REGISTER);
+                          API.setStoredToken(res.key);
+                          document.location = Project.appUrl + query;
+                      });
               }
           })
           .catch((error) => {
