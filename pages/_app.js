@@ -1,12 +1,13 @@
 import App, { Container } from 'next/app';
 import Head from 'next/head';
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import '../styles/styles.scss';
 import '../project/polyfill';
 import Header from '../components/Header';
 import Project from '../common/project';
 import '../common/utils';
 import API from '../project/api';
+import RebrandBanner from '../components/RebrandBanner';
 
 function MyApp({ Component, pageProps }) {
     useEffect(() => {
@@ -28,8 +29,9 @@ function MyApp({ Component, pageProps }) {
     }, []);
     return (
       <>
-        <Header/>
-        <Component {...pageProps} />
+          <Header/>
+          <Component {...pageProps} />
+          <RebrandBanner/>
       </>
     );
 }

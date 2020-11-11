@@ -67,6 +67,17 @@ const API = {
         }
         return cookies.set('event', v, { path: '', domain: '.bullet-train.io' });
     },
+    getCookie(key) {
+        return require('js-cookie').get(key);
+    },
+    setCookie(key, v) {
+        try {
+            require('js-cookie').set(key, v);
+            require('js-cookie').set(key, v, { path: '', domain: Project.cookieDomain });
+        } catch (e) {
+
+        }
+    },
     trackEvent(data) {
         if (__DEV__) {
             // eslint-disable-next-line
