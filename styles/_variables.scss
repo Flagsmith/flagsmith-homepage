@@ -81,20 +81,20 @@ $brand-primary: #6633ff;
 $bt-brand-primary-dark: #17103a;
 
 $bt-brand-primary: #6633ff;
-$bt-brand-primary-light: lighten($bt-brand-primary,0.3);
-$bt-brand-primary-lighter: lighten($bt-brand-primary,0.7);
+$bt-brand-primary-light: lighten($bt-brand-primary,40);
+$bt-brand-primary-lighter: lighten($bt-brand-primary,70);
 $bt-brand-faint: #f3ecff;
 $bt-brand-faint-alt: #fcfaff;
 $bt-brand-faint-hover: #eee7f6;
 
 
-$bt-brand-secondary: #f27157;
-$bt-brand-secondary-light: #f6a999;
-$bt-brand-secondary-hover: #e3674d;
-$bt-brand-secondary-active: #e3674d;
+$bt-brand-secondary: #00a696;
+$bt-brand-secondary-light: lighten($bt-brand-secondary,40);
+$bt-brand-secondary-hover: darken($bt-brand-secondary, 5);
+$bt-brand-secondary-active: $bt-brand-secondary-hover;
 
-$body-text: #242039;
-$body-text-faint: #716E86;
+$body-text: #38386d;
+$body-text-faint: #717186;
 
 $header-color: $body-text;
 $link-color: $body-text;
