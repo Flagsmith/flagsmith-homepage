@@ -61,6 +61,12 @@ const API = {
         }
         return cookies.set('r', v, { path: '', domain: '.bullet-train.io' });
     },
+    setEvent(v) {
+        if (cookies.get('event')) {
+            return;
+        }
+        return cookies.set('event', v, { path: '', domain: '.bullet-train.io' });
+    },
     trackEvent(data) {
         if (__DEV__) {
             // eslint-disable-next-line
@@ -110,7 +116,7 @@ const API = {
         }
 
         if (Project.mixpanel && typeof window !== 'undefined') {
-            mixpanel.track('Page View', {
+            mixpanel.track(`Page View - ${title}`, {
                 title,
                 location: document.location.href,
                 page: document.location.pathname,

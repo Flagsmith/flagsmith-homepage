@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import './Modal';
+import Router from 'next/router';
 import Input from './base/forms/Input';
 import InputGroup from './base/forms/InputGroup';
 import data from '../common/utils/_data';
@@ -139,6 +140,11 @@ const PricingPanel = class extends React.Component {
       this.state = {};
   }
 
+  goSignup = () => {
+      const href = '/?signup=1';
+      const as = href;
+      Router.replace(href, as, { shallow: true });
+  }
 
   render() {
       const { redirect } = this.props;
@@ -273,7 +279,11 @@ const PricingPanel = class extends React.Component {
                                       <a
                                         onClick={() => openModal(
                                             <h3>Contact Sales</h3>,
-                                            <ContactForm onComplete={() => closeModal()}/>,
+                                            <ContactForm onComplete={() => {
+                                                closeModal();
+                                                this.goSignup();
+                                            }}
+                                            />,
                                         )} className="pricing-cta"
                                       >Contact Sales
                                       </a>

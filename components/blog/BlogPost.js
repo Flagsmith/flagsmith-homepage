@@ -49,6 +49,9 @@ export default class TheComponent extends Component {
                     <meta data-rh="true" property="og:type" content="article"/>
                     <meta data-rh="true" property="og:title" content={title}/>
                     <meta data-rh="true" property="og:description" content={description}/>
+                    {image && (
+                    <meta data-rh="true" property="og:image" content={image}/>
+                    )}
                     <meta data-rh="true" name="description" content={description}/>
                     <meta data-rh="true" property="article:author" content={author}/>
                     <meta data-rh="true" name="author" content={author}/>

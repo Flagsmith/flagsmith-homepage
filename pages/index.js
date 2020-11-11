@@ -97,7 +97,9 @@ const HomePage = class extends React.Component {
           const isSignup = document.location.href.includes('?signup');
           if (isSignup) {
               this.signup = true;
-              Utils.scrollToSignUp();
+              setTimeout(() => {
+                  Utils.scrollToSignUp();
+              }, 200);
           }
       }
   };
@@ -119,6 +121,7 @@ const HomePage = class extends React.Component {
       if (referrer) {
           query = `?${Utils.toParam(Utils.fromParam())}`;
       }
+
       data.post(`${Project.api}auth/users/`, {
           email,
           password,
@@ -126,11 +129,10 @@ const HomePage = class extends React.Component {
           last_name,
       })
           .then((res) => {
-              if (res && res.key) {
-                  API.trackEvent(Constants.events.REGISTER);
-                  API.setStoredToken(res.key);
-                  document.location = Project.appUrl + query;
-              }
+              API.setEvent(JSON.stringify({ tag: 'registrations', event: `User register${email} ${first_name} ${last_name}` }));
+              API.trackEvent(Constants.events.REGISTER);
+              API.setStoredToken(res.key);
+              document.location = Project.appUrl + query;
           })
           .catch((error) => {
               this.setState({ error, isSaving: false });
