@@ -8,13 +8,13 @@ const PrivacyPolicyPage = props => (
             <title>
                 Privacy Policy - Flagsmith
             </title>
-            <link rel="canonical" href="https://bullet-train.io/legal/privacy-policy/" />
+            <link rel="canonical" href="https://flagsmith.com/legal/privacy-policy/" />
         </Head>
         <div className="legal-container">
             <div className="container">
                 <h2>Privacy Policy</h2>
                 <p>
-            By using the BulletTrain.io website ("service"), or any services of Bullet Train Ltd, you are
+            By using the flagsmith.com website ("service"), or any services of Bullet Train Ltd, you are
             agreeing to be bound by the following privacy policy ("privacy policy"). If you are entering into this
             agreement on behalf of a company or other legal entity, you represent that you have the authority to
             bind such entity, its affiliates and all users who access our services through your account to these
@@ -283,7 +283,7 @@ const PrivacyPolicyPage = props => (
                 </p>
                 <p>
             To request removal of your Personal Information from our site or services, contact us at
-            privacy@bullettrain.io. Flagsmith cares deeply about the sanctity of your data and our privacy team
+            privacy@flagsmith.com. Flagsmith cares deeply about the sanctity of your data and our privacy team
             will manage each request on a case by case basis.
                 </p>
                 <p>
@@ -310,7 +310,7 @@ const PrivacyPolicyPage = props => (
                 <h5>How do I contact the Flagsmith Data Privacy Officer?</h5>
                 <p>
             Flagsmith's Data Privacy Officer is Matthew Elwell, and you can contact him at
-                    <a href="mailto:privacy@bullet-train.io">privacy@bullet-train.io.</a>
+                    <a href="mailto:privacy@bullet-train.io">privacy@flagsmith.com.</a>
                 </p>
 
                 <h5>Is Flagsmith compliant with the General Data Protection Regulation (GDPR)?</h5>

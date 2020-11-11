@@ -108,7 +108,7 @@ const HomePage = class extends React.Component {
       API.trackEvent(Constants.events.REGISTER_GOOGLE);
       Google.login().then((res) => {
           if (res) {
-              document.location = `https://app.bullet-train.io/oauth/google?code=${res}`;
+              document.location = `https://app.flagsmith.com/oauth/google?code=${res}`;
           }
       });
   }
@@ -149,7 +149,7 @@ const HomePage = class extends React.Component {
                   <title>
             Feature Flags and Toggles for Continuous Integration - Flagsmith
                   </title>
-                  <link rel="canonical" href="https://bullet-train.io/"/>
+                  <link rel="canonical" href="https://flagsmith.com/"/>
               </Head>
               <Hero redirect={redirect}/>
               <div className="feature-container ">
@@ -205,12 +205,12 @@ const HomePage = class extends React.Component {
                       <h2>We currently support these popular languages</h2>
                       <div style={{ justifyContent: 'center' }} className="row">
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/java/">
+                              <a href="https://docs.flagsmith.com/clients/java/">
                                   <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/javascript/">
+                              <a href="https://docs.flagsmith.com/clients/javascript/">
                                   <img
                                     src="/static/images/tech-logos/javascript.png" alt="JavaScript"
                                     title="JavaScript Feature Flags"
@@ -218,17 +218,17 @@ const HomePage = class extends React.Component {
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/javascript/">
+                              <a href="https://docs.flagsmith.com/clients/javascript/">
                                   <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/node/">
+                              <a href="https://docs.flagsmith.com/clients/node/">
                                   <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/python/">
+                              <a href="https://docs.flagsmith.com/clients/python/">
                                   <img
                                     src="/static/images/tech-logos/python.png" alt="Python Feature Flags"
                                     title="Python"
@@ -236,42 +236,42 @@ const HomePage = class extends React.Component {
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/ruby/">
+                              <a href="https://docs.flagsmith.com/clients/ruby/">
                                   <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/dotnet/">
+                              <a href="https://docs.flagsmith.com/clients/dotnet/">
                                   <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/java/">
+                              <a href="https://docs.flagsmith.com/clients/java/">
                                   <img src="/static/images/tech-logos/android2x.png" alt="android" title="android Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/ios/">
+                              <a href="https://docs.flagsmith.com/clients/ios/">
                                   <img src="/static/images/tech-logos/bt-IOS.png" alt="iOS" title="iOS Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/flutter/">
+                              <a href="https://docs.flagsmith.com/clients/flutter/">
                                   <img src="/static/images/tech-logos/flutter.png" alt="Flutter" title="Flutter Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/php/">
+                              <a href="https://docs.flagsmith.com/clients/php/">
                                   <img src="/static/images/tech-logos/php.png" alt="PHP" title="PHP Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/go/">
+                              <a href="https://docs.flagsmith.com/clients/go/">
                                   <img src="/static/images/tech-logos/golang.png" alt="Go" title="Go Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/rust/">
+                              <a href="https://docs.flagsmith.com/clients/rust/">
                                   <img src="/static/images/tech-logos/rust.png" alt="Rust" title="Rust Feature Flags"/>
                               </a>
                           </div>
@@ -413,7 +413,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/managing-features/"
+                                    href="https://docs.flagsmith.com/managing-features/"
                                   >
                     Feature flags
                                       <span
@@ -434,7 +434,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/managing-features/"
+                                    href="https://docs.flagsmith.com/managing-features/"
                                   >
                     Remote config
                                       <span
@@ -453,7 +453,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/managing-identities/#identity-traits"
+                                    href="https://docs.flagsmith.com/managing-identities/#identity-traits"
                                   >
                     User Traits
                                       <span
@@ -472,7 +472,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/managing-segments/"
+                                    href="https://docs.flagsmith.com/managing-segments/"
                                   >
                     User Segments
                                       <span
@@ -491,7 +491,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/staged-feature-rollouts/"
+                                    href="https://docs.flagsmith.com/staged-feature-rollouts/"
                                   >
                     Staged Feature Rollouts
                                       <span
@@ -510,7 +510,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/audit-logs/"
+                                    href="https://docs.flagsmith.com/audit-logs/"
                                   >
                     Track Changes
                                       <span
@@ -522,47 +522,6 @@ const HomePage = class extends React.Component {
                       </div>
                   </div>
               </div>
-
-              {/*<div style={{ padding: '1rem' }} className="feature-container">*/}
-              {/*    <div className="container">*/}
-              {/*        <div className="text-center">*/}
-              {/*            <h2>Resources</h2>*/}
-              {/*        </div>*/}
-              {/*        <div className="row">*/}
-              {/*            <div className="col-xl-4">*/}
-              {/*                <Guide*/}
-              {/*                  href="https://www.youtube.com/watch?v=_lyNzKLZ8rc"*/}
-              {/*                  description="A tutorial on how to use Flagsmith using React Native."*/}
-              {/*                  image="/static/images/tech-logos/react.png"*/}
-              {/*                  title="React Feature Flags Guide"*/}
-              {/*                />*/}
-              {/*            </div>*/}
-              {/*            <div className="col-xl-4">*/}
-              {/*                <Guide*/}
-              {/*                  href="https://www.youtube.com/watch?v=GPkCLO0F-5g"*/}
-              {/*                  description="A quick introduction to Flagsmith."*/}
-              {/*                  image="/static/images/90seconds.jpg"*/}
-              {/*                />*/}
-              {/*            </div>*/}
-              {/*            <div className="col-xl-4">*/}
-              {/*                <Guide*/}
-              {/*                  href="https://www.youtube.com/watch?v=8cD-t7KKitU"*/}
-              {/*                  description="A tutorial on how to use Flagsmith using vanilla JavaScript."*/}
-              {/*                  image="/static/images/tech-logos/javascript.png"*/}
-              {/*                  title="JavaScript Feature Flags Guide"*/}
-              {/*                />*/}
-              {/*            </div>*/}
-              {/*        </div>*/}
-              {/*        <div className="text-center">*/}
-              {/*            <a*/}
-              {/*              style={{ color: '#1c2b3d', fontSize: 18 }}*/}
-              {/*              href="https://www.youtube.com/channel/UCki7GZrOdZZcsV9rAIRchCw"*/}
-              {/*            >*/}
-              {/*  View all*/}
-              {/*            </a>*/}
-              {/*        </div>*/}
-              {/*    </div>*/}
-              {/*</div>*/}
               <div className="sign-up" id="sign-up">
                   <div>
                       <div className="card signup-form container animated fadeIn col-md-8 col-xl-8">

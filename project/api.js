@@ -53,19 +53,19 @@ const API = {
         return cookies.set('locale', v);
     },
     setStoredToken(v) {
-        return cookies.set('t', v, { path: '', domain: '.bullet-train.io' });
+        return cookies.set('t', v, { path: '', domain: Project.cookieDomain });
     },
     setReferrer(v) {
         if (cookies.get('r')) {
             return;
         }
-        return cookies.set('r', v, { path: '', domain: '.bullet-train.io' });
+        return cookies.set('r', v, { path: '', domain: Project.cookieDomain });
     },
     setEvent(v) {
         if (cookies.get('event')) {
             return;
         }
-        return cookies.set('event', v, { path: '', domain: '.bullet-train.io' });
+        return cookies.set('event', v, { path: '', domain: Project.cookieDomain });
     },
     getCookie(key) {
         return require('js-cookie').get(key);

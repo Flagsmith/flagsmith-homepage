@@ -6,7 +6,7 @@ const TermsOfService = props => (
             <title>
               Terms of Service - Flagsmith
             </title>
-            <link rel="canonical" href="https://bullet-train.io/legal/tos/" />
+            <link rel="canonical" href="https://flagsmith.com/legal/tos/" />
         </Head>
         <div className="legal-container">
             <div className="container">

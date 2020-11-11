@@ -31,7 +31,7 @@ const PricingPage = class extends React.Component {
                   <title>
                     Pricing - Flagsmith
                   </title>
-                  <link rel="canonical" href="https://bullet-train.io/pricing" />
+                  <link rel="canonical" href="https://flagsmith.com/pricing" />
               </Head>
               <PricingPanel redirect={redirect}/>
 
@@ -99,7 +99,7 @@ const PricingPage = class extends React.Component {
                           <p className="answer">
                             If this sort of pricing is important to you - please
                               {' '}
-                              <a style={{ color: '#22354a' }} href="mailto:support@bullettrain.io">get in touch</a>
+                              <a style={{ color: '#22354a' }} href="mailto:support@flagsmith.com">get in touch</a>
                               {' '}
                           </p>
                       </div>

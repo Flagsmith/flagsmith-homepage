@@ -1,4 +1,4 @@
-[<img alt="Feature Flag, Remote Config and A/B Testing platform, Flagsmith" width="100%" src="https://github.com/BulletTrainHQ/bullet-train-frontend/raw/master/hero.png"/>](https://bullet-train.io/)
+[<img alt="Feature Flag, Remote Config and A/B Testing platform, Flagsmith" width="100%" src="https://github.com/Flagsmith/bullet-train-frontend/raw/master/hero.png"/>](https://bullet-train.io/)
 
 
 <img src="http://g.recordit.co/TY8wciTsQH.gif"/>
@@ -44,4 +44,4 @@ If you encounter a bug or feature request we would like to hear about it. Before
 
 ## Get in touch
 
-If you have any questions about our projects you can email <a href="mailto:support@bullet-train.io">support@bullet-train.io</a>.
+If you have any questions about our projects you can email <a href="mailto:support@flagsmith.com">support@flagsmith.com</a>.

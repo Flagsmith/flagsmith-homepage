@@ -6,7 +6,7 @@ const ServiceLevelAgreement = props => (
             <title>
               Service Level Agreement - Flagsmith
             </title>
-            <link rel="canonical" href="https://bullet-train.io/legal/sla/" />
+            <link rel="canonical" href="https://flagsmith.com/legal/sla/" />
         </Head>
         <div className="legal-container">
             <div className="container">
@@ -53,8 +53,7 @@ const ServiceLevelAgreement = props => (
                         <p>
                             <b>“Maintenance”</b>
                             {' '}
-              means scheduled Unavailability of Flagsmith Services, as announced by us prior to Bullet
-              Train Services becoming Unavailable.
+              means scheduled Unavailability of Flagsmith Services, as announced by us prior to Flagsmith Services becoming Unavailable.
                         </p>
                         <p>
                             <b>“Monthly Uptime Percentage”</b>

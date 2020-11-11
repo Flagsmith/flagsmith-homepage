@@ -70,7 +70,7 @@ class Header extends PureComponent {
                                 <Link prefetch={false} href="/pricing"><a className="nav-link">Pricing</a></Link>
                             </li>
                             <li className="nav-item">
-                                <Link prefetch={false} href="https://docs.bullet-train.io/"><a className="nav-link">Docs</a></Link>
+                                <Link prefetch={false} href="https://docs.flagsmith.com/"><a className="nav-link">Docs</a></Link>
                             </li>
                             <li className="nav-item">
                                 <Link prefetch={false} href="/open-source"><a className="nav-link">Open Source</a></Link>
