@@ -45,7 +45,7 @@ const Footer = class extends React.Component {
                                   </a>
                               </li>
                               <li className="list-inline-item">
-                                  <a href="https://twitter.com/GetBulletTrain" title="Twitter">
+                                  <a href="https://twitter.com/GetFlagsmith" title="Twitter">
                                       <span className="pl-4 icon ion-logo-twitter"/>
                                   </a>
                               </li>

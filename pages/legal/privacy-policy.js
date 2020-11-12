@@ -240,7 +240,7 @@ const PrivacyPolicyPage = props => (
                 <p>
             Flagsmith takes security very seriously, and if you have reason to believe that your data or someone
             elses data is no longer secure, please contact
-                    <a href="mailto:security@bullettrain.io">security@bullettrain.io.</a>
+                    <a href="mailto:security@flagsmith.com">security@flagsmith.com.</a>
                 </p>
                 <p>
             In the event of a security breach, we will take take necessary measures to ensure the continued safety of
@@ -310,7 +310,7 @@ const PrivacyPolicyPage = props => (
                 <h5>How do I contact the Flagsmith Data Privacy Officer?</h5>
                 <p>
             Flagsmith's Data Privacy Officer is Matthew Elwell, and you can contact him at
-                    <a href="mailto:privacy@bullet-train.io">privacy@flagsmith.com.</a>
+                    <a href="mailto:privacy@flagsmith.com">privacy@flagsmith.com.</a>
                 </p>
 
                 <h5>Is Flagsmith compliant with the General Data Protection Regulation (GDPR)?</h5>
