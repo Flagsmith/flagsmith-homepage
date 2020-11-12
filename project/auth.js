@@ -50,6 +50,7 @@ export const Google = {
             scope: 'email profile',
             prompt: 'select_account',
         }, (r) => {
+            console.log("GAUTH", r)
             if (r.access_token) {
                 resolve(r.access_token);
             }
