@@ -5,5 +5,5 @@ module.exports = global.Project = {
     api: 'https://api.bullet-train.io/api/v1/',
     isso: 'https://isso.bullet-train.io/',
     appUrl: 'https://app.bullet-train.io',
-    mixpanel: '9448f5be8a5555c380e5dd4b7ac2c345'
+    mixpanel: '9448f5be8a5555c380e5dd4b7ac2c345',
 };
