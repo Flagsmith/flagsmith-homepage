@@ -3,9 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
     plugins: require('./plugins').concat([
-        new webpack.DefinePlugin({
-            __DEV__: true,
-        }),
+        new webpack.DefinePlugin(require('../environment')),
     ]),
     module: {
         rules: require('./loaders')
