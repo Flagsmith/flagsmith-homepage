@@ -9,7 +9,11 @@ const env = process.env.ENV || 'dev';
 const src = path.resolve(__dirname, `../env/project_${env}.js`);
 const target = path.resolve(__dirname, '../common/project.js');
 
-
 console.log(`Using project_${env}.js`.green);
 
 fs.copySync(src, target);
+
+const targetOverrides = JSON.parse(require('../environment').projectOverrides);
+const existing = require('../common/project');
+
+fs.writeFileSync(target, `module.exports = global.Project = ${JSON.stringify({ ...existing, ...targetOverrides },null,2)}`);

@@ -4,8 +4,9 @@ const webpack = require('webpack');
 
 module.exports = {
     plugins: require('./plugins').concat([
+        new webpack.DefinePlugin(require('../environment')),
         new webpack.DefinePlugin({
-            __DEV__: false,
+            __DEV__: true,
         }),
     ]),
     module: {
