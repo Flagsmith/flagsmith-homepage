@@ -299,7 +299,7 @@ const HomePage = class extends React.Component {
                               <div className="col-md-6 offset-md-1">
                                   <img
                                     alt="Create a new Feature"
-                                    srcSet="/static/images/workflow/workflow-1.png 1x, /static/images/workflow/workflow-1@2x.png 2x"
+                                    srcSet="/static/images/workflow/workflow-1.png 1x, /static/images/workflow/workflow-1@2x.png 2x, /static/images/workflow/workflow-1@3x.png 3x"
                                     src="/static/images/workflow/workflow-1.png"
                                     className="img-fluid"
                                   />
@@ -310,7 +310,7 @@ const HomePage = class extends React.Component {
                               <div className="col-md-6">
                                   <img
                                     alt="Deploy the feature"
-                                    srcSet="/static/images/workflow/workflow-2.png 1x, /static/images/workflow/workflow-2@2x.png 2x"
+                                    srcSet="/static/images/workflow/workflow-2.png 1x, /static/images/workflow/workflow-2@2x.png 2x, /static/images/workflow/workflow-2@3x.png 3x"
                                     src="/static/images/workflow/workflow-2.png"
                                     className="img-fluid mb-sm-0"
                                   />
@@ -334,9 +334,9 @@ const HomePage = class extends React.Component {
                               <div className="col-md-7">
                                   <img
                                     alt="Enable the feature"
-                                    srcSet="/static/images/workflow/workflow-3.png 1x, /static/images/workflow/workflow-3@2x.png 2x"
+                                    srcSet="/static/images/workflow/workflow-3.png 1x, /static/images/workflow/workflow-3@2x.png 2x, /static/images/workflow/workflow-3@3x.png 3x"
                                     src="/static/images/workflow/workflow-3.png"
-                                    className="img-fluid img__large"
+                                    className="img-fluid"
                                   />
                               </div>
                           </div>
@@ -345,7 +345,7 @@ const HomePage = class extends React.Component {
                               <div className="col-md-5">
                                   <img
                                     alt="Create a new Feature"
-                                    srcSet="/static/images/workflow/workflow-4.2.png 1x, /static/images/workflow/workflow-4.2@2x.png 2x"
+                                    srcSet="/static/images/workflow/workflow-4.2.png 1x, /static/images/workflow/workflow-4.2@2x.png 2x, /static/images/workflow/workflow-4.2@3x.png 3x"
                                     src="/static/images/workflow/workflow-4.2.png"
                                     className="img-fluid"
                                   />
@@ -356,7 +356,7 @@ const HomePage = class extends React.Component {
                                   <p>Now we can override that flag for this segment of users. They can now test out the new widget and make sure all the integration points work nicely.</p>
                                   <img
                                     alt="Bring in the rest of your team"
-                                    srcSet="/static/images/workflow/workflow-4.1.png 1x, /static/images/workflow/workflow-4.1@2x.png 2x"
+                                    srcSet="/static/images/workflow/workflow-4.1.png 1x, /static/images/workflow/workflow-4.1@2x.png 2x, /static/images/workflow/workflow-4.1@3x.png 3x"
                                     src="/static/images/workflow/workflow-4.1.png"
                                     className="img-fluid mt-5 mb-5 mb-sm-0"
                                   />
@@ -373,7 +373,7 @@ const HomePage = class extends React.Component {
                               <div className="col-md-6 offset-md-1">
                                   <img
                                     alt="Enable the feature"
-                                    srcSet="/static/images/workflow/workflow-5.png 1x, /static/images/workflow/workflow-5@2x.png 2x"
+                                    srcSet="/static/images/workflow/workflow-5.png 1x, /static/images/workflow/workflow-5@2x.png 2x, /static/images/workflow/workflow-5@3x.png 3x"
                                     src="/static/images/workflow/workflow-5.png"
                                     className="img-fluid"
                                   />

@@ -55,6 +55,11 @@ h2 {
 }
 
 .feature-container {
+    img {
+        -webkit-box-shadow: 0px 0px 44px 5px rgba(0,0,0,0.18);
+        -moz-box-shadow: 0px 0px 44px 5px rgba(0,0,0,0.18);
+        box-shadow: 0px 0px 44px 5px rgba(0,0,0,0.18);
+    }
     padding: 2rem 0;
     &.alt {
         background-color: $bt-brand-faint-alt;
