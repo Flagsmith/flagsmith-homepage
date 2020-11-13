@@ -17,7 +17,7 @@ const Footer = class extends React.Component {
                   <div className="row footer__homepage-content pt-5">
                       <div className="col-md-4">
                           <div className="service-status">
-                              <a href="https://bullet-train.statuspage.io/">
+                              <a href="https://flagsmith.statuspage.io/">
                                   <span className="uptime-badge">
                                       <span className="label">
                                       Status
