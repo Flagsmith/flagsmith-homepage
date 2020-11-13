@@ -86,7 +86,7 @@ Python REST API for Flagsmith.
                                 <a className="open-source-card" href="https://github.com/Flagsmith/bullet-train-docker">
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>isso.flagsmith.com-train-docker</h2>
+                                            <h2>flagsmith-docker</h2>
                                             <p className="m-0">
 Docker Compose file to run the entire Flagsmith stack locally.
                                             </p>
@@ -102,7 +102,7 @@ Docker Compose file to run the entire Flagsmith stack locally.
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>isso.flagsmith.com-train-docs</h2>
+                                            <h2>flagsmith-docs</h2>
                                             <p className="m-0">
 This is the documentation repository for the Docs of Flagsmith.
                                             </p>
