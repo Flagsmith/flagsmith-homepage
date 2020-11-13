@@ -308,11 +308,24 @@ const HomePage = class extends React.Component {
 
                           <div className="flex-row mt-5 mb-5">
                               <div className="col-md-6">
-                                  <img
-                                    alt="Deploy the feature"
-                                    srcSet="/static/images/workflow/workflow-2.png 1x, /static/images/workflow/workflow-2@2x.png 2x, /static/images/workflow/workflow-2@3x.png 3x"
-                                    src="/static/images/workflow/workflow-2.png"
-                                    className="img-fluid mb-sm-0"
+                                  <div
+                                    style={{pointerEvents:"none",userSelect:"none"}}
+                                    dangerouslySetInnerHTML={{ __html: `
+                                  
+                                  <code contentEditable="false" className="javascript hljs"><span
+                                  className="hljs-keyword">import</span> <span class="hlhs-brand">flagsmith</span> <span className="hljs-keyword">from</span> <span class="hljs-string">"flagsmith"</span>;
+                                  <br/>
+                                  <br/>
+                                    <span class="hlhs-brand">flagsmith</span>.<span class="hljs-keyword">identify</span>(<span class="hljs-string">"user_id"</span>, user.id);
+                                    <br/>
+                                    <span class="hlhs-brand">flagsmith</span>.<span class="hljs-keyword">setTrait</span>(<span class="hljs-string">"email_address"</span>, user.emailAddress);
+                                    <br/>
+                                    <br/>
+                                   <span class="hljs-keyword">if</span> (<span class="hlhs-brand">flagsmith</span>.<span class="hljs-keyword">hasFeature</span>(<span class="hljs-string">"customer_chat_widget"</span>)) {
+                                    <span class="ml-2"/> <span class="hljs-keyword-2">displayChatWidget</span>();<br/>
+                                  }
+                                </code>
+                                  ` }} className="code-img"
                                   />
                               </div>
                               <div className="col-md-5 offset-md-1">

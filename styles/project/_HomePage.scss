@@ -55,7 +55,30 @@ h2 {
 }
 
 .feature-container {
-    img {
+
+    .code-img {
+        background-color: #2b273c;
+        padding:20px;
+        width: 480px;
+        color: #d9d9d9;
+        border-radius: $border-radius-default;
+        font-size: 12px;
+        line-height: 24px;
+        .hljs-keyword {
+            color: $bt-brand-tertiary;
+        }
+        .hljs-keyword-2 {
+            color: #ee4b70;
+        }
+        .hlhs-brand {
+            //color: white;
+        }
+        .hljs-string {
+            color: #abca7d;
+        }
+    }
+
+    img, .code-img {
         -webkit-box-shadow: 0px 0px 44px 5px rgba(0,0,0,0.18);
         -moz-box-shadow: 0px 0px 44px 5px rgba(0,0,0,0.18);
         box-shadow: 0px 0px 44px 5px rgba(0,0,0,0.18);
