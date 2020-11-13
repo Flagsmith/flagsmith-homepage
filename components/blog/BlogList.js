@@ -29,7 +29,7 @@ export default class BlogList extends Component {
                   <title>
                       {RichText.asText(doc.data.headline)}
                   </title>
-                  <link rel="canonical" href="https://bullet-train.io/blog" />
+                  <link rel="canonical" href="https://flagsmith.com/blog" />
               </Head>
               <div className="container mt-5">
                   <div className="home">

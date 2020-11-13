@@ -23,14 +23,14 @@ export default class OpenSource extends Component {
             <div>
                 <Head>
                     <title>
-                      Open Source Projects - Bullet Train
+                      Open Source Projects - Flagsmith
                     </title>
-                    <link rel="canonical" href="https://bullet-train.io/open-source" />
+                    <link rel="canonical" href="https://flagsmith.com/open-source" />
                 </Head>
                 <div className="pt-5 hero__open-source text-center">
                     <h1 className="text-center margin-bottom">Open Source</h1>
                     <p className="pb-3">
-                        Bullet Train is 100% Open Source Software.
+                        Flagsmith is 100% Open Source Software.
                         We welcome pull requests!
                     </p>
                 </div>
@@ -52,14 +52,14 @@ export default class OpenSource extends Component {
                         >
                             <div className="mb-5">
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-api" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-api" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-api</h2>
+                                            <h2>api</h2>
                                             <p className="m-0">
-Python REST API for Bullet-Train.
+Python REST API for Flagsmith.
                                             </p>
                                             <div className="colour-block colour-block--small colour-block--python"/>
                                             <small className="technology-name">Python</small>
@@ -68,14 +68,14 @@ Python REST API for Bullet-Train.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-frontend" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-frontend" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-frontend</h2>
+                                            <h2>frontend</h2>
                                             <p className="m-0">
-                                              The admininstration interface for Bullet Train.
+                                              The admininstration interface for Flagsmith.
                                             </p>
                                             <div className="colour-block colour-block--small colour-block--javascript"/>
                                             <small className="technology-name">JavaScript</small>
@@ -83,12 +83,12 @@ Python REST API for Bullet-Train.
                                     </div>
                                 </a>
 
-                                <a className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-docker">
+                                <a className="open-source-card" href="https://github.com/Flagsmith/bullet-train-docker">
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-docker</h2>
+                                            <h2>isso.flagsmith.com-train-docker</h2>
                                             <p className="m-0">
-Docker Compose file to run the entire Bullet Train stack locally.
+Docker Compose file to run the entire Flagsmith stack locally.
                                             </p>
                                             <div className="colour-block colour-block--small colour-block--javascript"/>
                                             <small className="technology-name">Docker</small>
@@ -97,51 +97,18 @@ Docker Compose file to run the entire Bullet Train stack locally.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-docs" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-docs" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-docs</h2>
+                                            <h2>isso.flagsmith.com-train-docs</h2>
                                             <p className="m-0">
-This is the documentation repository for the Docs of Bullet Train.
+This is the documentation repository for the Docs of Flagsmith.
                                             </p>
                                         </div>
                                     </div>
                                 </a>
-
-                                <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-js-client/tree/master/examples" target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                    <div className="panel panel-default panel--open-source mt-4">
-                                        <div className="panel-content">
-                                            <h2>bullet-train-examples</h2>
-                                            <p className="m-0">
-A collection of integrations to Bullet Train in a number of different frameworks.
-                                            </p>
-                                            <div className="colour-block colour-block--small colour-block--typescript"/>
-                                            <small className="technology-name">TypeScript</small>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-rules-engine" target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                    <div className="panel panel-default panel--open-source mt-4">
-                                        <div className="panel-content">
-                                            <h2>bullet-train-rules-engine</h2>
-                                            <p className="m-0">
-Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY predicates with standard operators.
-                                            </p>
-                                            <div className="colour-block colour-block--small colour-block--javascript"/>
-                                            <small className="technology-name">JavaScript</small>
-                                        </div>
-                                    </div>
-                                </a>
-
                             </div>
                         </TabItem>
 
@@ -155,12 +122,12 @@ Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY
                         >
                             <div className="mb-5">
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-js-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-js-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-js-client</h2>
+                                            <h2>js-client</h2>
                                             <p className="m-0">
                                               Javascript client.
                                             </p>
@@ -170,12 +137,12 @@ Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY
                                     </div>
                                 </a>
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-js-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-js-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>react-native-bullet-train</h2>
+                                            <h2>react-native-client</h2>
                                             <p className="m-0">
                                               React Native client.
                                             </p>
@@ -185,12 +152,12 @@ Evaluate objects against a set of JSON rules supporting nested ALL, NONE and ANY
                                     </div>
                                 </a>
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-nodejs-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-nodejs-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-nodejs-client</h2>
+                                            <h2>nodejs-client</h2>
                                             <p className="m-0">
 Node.js client.
                                             </p>
@@ -201,12 +168,12 @@ Node.js client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-dotnet-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-dotnet-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-dotnet-client</h2>
+                                            <h2>dotnet-client</h2>
                                             <p className="m-0">
 .NET Standard client.
                                             </p>
@@ -217,12 +184,12 @@ Node.js client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-ruby-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-ruby-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-ruby-client</h2>
+                                            <h2>ruby-client</h2>
                                             <p className="m-0">
 Ruby client.
                                             </p>
@@ -233,12 +200,12 @@ Ruby client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-python-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-python-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-python-client</h2>
+                                            <h2>python-client</h2>
                                             <p className="m-0">
 Python client.
                                             </p>
@@ -249,12 +216,12 @@ Python client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-java-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-java-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-java-client</h2>
+                                            <h2>java-client</h2>
                                             <p className="m-0">
 Java/Android client.
                                             </p>
@@ -265,12 +232,12 @@ Java/Android client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-ios-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-ios-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-ios-client</h2>
+                                            <h2>ios-client</h2>
                                             <p className="m-0">
 iOS/Swift client.
                                             </p>
@@ -281,12 +248,12 @@ iOS/Swift client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-php-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-php-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-php-client</h2>
+                                            <h2>php-client</h2>
                                             <p className="m-0">
 PHP client.
                                             </p>
@@ -297,12 +264,12 @@ PHP client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-go-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-go-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-go-client</h2>
+                                            <h2>go-client</h2>
                                             <p className="m-0">
 Go client.
                                             </p>
@@ -313,12 +280,12 @@ Go client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/BulletTrainHQ/bullet-train-flutter-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-flutter-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
-                                            <h2>bullet-train-flutter-client</h2>
+                                            <h2>flutter-client</h2>
                                             <p className="m-0">
 Flutter client.
                                             </p>

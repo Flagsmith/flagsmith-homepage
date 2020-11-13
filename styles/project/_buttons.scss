@@ -8,9 +8,9 @@ a, .btn, button{
 }
 .btn, button.btn{
     outline: none !important;
-    background: #1c9997;
+    background: $bt-brand-secondary;
     transition: $button-transition;
-    border-radius: $border-radius-default !important;
+    border-radius: $btn-border-radius !important;
     color:#fff;
     text-align: center;
     border: none !important;
@@ -23,9 +23,13 @@ a, .btn, button{
     font-size: 16px;
     height:$input-height;
     box-shadow:0 0 5px rgba(0,0,0,0.2);
-
+    &--small {
+        height: 32px;
+        line-height: 32px;
+    }
     &:hover, &:disabled:hover {
-        background: #29aaa8;
+        color: $btn-default-color;
+        background: $bt-brand-secondary-hover;
     }
     &:hover {
         box-shadow:0 0 10px rgba(0,0,0,0.5);
@@ -34,7 +38,7 @@ a, .btn, button{
         box-shadow: none;
     }
     &:active,&:focus{
-        background: #098783;
+        background: $bt-brand-secondary-active;
         box-shadow:0 0 10px rgba(0,0,0,0.5);
     }
     &.white{

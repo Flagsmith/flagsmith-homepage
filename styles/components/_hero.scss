@@ -39,8 +39,8 @@
   .hero-inner {
     padding-top: 0.1rem;
     padding-bottom: 10%;
-    background-color: $bt-brand-secondary-light;
-    background: linear-gradient(to right, $bt-brand-secondary-light, #1d2d3e);
+    background-color: $bt-gradient-start;
+    //background: linear-gradient(to right, $bt-brand-secondary-light, #1d2d3e);
     &:after {
       content: " ";
       clear: both;
@@ -48,14 +48,16 @@
     }
   }
   .companies {
-    h2 {
+    background-color: white;
+    p {
       margin-top: -1px;
       margin-bottom: 10px;
-      font-size: 22px;
+      color: $body-text;
+      font-weight: 600;
     }
     padding: 0 0 40px 0;
-    background-color: white;
     img {
+      //filter: grayscale(100%) brightness(1);
       &.pad {
         padding: 10px;
       }
@@ -63,7 +65,6 @@
     }
     p {
       width: 100%;
-      color: $body-text;
     }
     .row > div {
       margin: 0 auto;
@@ -71,19 +72,16 @@
     }
 
     a {
-      color: #22354a;
       font-weight: bold;
     }
   }
 }
 
 .hero {
-  color: white;
   button.btn {
     font-size: 1.2em !important;
   }
   h1,p {
-    color: white;
   }
   h1 {
     font-size: 46px;
@@ -129,8 +127,8 @@
       }
       @keyframes typewriter{
         from{width: 9em;}
-        50%{width: 24.75em;}
-        70%{width: 24.75em;}
+        50%{width: 23.75em;}
+        70%{width: 23.75em;}
         90%{width: 9em;}
         to{width: 9em;}
       }

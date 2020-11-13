@@ -34,7 +34,7 @@
 	margin-top: -2px;
 	position: relative;
 	transition: left 1s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-	background-color: $tab-line-color;
+	background-color: $bt-brand-primary;
 }
 .tab-icon {
 	margin-right: $input-padding-x;
@@ -48,6 +48,10 @@
 		&:last-child {
 			border-top-right-radius: 15px;
 			border-bottom-right-radius: 15px;
+		}
+		&:active {
+			background-color: lighten($brand-primary, 10);
+			color: white;
 		}
 	}
 	.tabs-nav {
@@ -66,7 +70,8 @@
 		}
 		color: $tab-inactive-color;
 		&.tab-active {
-			color: $tab-active-color;
+			background-color: $brand-primary !important;
+			color: white;
 		}
 	}
 

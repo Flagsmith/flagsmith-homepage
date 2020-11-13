@@ -8,7 +8,7 @@
         }
     }
     &--navy {
-        background: #252F35;
+        background: $bt-brand-primary-dark;
         box-shadow: 0 5px 25px 0 rgba(0,0,0,0.28);
         border-radius: 4px;
         pre {
@@ -22,10 +22,14 @@
         word-wrap: break-word;
     }
     &--feature {
+        cursor: default;
         display: flex;
         flex-direction: column;
         text-align: center;
-        background-color: $bt-brand-secondary;
+        background-color: $bt-brand-primary-dark;
+        a {
+            color: white;
+        }
         box-shadow: 0 5px 26px 0 rgba(0,0,0,0.28);
         border-radius: 6px;
         border: none;
@@ -41,7 +45,7 @@
             transform: scale(1.1);
             background-color: $bt-brand-primary;
             .card__title, .card__paragraph-text, .card__link, .card__icon {
-                color: $bt-brand-secondary;
+                color: white;
             }
         }
     }

@@ -45,16 +45,19 @@ class Header extends PureComponent {
                     >
                         <a className="nav-link navbar-brand">
                             <img
-                              title="Bullet Train" height={24}
-                              src="/static/images/bullet-train-1.svg"
-                              className="brand " alt="Bullet Train logo"
+                              title="Flagsmith" height={54}
+                              src="/static/images/nav-logo.svg"
+                              className="brand " alt="Flagsmith logo"
                             />
                         </a>
                     </Link>
                     <button
-                      onClick={() => this.setState({ showNav: !this.state.showNav })}
+                      onClick={() => {
+                          debugger
+                          this.setState({ showNav: !this.state.showNav })
+                      }}
                       className="navbar-toggler" type="button" data-toggle="collapse"
-                      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                      aria-expanded="false"
                       aria-label="Toggle navigation"
                     >
                         <img width={32} src="/static/images/menu.svg"/>
@@ -67,13 +70,13 @@ class Header extends PureComponent {
                                 <Link prefetch={false} href="/pricing"><a className="nav-link">Pricing</a></Link>
                             </li>
                             <li className="nav-item">
-                                <Link prefetch={false} href="https://docs.bullet-train.io/"><a className="nav-link">Documentation</a></Link>
+                                <Link prefetch={false} href="https://docs.flagsmith.com/"><a className="nav-link">Docs</a></Link>
                             </li>
                             <li className="nav-item">
                                 <Link prefetch={false} href="/open-source"><a className="nav-link">Open Source</a></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" rel="noopener noreferrer" target="_blank" href="https://product-hub.io/roadmap/5d81f2406180537538d99f28">Product Roadmap</a>
+                                <a className="nav-link" rel="noopener noreferrer" target="_blank" href="https://product-hub.io/roadmap/5d81f2406180537538d99f28">Roadmap</a>
                             </li>
                             <li className="nav-item">
                                 <Link prefetch={false} href={`${Project.appUrl}/login`}><a className="nav-link">Log in</a></Link>

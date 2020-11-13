@@ -1,8 +1,8 @@
 .navbar {
     padding: 1.5rem;
 
-    background-color: $bt-brand-secondary-light;
-    background: linear-gradient(to right, $bt-brand-secondary-light, #1d2d3e);
+    background-color: $navbar-background;
+    //background: linear-gradient(to right, $bt-brand-secondary-light, #1d2d3e);
     &.homepage {
         position: absolute;
         left:0;
@@ -25,9 +25,10 @@
     font-size: 1.2rem;
     font-weight: 400;
     margin-right: 1rem;
+    color: $nav-link-color;
     @include transition(opacity, 200ms);
     &:hover {
-        color: white;
+        color: $nav-link-color-hover;
     }
     &.nav-faint {
         opacity: 0.5;
@@ -36,8 +37,12 @@
         }
     }
     .nav-link-featured {
-        border-radius: 5px;
-        border: 1px solid rgba(255,255,255,.5);
+        border-radius: $btn-border-radius;
+        background-color: $bt-brand-faint;
+        &:hover {
+            background-color: $bt-brand-faint-hover;
+        }
+        color: $bt-brand-primary;
         padding: 5px 20px;
         -moz-transition:    opacity 200ms;
         -o-transition:      opacity 200ms;
@@ -54,10 +59,6 @@
 
 .service-status {
     font-size: 14px;
-
-    a:hover {
-        color: white !important;
-    }
 
     .uptime-badge {
         display: block;

@@ -40,12 +40,12 @@ const Footer = class extends React.Component {
 
                           <ul className="list-inline">
                               <li className="list-inline-item">
-                                  <a rel="noreferrer" href="https://github.com/BulletTrainHQ" title="GitHub">
+                                  <a rel="noreferrer" href="https://github.com/Flagsmith" title="GitHub">
                                       <span className="icon ion-logo-github"/>
                                   </a>
                               </li>
                               <li className="list-inline-item">
-                                  <a href="https://twitter.com/GetBulletTrain" title="Twitter">
+                                  <a href="https://twitter.com/GetFlagsmith" title="Twitter">
                                       <span className="pl-4 icon ion-logo-twitter"/>
                                   </a>
                               </li>
@@ -55,7 +55,7 @@ const Footer = class extends React.Component {
                           <h5>Product</h5>
                           <ul className=" float-left nav-list">
                               <li><a href={`${Project.appUrl}/demo`}>Demo Account</a></li>
-                              <li><a href="https://docs.bullet-train.io/">Documentation</a></li>
+                              <li><a href="https://docs.flagsmith.com/">Documentation</a></li>
                               <li><Link prefetch={false} href="/pricing#pricing"><a>Pricing</a></Link></li>
                           </ul>
                       </div>

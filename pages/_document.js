@@ -10,6 +10,7 @@ import { Container } from 'next/app';
 import React from 'react';
 import Project from '../common/project';
 import Header from '../components/Header';
+import Button from '../components/base/forms/Button';
 
 const gtm = () => {
     if (typeof window !== 'undefined' && !document.location.origin.includes('localhost')) {
@@ -40,7 +41,7 @@ class MyDocument extends Document {
                       content="Cloud or Self Hosted Feature Flags, Feature Toggles &amp; Remote Config in your Mobile, React, React Native, Java, Javascript &amp; Python projects."
                     />
                     <title>
-                  Feature Flags and Toggles for Continuous Integration - Bullet Train
+                  Feature Flags and Toggles for Continuous Integration - Flagsmith
                     </title>
                     <link rel="icon" sizes="192x192" href="/static/icons-192.png"/>
                     <link rel="apple-touch-icon" href="/static/icons-192.png"/>
@@ -52,7 +53,6 @@ class MyDocument extends Document {
                     </script>
                 </Head>
                 <body>
-                    <Header/>
                     <Main />
                     <div id="confirm"/>
                     <div id="alert"/>

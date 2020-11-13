@@ -12,17 +12,17 @@ const Hero = class extends React.Component {
             animating: true,
             values: [
                 {
-                    a: 'bulletTrain.hasFeature(',
+                    a: 'flagsmith.hasFeature(',
                     b: "'show_coupon'",
                     c: ')',
                 },
                 {
-                    a: 'bulletTrain.getTrait(',
+                    a: 'flagsmith.getTrait(',
                     b: "'accepted-term'",
                     c: ')',
                 },
                 {
-                    a: 'bulletTrain.getTrait(',
+                    a: 'flagsmith.getTrait(',
                     b: "'login_count'",
                     c: ')>3',
                 },
@@ -58,23 +58,21 @@ const Hero = class extends React.Component {
                 <div className="hero hero--homepage">
                     <div className="hero-inner pt-4">
                         <div className="container">
-                        <h1 className="margin-bottom margin-top">Release features with confidence</h1>
-                        <p className="">
+                            <h1 className="margin-bottom margin-top">Release features with confidence</h1>
+                            <p className="">
                         Manage feature flags across web, mobile and
                         server side applications. Deliver true Continuous Integration. Get builds out faster.
                         Control who has access to new features.
-                        </p>
-                        <p className="">
+                            </p>
+                            <p className="">
                         Use our hosted API, deploy to your own private cloud, or run on-premise.
-                        </p>
-                        <div className="hero-cta mt-1">
-                            <Button onClick={Utils.scrollToSignUp}>
-                                {/* <Link href={`/${this.props.redirect}#sign-up`}> */}
-                            Get Started For Free
-                                {/* </Link> */}
-                            </Button>
-                            <p className="text-small">No payment card required</p>
-                        </div>
+                            </p>
+                            <div className="hero-cta mt-1">
+                                <Button onClick={Utils.scrollToSignUp}>
+                                    Get Started For Free
+                                </Button>
+                                <p className="text-small">No payment card required</p>
+                            </div>
                         </div>
                     </div>
                     <svg
@@ -98,7 +96,7 @@ const Hero = class extends React.Component {
                     <div className="companies">
                         <div className="container">
                             <div className="text-center margin-auto col-md-12 text-center">
-                                <h2>Trusted by top development teams</h2>
+                                <p>Trusted by top development teams.</p>
                                 <div className="row">
                                     <div className="col-4">
                                         <img src="/static/images/companies/aer-lingus.svg" alt="Aer Lingus" title="Aer Lingus"/>

@@ -29,9 +29,9 @@ const PricingPage = class extends React.Component {
           <div>
               <Head>
                   <title>
-                    Pricing - Bullet Train
+                    Pricing - Flagsmith
                   </title>
-                  <link rel="canonical" href="https://bullet-train.io/pricing" />
+                  <link rel="canonical" href="https://flagsmith.com/pricing" />
               </Head>
               <PricingPanel redirect={redirect}/>
 
@@ -39,9 +39,9 @@ const PricingPage = class extends React.Component {
                   <div className="container">
                       <h2 className="text-center margin-bottom">FAQs</h2>
                       <div className="panel panel-default panel-grey">
-                          <p className="question">So how does this all work?</p>
+                          <h4>So how does this all work?</h4>
                           <p className="answer">
-                First off, you're free to host Bullet Train yourself, without charge. We're 100% open source,
+                First off, you're free to host Flagsmith yourself, without charge. We're 100% open source,
                 and totally fine with you doing that.
                           </p>
                           <p className="answer">
@@ -50,13 +50,13 @@ const PricingPage = class extends React.Component {
                           </p>
                           <p className="answer">
                 The only metrics you need to consider when deciding on your plan is the number of API calls
-                you plan on making, and the number of team members you have that need access to Bullet Train.
+                you plan on making, and the number of team members you have that need access to Flagsmith.
                 You can create as many projects, environments, flags and segments as you like. We feel that this is
                 the fairest measure of usage.
                           </p>
                       </div>
                       <div className="panel panel-default panel-grey">
-                          <p className="question">How do you calculate API calls per month?</p>
+                          <h4>How do you calculate API calls per month?</h4>
                           <p className="answer">
                 This is simply the total number of API requests you make for each calendar month, across
                 all the projects in your organisation.
@@ -80,14 +80,14 @@ const PricingPage = class extends React.Component {
                           </ul>
                       </div>
                       <div className="panel panel-default panel-grey">
-                          <p className="question">What is a Team Member?</p>
+                          <h4>What is a Team Member?</h4>
                           <p className="answer">
                 Each Team Member can log in with their own email address. Audit logs record activities per
                 logged in Team Member.
                           </p>
                       </div>
                       <div className="panel panel-default panel-grey">
-                          <p className="question">What happens if I go over my plan limit?</p>
+                          <h4>What happens if I go over my plan limit?</h4>
                           <p className="answer">
                 Don't worry; we'll carry on serving your flags to your users. We realise that this is
                 important to your application.
@@ -95,11 +95,11 @@ const PricingPage = class extends React.Component {
                           </p>
                       </div>
                       <div className="panel panel-default panel-grey">
-                          <p className="question">What about an annual discount?</p>
+                          <h4>What about an annual discount?</h4>
                           <p className="answer">
                             If this sort of pricing is important to you - please
                               {' '}
-                              <a style={{ color: '#22354a' }} href="mailto:support@bullettrain.io">get in touch</a>
+                              <a style={{ color: '#22354a' }} href="mailto:support@flagsmith.com">get in touch</a>
                               {' '}
                           </p>
                       </div>

@@ -108,7 +108,7 @@ const HomePage = class extends React.Component {
       API.trackEvent(Constants.events.REGISTER_GOOGLE);
       Google.login().then((res) => {
           if (res) {
-              document.location = `https://app.bullet-train.io/oauth/google?code=${res}`;
+              document.location = `https://app.flagsmith.com/oauth/google?code=${res}`;
           }
       });
   }
@@ -147,9 +147,9 @@ const HomePage = class extends React.Component {
 
               <Head>
                   <title>
-            Feature Flags and Toggles for Continuous Integration - Bullet Train
+            Feature Flags and Toggles for Continuous Integration - Flagsmith
                   </title>
-                  <link rel="canonical" href="https://bullet-train.io/"/>
+                  <link rel="canonical" href="https://flagsmith.com/"/>
               </Head>
               <Hero redirect={redirect}/>
               <div className="feature-container ">
@@ -158,7 +158,7 @@ const HomePage = class extends React.Component {
                           <div className="col-md-4">
                               <h2>Manage features without deployments</h2>
                               <p>
-                  Bullet Train combines the concepts of feature toggles with the flexibility of remote config. Rather
+                  Flagsmith combines the concepts of feature toggles with the flexibility of remote config. Rather
                   than just switching features on and off, you can configure them for individual segments, users and
                   development environments.
                               </p>
@@ -205,12 +205,12 @@ const HomePage = class extends React.Component {
                       <h2>We currently support these popular languages</h2>
                       <div style={{ justifyContent: 'center' }} className="row">
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/java/">
+                              <a href="https://docs.flagsmith.com/clients/java/">
                                   <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/javascript/">
+                              <a href="https://docs.flagsmith.com/clients/javascript/">
                                   <img
                                     src="/static/images/tech-logos/javascript.png" alt="JavaScript"
                                     title="JavaScript Feature Flags"
@@ -218,17 +218,17 @@ const HomePage = class extends React.Component {
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/javascript/">
+                              <a href="https://docs.flagsmith.com/clients/javascript/">
                                   <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/node/">
+                              <a href="https://docs.flagsmith.com/clients/node/">
                                   <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/python/">
+                              <a href="https://docs.flagsmith.com/clients/python/">
                                   <img
                                     src="/static/images/tech-logos/python.png" alt="Python Feature Flags"
                                     title="Python"
@@ -236,42 +236,42 @@ const HomePage = class extends React.Component {
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/ruby/">
+                              <a href="https://docs.flagsmith.com/clients/ruby/">
                                   <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/dotnet/">
+                              <a href="https://docs.flagsmith.com/clients/dotnet/">
                                   <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/java/">
+                              <a href="https://docs.flagsmith.com/clients/java/">
                                   <img src="/static/images/tech-logos/android2x.png" alt="android" title="android Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/ios/">
+                              <a href="https://docs.flagsmith.com/clients/ios/">
                                   <img src="/static/images/tech-logos/bt-IOS.png" alt="iOS" title="iOS Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/flutter/">
+                              <a href="https://docs.flagsmith.com/clients/flutter/">
                                   <img src="/static/images/tech-logos/flutter.png" alt="Flutter" title="Flutter Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/php/">
+                              <a href="https://docs.flagsmith.com/clients/php/">
                                   <img src="/static/images/tech-logos/php.png" alt="PHP" title="PHP Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/go/">
+                              <a href="https://docs.flagsmith.com/clients/go/">
                                   <img src="/static/images/tech-logos/golang.png" alt="Go" title="Go Feature Flags"/>
                               </a>
                           </div>
                           <div className="col">
-                              <a href="https://docs.bullet-train.io/clients/rust/">
+                              <a href="https://docs.flagsmith.com/clients/rust/">
                                   <img src="/static/images/tech-logos/rust.png" alt="Rust" title="Rust Feature Flags"/>
                               </a>
                           </div>
@@ -282,18 +282,18 @@ const HomePage = class extends React.Component {
               <div className="feature-container">
                   <div className="section--wave">
                       <div className="offset-md-3 col-md-6">
-                          <h2 className="text-center section--wave__title">How can Bullet Train accelerate your development process? Here's how.</h2>
+                          <h2 className="text-center section--wave__title">How can Flagsmith accelerate your development process? Here's how.</h2>
                       </div>
                   </div>
                   <div className="section--grey">
                       <div className="container">
                           <div className="flex-row mt-5 mb-5">
                               <div className="col-md-5">
-                                  <h3><span className="text--green">1.</span> Start on a new Feature
+                                  <h3>1. Start on a new Feature
                                       Branch
                                   </h3>
                                   <p>
-                                    Create a feature branch in git and a corresponding Feature Flag in Bullet Train.
+                                    Create a feature branch in git and a corresponding Feature Flag in Flagsmith.
                                   </p>
                               </div>
                               <div className="col-md-6 offset-md-1">
@@ -316,7 +316,7 @@ const HomePage = class extends React.Component {
                                   />
                               </div>
                               <div className="col-md-5 offset-md-1">
-                                  <h3><span className="text--green">2.</span> Deploy the feature behind the feature flag
+                                  <h3>2. Deploy the feature behind the feature flag
                                   </h3>
                                   <p>Write your code, place it behind a feature flag and deploy it straight to production. Don't worry! It's hidden for everyone.
                                   </p>
@@ -327,7 +327,7 @@ const HomePage = class extends React.Component {
                               <div className="col-md-5">
                                   <h3><span className="text--green">3.</span> Enable the feature for your own account
                                   </h3>
-                                  <p>You can now test the widget using your own account. Select your own user within Bullet Train and override the flag for your account.
+                                  <p>You can now test the widget using your own account. Select your own user within Flagsmith and override the flag for your account.
                                   </p>
                                   <p>The widget will now show up for your own account. It's still hidden for everybody else.</p>
                               </div>
@@ -351,7 +351,7 @@ const HomePage = class extends React.Component {
                                   />
                               </div>
                               <div className="col-md-6 offset-md-1">
-                                  <h3><span className="text--green">4.</span> Bring in the rest of your team</h3>
+                                  <h3>4. Bring in the rest of your team</h3>
                                   <p>Create a Segment that includes all your company team members.</p>
                                   <p>Now we can override that flag for this segment of users. They can now test out the new widget and make sure all the integration points work nicely.</p>
                                   <img
@@ -365,7 +365,7 @@ const HomePage = class extends React.Component {
 
                           <div className="flex-row mt-5 mb-5">
                               <div className="col-md-5">
-                                  <h3><span className="text--green">5.</span> Gradually release the feature!</h3>
+                                  <h3>5. Gradually release the feature!</h3>
                                   <p>Lets do a percentage rollout so that we can be sure that there are no unexpected issues when deploying the feature to everyone.</p>
 
                                   <p>Modify the Segment, replacing the emailAddress filter with a % Split. 5% of our users will now see the chat widget and 95% won't.</p>
@@ -383,13 +383,13 @@ const HomePage = class extends React.Component {
                           <div className="mt-5 mb-5 pb-5">
                               <div className="offset-md-3 col-md-6">
                                   <h3 className="text-center">
-                                      <span className="text--green">6.</span> Finish Up
+                                      6. Finish Up
                                   </h3>
                                   <p className="text-center">The chat widget has been live for a few weeks, and
                                       everything is working nicely. The team have decided that they want to keep the
                                       widget in the application, so we can now remove the feature flag entirely. We edit
                                       the code to remove the optional display of the widget, and delete the flag from
-                                      Bullet Train.
+                                      Flagsmith.
                                   </p>
                               </div>
                           </div>
@@ -413,7 +413,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/managing-features/"
+                                    href="https://docs.flagsmith.com/managing-features/"
                                   >
                     Feature flags
                                       <span
@@ -434,7 +434,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/managing-features/"
+                                    href="https://docs.flagsmith.com/managing-features/"
                                   >
                     Remote config
                                       <span
@@ -453,7 +453,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/managing-identities/#identity-traits"
+                                    href="https://docs.flagsmith.com/managing-identities/#identity-traits"
                                   >
                     User Traits
                                       <span
@@ -472,7 +472,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/managing-segments/"
+                                    href="https://docs.flagsmith.com/managing-segments/"
                                   >
                     User Segments
                                       <span
@@ -491,7 +491,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/staged-feature-rollouts/"
+                                    href="https://docs.flagsmith.com/staged-feature-rollouts/"
                                   >
                     Staged Feature Rollouts
                                       <span
@@ -510,7 +510,7 @@ const HomePage = class extends React.Component {
                                   </p>
                                   <a
                                     className="card__link"
-                                    href="https://docs.bullet-train.io/audit-logs/"
+                                    href="https://docs.flagsmith.com/audit-logs/"
                                   >
                     Track Changes
                                       <span
@@ -522,48 +522,6 @@ const HomePage = class extends React.Component {
                       </div>
                   </div>
               </div>
-
-              <div style={{ padding: '1rem' }} className="feature-container">
-                  <div className="container">
-                      <div className="text-center">
-                          <h2>Resources</h2>
-                      </div>
-                      <div className="row">
-                          <div className="col-xl-4">
-                              <Guide
-                                href="https://www.youtube.com/watch?v=_lyNzKLZ8rc"
-                                description="A tutorial on how to use Bullet Train using React Native."
-                                image="/static/images/tech-logos/react.png"
-                                title="React Feature Flags Guide"
-                              />
-                          </div>
-                          <div className="col-xl-4">
-                              <Guide
-                                href="https://www.youtube.com/watch?v=GPkCLO0F-5g"
-                                description="A quick introduction to Bullet Train."
-                                image="/static/images/90seconds.jpg"
-                              />
-                          </div>
-                          <div className="col-xl-4">
-                              <Guide
-                                href="https://www.youtube.com/watch?v=8cD-t7KKitU"
-                                description="A tutorial on how to use Bullet Train using vanilla JavaScript."
-                                image="/static/images/tech-logos/javascript.png"
-                                title="JavaScript Feature Flags Guide"
-                              />
-                          </div>
-                      </div>
-                      <div className="text-center">
-                          <a
-                            style={{ color: '#1c2b3d', fontSize: 18 }}
-                            href="https://www.youtube.com/channel/UCki7GZrOdZZcsV9rAIRchCw"
-                          >
-                View all
-                          </a>
-                      </div>
-                  </div>
-              </div>
-
               <div className="sign-up" id="sign-up">
                   <div>
                       <div className="card signup-form container animated fadeIn col-md-8 col-xl-8">
@@ -575,7 +533,7 @@ const HomePage = class extends React.Component {
                           >
                               <div className="form-intro text-center">
                                   <h3>It's free to get started.</h3>
-                                  <p className="text-white">
+                                  <p>
                     We have a 100% free for life plan for smaller projects.
                                       {' '}
                                       <Link href="/pricing">
@@ -694,7 +652,7 @@ const HomePage = class extends React.Component {
 
                                   <div className="form-cta margin-top">
 
-                                      <ButtonWhite
+                                      <Button
                                         data-test="signup-btn"
                                         name="signup-btn"
                                         disabled={isLoading || isSaving}
@@ -702,7 +660,7 @@ const HomePage = class extends React.Component {
                                         type="submit"
                                       >
                       Get Started For Free
-                                      </ButtonWhite>
+                                      </Button>
                                       <a href={`${Project.appUrl}/login`} id="existing-member-btn">
                       Already a member?
                                       </a>
