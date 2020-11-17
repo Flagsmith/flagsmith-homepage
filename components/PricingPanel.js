@@ -285,7 +285,6 @@ const PricingPanel = class extends React.Component {
                                             <li><p>Unlimited Identities and Segments</p></li>
                                             <li><p>3rd Party Integrations</p></li>
                                             <li><p>A/B and MVT Testing</p></li>
-                                            <li><p>Audit Logs</p></li>
                                             <li><p>Priority Email Technical Support</p></li>
                                             <li><p>User Roles and Permissions</p></li>
                                             <li><p>2FA and SAML Authentication</p></li>
@@ -333,7 +332,6 @@ const PricingPanel = class extends React.Component {
                                         <li><p>Unlimited Identities and Segments</p></li>
                                         <li><p>3rd Party Integrations</p></li>
                                         <li><p>A/B and MVT Testing</p></li>
-                                        <li><p>Audit Logs</p></li>
                                         <li><p>Priority Email Technical Support</p></li>
                                         <li><p>User Roles and Permissions</p></li>
                                         <li><p>2FA and SAML Authentication</p></li>
