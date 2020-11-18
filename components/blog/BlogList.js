@@ -27,7 +27,7 @@ export default class BlogList extends Component {
           <div className="blog">
               <Head>
                   <title>
-                      {RichText.asText(doc.data.headline)}
+                    Feature Flag Platform Blog - Flagsmith
                   </title>
                   <link rel="canonical" href="https://flagsmith.com/blog" />
               </Head>

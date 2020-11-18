@@ -6,7 +6,7 @@ const PrivacyPolicyPage = props => (
 
         <Head>
             <title>
-                Privacy Policy - Flagsmith
+            Feature Flag Platform Privacy Policy - Flagsmith
             </title>
             <link rel="canonical" href="https://flagsmith.com/legal/privacy-policy/" />
         </Head>

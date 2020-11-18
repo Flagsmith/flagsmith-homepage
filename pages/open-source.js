@@ -23,7 +23,7 @@ export default class OpenSource extends Component {
             <div>
                 <Head>
                     <title>
-                      Open Source Projects - Flagsmith
+                    Feature Flag Platform Open Source Projects - Flagsmith
                     </title>
                     <link rel="canonical" href="https://flagsmith.com/open-source" />
                 </Head>

@@ -4,7 +4,7 @@ const ServiceLevelAgreement = props => (
     <div>
         <Head>
             <title>
-              Service Level Agreement - Flagsmith
+            Feature Flag Platform Service Level Agreement - Flagsmith
             </title>
             <link rel="canonical" href="https://flagsmith.com/legal/sla/" />
         </Head>

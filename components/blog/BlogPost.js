@@ -65,7 +65,7 @@ export default class TheComponent extends Component {
                     />
                     )}
                     <title>
-                        {title}
+                        {title} - Feature Flag Platform Blog - Flagsmith
                     </title>
                 </Head>
                 <h1>

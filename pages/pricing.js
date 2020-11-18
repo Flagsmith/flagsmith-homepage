@@ -29,7 +29,7 @@ const PricingPage = class extends React.Component {
           <div>
               <Head>
                   <title>
-                    Pricing - Flagsmith
+                  Feature Flag Platform Pricing - Flagsmith
                   </title>
                   <link rel="canonical" href="https://flagsmith.com/pricing" />
               </Head>

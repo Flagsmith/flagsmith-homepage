@@ -4,7 +4,7 @@ const TermsOfService = props => (
     <div>
         <Head>
             <title>
-              Terms of Service - Flagsmith
+            Feature Flag Platform Terms of Service - Flagsmith
             </title>
             <link rel="canonical" href="https://flagsmith.com/legal/tos/" />
         </Head>
