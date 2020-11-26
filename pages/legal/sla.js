@@ -14,8 +14,8 @@ const ServiceLevelAgreement = props => (
                 <p>
           This Flagsmith Service Level Agreement (
                     <b>“SLA”</b>
-          ) between Solid State Group Ltd (
-                    <b>"Solid State Group"</b>
+          ) between Bullet Train Ltd (
+                    <b>"Flagsmith"</b>
           ,
                     <b>“us”</b>
                     {' '}
@@ -76,7 +76,7 @@ const ServiceLevelAgreement = props => (
                             <b>“Unavailability”</b>
                             {' '}
               mean, for app services and databases, when your service or database is not running or not
-              reachable due to Solid State Group's fault. This excludes reasons where the fault lies with
+              reachable due to Flagsmith's fault. This excludes reasons where the fault lies with
               Amazon Web Services.
                         </p>
                     </li>
@@ -106,7 +106,7 @@ const ServiceLevelAgreement = props => (
               We will apply any Service Credits only against future payments for the Services otherwise due
               from you. At our discretion, we may issue the Service Credit to the credit card you used to pay
               for the billing cycle in which the Unavailability occurred. Service Credits will not entitle you
-              to any refund or other payment from Solid State Group Ltd. A Service Credit will be applicable
+              to any refund or other payment from Bullet Train Ltd. A Service Credit will be applicable
               and issued only if the credit amount for the applicable monthly billing cycle is greater than
               one dollar ($1 USD). Service Credits may not be transferred or applied to any other account.
                         </p>
