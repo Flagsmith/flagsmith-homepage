@@ -10,7 +10,7 @@ const ServiceLevelAgreement = props => (
         </Head>
         <div className="legal-container">
             <div className="container">
-                <h2>Service Level Agreement</h2>
+                <h1>Service Level Agreement</h1>
                 <p>
           This Flagsmith Service Level Agreement (
                     <b>“SLA”</b>

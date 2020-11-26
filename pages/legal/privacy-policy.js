@@ -12,7 +12,7 @@ const PrivacyPolicyPage = props => (
         </Head>
         <div className="legal-container">
             <div className="container">
-                <h2>Privacy Policy</h2>
+                <h1>Privacy Policy</h1>
                 <p>
             By using the flagsmith.com website ("service"), or any services of Bullet Train Ltd, you are
             agreeing to be bound by the following privacy policy ("privacy policy"). If you are entering into this

@@ -10,7 +10,7 @@ const TermsOfService = props => (
         </Head>
         <div className="legal-container">
             <div className="container">
-                <h2>Terms of Service</h2>
+                <h1>Terms of Service</h1>
                 <p>
                 These Flagsmith terms of service ("agreement") contains the terms for use of the Flagsmith service
                 and is between Bullet Train Ltd ("Flagsmith"), a London based company having a place of business
