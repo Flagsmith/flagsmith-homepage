@@ -119,7 +119,7 @@ const HomePage = class extends React.Component {
       const referrer = API.getReferrer();
       let query = '';
       if (referrer) {
-          query = `?${Utils.toParam(Utils.fromParam())}`;
+          query = `${Utils.toParam(Utils.fromParam())}`;
       }
 
       data.post(`${Project.api}auth/users/`, {
@@ -127,6 +127,7 @@ const HomePage = class extends React.Component {
           password,
           first_name,
           last_name,
+          query,
       })
           .then((res) => {
               API.setEvent(JSON.stringify({ tag: 'registrations', event: `User register${email} ${first_name} ${last_name}` }));
