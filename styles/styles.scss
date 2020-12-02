@@ -152,6 +152,11 @@ hr {
         margin-bottom: 0;
     }
 }
+.block-img {
+    img {
+        max-width: 100%;
+    }
+}
 
 .bottom-banner {
     position: fixed;
