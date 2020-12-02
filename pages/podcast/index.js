@@ -16,17 +16,19 @@ const BlogPage = (props) => {
         return <LoadingPreview/>;
     }
     if (!doc) {
-        return <div>Great, now create your content in prismic!</div>;
+        return <div className="blog container">Great, now create your content in prismic!</div>;
     }
     return (
-      <>
-          <BlogBody sections={doc.data.body}/>
+        <div className="blog">
+            <div className="container mt-5">
+                <BlogBody sections={doc.data.body}/>
 
-          {posts.map(b => (
-              <BlogItem key={b.id} authors={authors} post={b}/>
-          ))}
-          <Footer className="homepage"/>
-      </>
+                {posts.map(b => (
+                    <BlogItem key={b.id} authors={authors} post={b}/>
+                ))}
+            </div>
+            <Footer className="homepage"/>
+        </div>
     );
 };
 
