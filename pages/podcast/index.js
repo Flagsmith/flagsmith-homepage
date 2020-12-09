@@ -2,6 +2,7 @@ import React from 'react';
 import Prismic from 'prismic-javascript';
 // Project components & functions
 import { Client, queryTags } from '../../prismic-functions';
+import Head from 'next/head';
 import Footer from '../../components/Footer';
 import BlogList from '../../components/blog/BlogList';
 import usePreview from '../../components/blog/usePreview';
@@ -19,15 +20,22 @@ const BlogPage = (props) => {
         return <div className="blog container">Great, now create your content in prismic!</div>;
     }
     return (
-        <div className="blog">
-            <div className="container mt-5">
-                <BlogBody sections={doc.data.body}/>
+        <div className="podcast">
+            <Head>
+                <title>
+                    The Craft of Open Source - Podcast - Flagsmith
+                </title>
+            </Head>
+            <div className="blog">
+                <div className="container mt-5">
+                    <BlogBody sections={doc.data.body}/>
 
-                {posts.map(b => (
-                    <BlogItem key={b.id} authors={authors} post={b}/>
-                ))}
+                    {posts.map(b => (
+                        <BlogItem key={b.id} authors={authors} post={b}/>
+                    ))}
+                </div>
+                <Footer className="homepage"/>
             </div>
-            <Footer className="homepage"/>
         </div>
     );
 };
