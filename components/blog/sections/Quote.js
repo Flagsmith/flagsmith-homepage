@@ -4,10 +4,10 @@ import { RichText } from 'prismic-reactjs'
 /**
  * Quote slice component
  */
-const Quote = ({ data }) => (
+const Quote = ({ data }) => data?.primary?.quote && (
   <div className="post-part single container">
     <blockquote className="block-quotation">
-      {RichText.asText(slice.primary.quote)}
+      {RichText.asText(data.primary.quote)}
     </blockquote>
   </div>
 )
