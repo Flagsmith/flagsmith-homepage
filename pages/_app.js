@@ -8,6 +8,7 @@ import Project from '../common/project';
 import '../common/utils';
 import API from '../project/api';
 import RebrandBanner from '../components/RebrandBanner';
+import Crisp from '../components/Crisp'
 
 function MyApp({ Component, pageProps }) {
     useEffect(() => {
@@ -32,6 +33,7 @@ function MyApp({ Component, pageProps }) {
           <Header/>
           <Component {...pageProps} />
           <RebrandBanner/>
+          <Crisp/>
       </>
     );
 }
