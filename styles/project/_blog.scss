@@ -61,14 +61,16 @@
     margin-bottom: 64px;
     padding-bottom: 32px;
     .avatar {
+        border: 8px solid #EAE7F6;
         width: 120px;
         height: 120px;
         border-radius: 60px;
     }
     .avatar-small {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
+        border: 6px solid #EAE7F6;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
     }
 
     .title {
@@ -95,7 +97,7 @@
 
 .blog-tag {
     padding:5px 15px;
-    margin-right: 5px;
+    margin-right: 20px;
     margin-bottom: 10px;
     display: inline-block;
     border-radius: 10px;
