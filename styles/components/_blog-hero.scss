@@ -1,0 +1,46 @@
+@import "../variables";
+.blog-hero-gradient {
+  background-image: linear-gradient(#fefffe,#f7f8f7)
+}
+.blog-hero {
+    background-size: 1044px 720px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top: 45px;
+    min-height: 473px;
+    padding-bottom: 45px;
+  h1 {
+    font-family: $font-family;
+    color: $brand-primary;
+    font-size: 30px;
+  }
+  h2 {
+    color: $bt-brand-primary-dark;
+    font-family: $font-family-alt;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  p {
+    color: $bt-brand-primary-dark;
+    width: 40%;
+  }
+  svg {
+    display: inline-block;
+    height: 16px;
+    path {
+      fill: white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-hero {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-size: 0;
+    p {
+      width: 100%;
+    }
+  }
+}

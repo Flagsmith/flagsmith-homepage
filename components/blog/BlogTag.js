@@ -15,8 +15,11 @@ export default class TheComponent extends Component {
 
   render() {
       return (
-          <Link href={`/blog/tag/${encodeURIComponent(this.props.tag)}`}>
-              <span className={`blog-tag ${this.props.tag.replace(/ /g, '_').toLowerCase()}`}>{this.props.tag}</span>
+          <Link href={this.props.tag === 'podcast' ? '/podcast' : `/blog/tag/${encodeURIComponent(this.props.tag)}`}>
+              <span className={`blog-tag ${this.props.tag.replace(/ /g, '_').toLowerCase()}`}>{
+                this.props.tag === 'bullet-train' ? 'flagsmith' : this.props.tag
+              }
+              </span>
           </Link>
       );
   }

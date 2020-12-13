@@ -8,7 +8,7 @@ a, .btn, button{
 }
 .btn, button.btn{
     outline: none !important;
-    background: $bt-brand-secondary;
+    background: $bt-brand-tertiary;
     transition: $button-transition;
     border-radius: $btn-border-radius !important;
     color:#fff;
@@ -29,7 +29,7 @@ a, .btn, button{
     }
     &:hover, &:disabled:hover {
         color: $btn-default-color;
-        background: $bt-brand-secondary-hover;
+        background: $bt-brand-tertiary-hover;
     }
     &:hover {
         box-shadow:0 0 10px rgba(0,0,0,0.5);
@@ -38,7 +38,7 @@ a, .btn, button{
         box-shadow: none;
     }
     &:active,&:focus{
-        background: $bt-brand-secondary-active;
+        background: $bt-brand-tertiary-active;
         box-shadow:0 0 10px rgba(0,0,0,0.5);
     }
     &.white{

@@ -76,6 +76,12 @@
 }
 
 @font-face {
+  font-family: 'Bitter';
+  src: url('/static/fonts/Bitter-Bold.ttf');
+  font-display:swap;
+}
+
+@font-face {
   font-family: 'OpenSans';
   src: local('OpenSans'), local('OpenSans'),
   url('/static/fonts/OpenSans-Bold.woff2') format('woff2'),
@@ -88,12 +94,15 @@
 //Fonts
 $font-family: "OpenSans", sans-serif;
 $font-family-headers: 'OpenSans', sans-serif;
+$font-family-alt: 'Bitter', sans-serif;
 
 // COLORS
 
 $brand-primary: #6633ff;
 $bt-brand-primary-dark: #17103a;
-$bt-brand-tertiary: #f18e7f;
+$bt-brand-tertiary: #F37156;
+$bt-brand-tertiary-hover: #e56850;
+$bt-brand-tertiary-active: #d26049;
 
 $bt-brand-primary: #6633ff;
 $bt-brand-primary-light: lighten($bt-brand-primary,40);
@@ -140,7 +149,7 @@ $bt-gradient-end: #fff;
 
 // BORDER RADIUS
 $default-border-radius: 8px;
-$btn-border-radius: 8px;
+$btn-border-radius: 21px;
 
 // INPUT
 $input-border-radius: 0px;

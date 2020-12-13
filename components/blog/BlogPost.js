@@ -75,7 +75,7 @@ export default class TheComponent extends Component {
                 </h1>
                 <div className="author mb-5 mt-3">
                     <Row>
-                        <img alt={author} className="avatar" src={avatar || '/static/images/default-avatar'}/>
+                        <img alt={author} className="avatar" src={avatar || '/static/images/default-avatar.svg'}/>
                         <div className="ml-2">
                             <div className="author">
                                 {author}

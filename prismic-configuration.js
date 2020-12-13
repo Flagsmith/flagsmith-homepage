@@ -14,6 +14,8 @@ export const accessToken = '';
 export const linkResolver = (doc) => {
     if (doc.type === 'post') {
         return `/blog/${doc.uid}`;
+    } if (doc.type === 'podcast_episode') {
+        return `/podcast/${doc.uid}`;
     }
     return '/';
 };
