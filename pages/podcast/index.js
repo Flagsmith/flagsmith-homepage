@@ -55,12 +55,8 @@ const getBlog = async (ref) => {
         },
     );
 
-    let episode_number = 1;
     posts.results = sortBy(posts.results, (res) => {
         const date = moment(res.data.date, 'YYYY-MM-DD');
-        if (res.type === 'podcast_episode') {
-            res.data.episode_number = episode_number++;
-        }
         return date.valueOf() * -1;
     });
 
