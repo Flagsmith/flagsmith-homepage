@@ -16,7 +16,6 @@ class Header extends PureComponent {
 
   componentDidMount() {
       const els = document.getElementsByClassName('nav-link');
-      console.log(els);
       for (let i = 0; i < els.length; i++) {
           els[i].addEventListener('mouseleave', () => {
               for (let x = 0; x < els.length; x++) {

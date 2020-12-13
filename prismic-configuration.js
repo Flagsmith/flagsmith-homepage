@@ -25,6 +25,9 @@ export const hrefResolver = (doc) => {
     if (doc.type === 'post') {
         return '/blog/[uid]';
     }
+    if (doc.type === 'podcast_episode') {
+        return '/podcast/[uid]';
+    }
     return '/';
 };
 

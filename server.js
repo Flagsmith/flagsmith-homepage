@@ -19,7 +19,6 @@ const ssrCache = (ttl) => {
     return cacheableResponse({
         ttl, // 1hour
         get: async ({ req, res, pagePath, queryParams }) => {
-            console.log('Caching', req.url); // eslint-disable-line no-console
             return ({
                 data: await app.renderToHTML(req, res, pagePath, queryParams),
             });

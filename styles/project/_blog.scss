@@ -1,4 +1,32 @@
 .blog {
+    .about-author {
+        padding-left: 34px;
+        border-left: 2px solid $bt-brand-primary;
+        .avatar {
+            width: 104px;
+            height: 104px;
+            border-radius: 52px;
+        }
+        .title {
+            font-size: 21px;
+            font-weight: 600;
+        }
+        .text {
+            font-weight: 500;
+        }
+    }
+    .block-quotation {
+       background-color: rgba(102, 51, 255, 0.05);
+        text-align: center;
+        padding:24px 120px;
+        font-weight: 500;
+        color: $bt-brand-primary;
+    }
+    @media screen and (min-width: 768px) {
+        .block-quotation {
+            padding: 24px 24px;
+        }
+    }
     min-height: calc(100vh - 448px);
     pre {
         border-radius: 10px;
@@ -12,7 +40,7 @@
     }
     a {
         font-weight: bold;
-        color: $body-text;
+        color: $bt-brand-tertiary;
     }
     .avatar {
         width: 48px;
@@ -26,6 +54,8 @@
             color: #666;
         }
     }
+    font-size: 18px;
+    color: $bt-brand-primary-dark;
     line-height: 1.58;
     text-rendering:optimizelegibility;
     word-break:break-word;
@@ -95,6 +125,14 @@
     }
 }
 
+.post-summary {
+    font-size: 21px;
+    font-weight: 500;
+
+}
+strong.post-summary {
+    font-weight: bold;
+}
 .blog-tag {
     padding:5px 15px;
     margin-right: 20px;

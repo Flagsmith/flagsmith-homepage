@@ -7,7 +7,7 @@ import { linkResolver } from '../../../prismic-configuration';
  * Text slice component
  */
 const Text = ({ data }) => (
-    <div className="post-part single container">
+    <div className="post-part single">
         <RichText
           render={data.primary.text}
           linkResolver={linkResolver}

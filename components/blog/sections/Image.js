@@ -10,7 +10,7 @@ const Image = ({ data }) => {
     const caption = data.primary.caption;
 
     return (
-        <div className="post-part single container">
+        <div className="post-part single">
             <div className={`block-img`}>
                 <img src={imageUrl} alt={imageAlt} />
                 <p>

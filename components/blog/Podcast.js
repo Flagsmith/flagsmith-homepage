@@ -6,7 +6,9 @@ import Head from 'next/head';
 import { RichText } from 'prismic-reactjs';
 import moment from 'moment/min/moment.min';
 import BlogBody from './BlogBody';
-import Mailerlite from '../Mailerlite'
+import Mailerlite from '../Mailerlite';
+import { linkResolver } from '../../prismic-configuration';
+import { customLink } from '../../prismic-functions';
 
 export default class TheComponent extends Component {
   static displayName = 'BlogPost';
@@ -25,12 +27,26 @@ export default class TheComponent extends Component {
           utm_campaign: title,
       }));
       this.setState({ loading: false });
+
+      const embed = document.getElementById('embed');
+      if (embed) {
+          const width = embed.clientWidth;
+          const divider = 16 / 9;
+          const height = width / divider;
+          const html = this.props.post.data.embed_url.html;
+          embed.innerHTML = html
+              .replace(/width=".*?"/, `width="${width}"`)
+              .replace(/height=".*?"/, `height="${height}"`);
+      }
   }
+
 
   render() {
       const { props: { post } } = this;
       const title = RichText.asText(post.data.title);
-      const image = post.data.image && post.data.image.url;
+      const image = post.data.banner && post.data.banner.url;
+      const image2x = post.data.banner2x && post.data.banner2x.url;
+      const image4x = post.data.banner4x && post.data.banner4x.url;
       const description = RichText.asText(post.data.description);
       const dateFormatted = moment(post.data.date).format('MMM DD YYYY');
       const author = this.props.author ? this.props.author.data.name : 'Unknown';
@@ -70,9 +86,6 @@ export default class TheComponent extends Component {
                     </title>
                 </Head>
                 <Mailerlite/>
-                <h1>
-                    {title}
-                </h1>
                 <div className="author mb-5 mt-3">
                     <Row>
                         <img alt={author} className="avatar" src={avatar || '/static/images/default-avatar.svg'}/>
@@ -86,18 +99,51 @@ export default class TheComponent extends Component {
                         </div>
                     </Row>
                 </div>
-                {image && <div className="text-center blog-image"><img src={image}/></div>}
+                <div className="mb-5 post-summary">
+                    <RichText
+                      render={post.data.summary}
+                      linkResolver={linkResolver}
+                      serializeHyperlink={customLink}
+                    />
+                </div>
+                {image && (
+                <div className="text-center blog-image mb-5">
+                    <img alt={title} srcSet={`${image} 1x, ${image2x} 2x, ${image4x} 4x`}/>
+                </div>
+                )}
+
+                {post.data.audio_url && (
+                <div className="text-center mb-4">
+                    <audio ref="audio_tag" src={post.data.audio_url} controls/>
+                </div>
+                )}
+
+                {post.data.embed_url && (
+                <div className="text-center mb-4">
+                    <div id="embed" />
+                </div>
+                )}
+
+                <div className="mb-4">
+                    <strong className="post-summary">
+                        Interview with {post.data.guest_name}: {Utils.capitalize(post.data.guest_job_title)}, {RichText.asText(post.data.company_name)}
+                    </strong>
+                </div>
                 <BlogBody sections={post.data.body}/>
             </div>
-            <div className="pb-3">
-                {!this.state.loading && (
+            <div className="container">
+                <div className="pb-3">
+                    {!this.state.loading && (
                     <section id="isso-thread" />
-                )}
+                    )}
+                </div>
+                <div
+                  className="ml-form-embed"
+                  data-account="1275188:o7m4q4p7i7"
+                  data-form="3175195:e5d1x5"
+                />
             </div>
-            <div class="ml-form-embed"
-                data-account="1275188:o7m4q4p7i7"
-                data-form="3175195:e5d1x5">
-            </div>
+
       </>
       );
   }

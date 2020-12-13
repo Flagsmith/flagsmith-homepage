@@ -18,7 +18,6 @@ const BlogPage = (props) => {
     if (!doc) {
         return <div>Great, now create your content in prismic!</div>;
     }
-    console.log(doc)
     return (
     <>
         <BlogList authors={authors} doc={doc} posts={posts}/>
