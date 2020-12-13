@@ -6,6 +6,7 @@ import Head from 'next/head';
 import { RichText } from 'prismic-reactjs';
 import moment from 'moment/min/moment.min';
 import BlogBody from './BlogBody';
+import Mailerlite from '../Mailerlite'
 
 export default class TheComponent extends Component {
   static displayName = 'BlogPost';
@@ -68,6 +69,7 @@ export default class TheComponent extends Component {
                         {title} - Feature Flag Platform Blog - Flagsmith
                     </title>
                 </Head>
+                <Mailerlite/>
                 <h1>
                     {title}
                 </h1>
@@ -91,6 +93,10 @@ export default class TheComponent extends Component {
                 {!this.state.loading && (
                     <section id="isso-thread" />
                 )}
+            </div>
+            <div class="ml-form-embed"
+                data-account="1275188:o7m4q4p7i7"
+                data-form="3175195:e5d1x5">
             </div>
       </>
       );
