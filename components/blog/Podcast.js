@@ -34,9 +34,11 @@ export default class TheComponent extends Component {
           const divider = 16 / 9;
           const height = width / divider;
           const html = this.props.post.data.embed_url.html;
-          embed.innerHTML = html
-              .replace(/width=".*?"/, `width="${width}"`)
-              .replace(/height=".*?"/, `height="${height}"`);
+          if (html) {
+              embed.innerHTML = html
+                  .replace(/width=".*?"/, `width="${width}"`)
+                  .replace(/height=".*?"/, `height="${height}"`);
+          }
       }
   }
 

@@ -40,13 +40,15 @@ const getBlog = async (ref) => {
         },
     );
 
-    let episode_number = 1;
-    posts.results = sortBy(posts.results, (res) => {
-        const date = moment(res.data.date, 'YYYY-MM-DD');
-        if (res.type === 'podcast_episode') {
-            res.data.episode_number = episode_number++;
+    posts.results.sort((a, b) => {
+        const dateA = moment(a.data.date, 'YYYY-MM-DD').valueOf();
+        const dateB = moment(b.data.date, 'YYYY-MM-DD').valueOf();
+
+        if (dateA > dateB) {
+            return -1;
+        } if (dateA < dateB) {
+            return 1;
         }
-        return date.valueOf() * -1;
     });
 
     const authors = await client.query(
