@@ -39,7 +39,6 @@ const getBlog = async (ref) => {
             ...(ref ? { ref } : null),
         },
     );
-
     posts.results.sort((a, b) => {
         const dateA = moment(a.data.date, 'YYYY-MM-DD').valueOf();
         const dateB = moment(b.data.date, 'YYYY-MM-DD').valueOf();
@@ -50,6 +49,14 @@ const getBlog = async (ref) => {
             return 1;
         }
     });
+
+    let episode_number = 1;
+    posts.results.slice().reverse()
+        .forEach((res) => {
+            if (res.type === 'podcast_episode') {
+                res.data.episode_number = episode_number++;
+            }
+        });
 
     const authors = await client.query(
         [
