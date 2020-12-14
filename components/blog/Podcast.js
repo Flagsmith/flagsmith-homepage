@@ -101,6 +101,11 @@ export default class TheComponent extends Component {
                         </div>
                     </Row>
                 </div>
+                {image && (
+                <div className="text-center blog-image mb-5">
+                    <img alt={title} srcSet={`${image} 1x, ${image2x} 2x, ${image4x} 4x`}/>
+                </div>
+                )}
                 <div className="mb-5 post-summary">
                     <RichText
                       render={post.data.summary}
@@ -108,12 +113,7 @@ export default class TheComponent extends Component {
                       serializeHyperlink={customLink}
                     />
                 </div>
-                {image && (
-                <div className="text-center blog-image mb-5">
-                    <img alt={title} srcSet={`${image} 1x, ${image2x} 2x, ${image4x} 4x`}/>
-                </div>
-                )}
-
+                
                 {post.data.audio_url && (
                 <div className="text-center mb-4">
                     <audio ref="audio_tag" src={post.data.audio_url} controls/>
@@ -127,9 +127,9 @@ export default class TheComponent extends Component {
                 )}
 
                 <div className="mb-4">
-                    <strong className="post-summary">
+                    <h2>
                         Interview with {post.data.guest_name}: {Utils.capitalize(post.data.guest_job_title)}, {RichText.asText(post.data.company_name)}
-                    </strong>
+                    </h2>
                 </div>
                 <BlogBody sections={post.data.body}/>
             </div>

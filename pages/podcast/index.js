@@ -27,13 +27,6 @@ const BlogPage = (props) => {
           title={doc.data.title}
           subtitle={doc.data.subtitle}
           text={doc.data.description}
-          link={posts[0] && (
-              <Link href={`/podcast/${posts[0].uid}`}>
-                  <a className="btn btn-primary">
-                      <PlayIcon className="mr-1"/> Play Episode 1
-                  </a>
-              </Link>
-          )}
         />
         <BlogList authors={authors} doc={doc} posts={posts}/>
         <Footer className="homepage"/>
