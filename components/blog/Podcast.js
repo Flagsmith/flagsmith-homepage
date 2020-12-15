@@ -101,11 +101,21 @@ export default class TheComponent extends Component {
                         </div>
                     </Row>
                 </div>
+
+                <div className="mb-4">
+                    <h1>
+                        Interview with {post.data.guest_name}: {Utils.capitalize(post.data.guest_job_title)}, {RichText.asText(post.data.company_name)}
+                    </h1>
+                </div>
+
                 {image && (
                 <div className="text-center blog-image mb-5">
                     <img alt={title} srcSet={`${image} 1x, ${image2x} 2x, ${image4x} 4x`}/>
                 </div>
                 )}
+                
+                <h2>Episode Overview</h2>
+                
                 <div className="mb-5 post-summary">
                     <RichText
                       render={post.data.summary}
@@ -126,11 +136,8 @@ export default class TheComponent extends Component {
                 </div>
                 )}
 
-                <div className="mb-4">
-                    <h2>
-                        Interview with {post.data.guest_name}: {Utils.capitalize(post.data.guest_job_title)}, {RichText.asText(post.data.company_name)}
-                    </h2>
-                </div>
+                <h2>Episode Transcript</h2>
+
                 <BlogBody sections={post.data.body}/>
             </div>
             <div className="container">
