@@ -56,6 +56,7 @@ const Footer = class extends React.Component {
                           <ul className=" float-left nav-list">
                               <li><a href={`${Project.appUrl}/demo`}>Demo Account</a></li>
                               <li><a href="https://docs.flagsmith.com/">Documentation</a></li>
+                              <li><a href="/podcast">Podcast</a></li>
                               <li><Link prefetch={false} href="/pricing#pricing"><a>Pricing</a></Link></li>
                           </ul>
                       </div>
