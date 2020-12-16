@@ -1,4 +1,23 @@
 .blog {
+    .audio {
+        position: relative;
+        span {
+            display: inline-block;
+            position: relative;
+            margin-right: 29px;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+        }
+        background-color: $bt-brand-tertiary;
+        padding:40px 80px;
+        audio {
+            position: absolute;
+            height:52px;
+            bottom:35px;
+            left:260px;
+        }
+    }
     .about-author {
         padding-left: 34px;
         border-left: 2px solid $bt-brand-primary;

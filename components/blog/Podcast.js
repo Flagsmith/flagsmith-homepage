@@ -45,7 +45,7 @@ export default class TheComponent extends Component {
 
   render() {
       const { props: { post } } = this;
-      const title = 'Interview with ' + post.data.guest_name + ': ' + post.data.guest_job_title + ', ' + RichText.asText(post.data.company_name);
+      const title = `Interview with ${post.data.guest_name}: ${post.data.guest_job_title}, ${RichText.asText(post.data.company_name)}`;
       const image = post.data.banner && post.data.banner.url;
       const image2x = post.data.banner2x && post.data.banner2x.url;
       const image4x = post.data.banner4x && post.data.banner4x.url;
@@ -113,9 +113,9 @@ export default class TheComponent extends Component {
                     <img alt={title} srcSet={`${image} 1x, ${image2x} 2x, ${image4x} 4x`}/>
                 </div>
                 )}
-                
+
                 <h2>Episode Overview</h2>
-                
+
                 <div className="mb-5 post-summary">
                     <RichText
                       render={post.data.summary}
@@ -123,9 +123,10 @@ export default class TheComponent extends Component {
                       serializeHyperlink={customLink}
                     />
                 </div>
-                
+
                 {post.data.audio_url && (
-                <div className="text-center mb-4">
+                <div className="mb-4 audio">
+                    <span>Listen now</span>
                     <audio ref="audio_tag" src={post.data.audio_url} controls/>
                 </div>
                 )}
