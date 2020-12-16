@@ -113,7 +113,12 @@ export default class TheComponent extends Component {
                     <img alt={title} srcSet={`${image} 1x, ${image2x} 2x, ${image4x} 4x`}/>
                 </div>
                 )}
-
+                {post.data.audio_url && (
+                  <div className="mb-4 audio">
+                      <span>Listen now</span>
+                      <audio ref="audio_tag" src={post.data.audio_url} controls/>
+                  </div>
+                )}
                 <h2>Episode Overview</h2>
 
                 <div className="mb-5 post-summary">
@@ -123,13 +128,6 @@ export default class TheComponent extends Component {
                       serializeHyperlink={customLink}
                     />
                 </div>
-
-                {post.data.audio_url && (
-                <div className="mb-4 audio">
-                    <span>Listen now</span>
-                    <audio ref="audio_tag" src={post.data.audio_url} controls/>
-                </div>
-                )}
 
                 {post.data.embed_url && (
                 <div className="text-center mb-4">
