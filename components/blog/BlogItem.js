@@ -77,7 +77,11 @@ export default class BlogItem extends Component {
                                             {post.tags && post.tags.map(t => (
                                                 <BlogTag key={t} tag={t}/>
                                             ))}
-                                            <BlogTag tag="podcast"/>
+                                          {post.type === 'podcast_episode' && (
+                                            <span className="blog-tag podcast">
+                                              Read more
+                                            </span>
+                                          )}
                                         </div>
                                     </div>
                                 </Flex>
@@ -104,7 +108,9 @@ export default class BlogItem extends Component {
                                           <BlogTag key={t} tag={t}/>
                                       ))}
                                       {post.type === 'podcast_episode' && (
-                                      <BlogTag tag="podcast"/>
+                                      <span className="blog-tag podcast">
+                                          Read more
+                                      </span>
                                       )}
                                   </div>
                               </div>
