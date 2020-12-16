@@ -17,7 +17,7 @@ export const linkResolver = (doc) => {
     } if (doc.type === 'podcast_episode') {
         return `/podcast/${doc.uid}`;
     }
-    return `/external/${encodeURIComponent(doc.url)}`;
+    return `/api/external?url=${encodeURIComponent(doc.url)}`;
 };
 
 // Additional helper function for Next/Link components
@@ -28,7 +28,7 @@ export const hrefResolver = (doc) => {
     if (doc.type === 'podcast_episode') {
         return '/podcast/[uid]';
     }
-    return `/external/${encodeURIComponent(doc.url)}`;
+    return `/api/external?url=${encodeURIComponent(doc.url)}`;
 };
 
 export const PrismicScript = () => {
