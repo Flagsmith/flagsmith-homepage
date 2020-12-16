@@ -25,7 +25,7 @@
         line-height:32px;
         padding:0;
         text-align: center;
-        &:hover, &:active {
+        &:hover, &:active, &:focus {
             background-color: darken($bt-brand-primary, 10);
         }
         svg {
