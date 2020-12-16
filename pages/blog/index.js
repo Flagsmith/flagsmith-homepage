@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Prismic from 'prismic-javascript';
 import sortBy from 'lodash/sortBy';
 import moment from 'moment/min/moment.min';
@@ -20,6 +21,9 @@ const BlogPage = (props) => {
     }
     return (
     <>
+        <Head>
+            <title>Blog - Feature Flags and Remote Config - Flagsmith</title>
+        </Head>
         <BlogList authors={authors} doc={doc} posts={posts}/>
         <Footer className="homepage"/>
     </>
