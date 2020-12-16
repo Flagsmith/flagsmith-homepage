@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Prismic from 'prismic-javascript';
 import sortBy from 'lodash/sortBy';
 import moment from 'moment/min/moment.min';
@@ -22,6 +23,9 @@ const BlogPage = (props) => {
     }
     return (
     <>
+        <Head>
+            <title>The Craft of Open Source - Podcast - Flagsmith</title>
+        </Head>
         <BlogHero
           backgroundImage="/static/images/blog-hero.jpg"
           title={doc.data.title}
@@ -33,7 +37,6 @@ const BlogPage = (props) => {
     </>
     );
 };
-
 
 const getBlog = async (ref) => {
     const client = Client();

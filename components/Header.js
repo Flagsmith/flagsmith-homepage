@@ -72,10 +72,10 @@ class Header extends PureComponent {
                                 <Link prefetch={false} href="https://docs.flagsmith.com/"><a className="nav-link">Docs</a></Link>
                             </li>
                             <li className="nav-item">
-                                <Link prefetch={false} href="/open-source"><a className="nav-link">Open Source</a></Link>
+                                <a className="nav-link" rel="noopener noreferrer" href="/blog">Blog</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" rel="noopener noreferrer" target="_blank" href="https://product-hub.io/roadmap/5d81f2406180537538d99f28">Roadmap</a>
+                                <Link prefetch={false} href="/open-source"><a className="nav-link">Open Source</a></Link>
                             </li>
                             <li className="nav-item">
                                 <Link prefetch={false} href={`${Project.appUrl}/login`}><a className="nav-link">Log in</a></Link>

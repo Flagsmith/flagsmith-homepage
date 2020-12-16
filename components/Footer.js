@@ -71,7 +71,7 @@ const Footer = class extends React.Component {
                               >Contact Us
                               </a>
                               </li>
-                              <li><Link prefetch={false} href="/blog"><a>Blog</a></Link></li>
+                              <li><a href="https://product-hub.io/roadmap/5d81f2406180537538d99f28" target="_blank">Product Roadmap</a></li>
                           </ul>
                       </div>
                       <div className="col-md-2">
