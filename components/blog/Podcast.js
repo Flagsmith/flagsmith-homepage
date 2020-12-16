@@ -45,7 +45,7 @@ export default class TheComponent extends Component {
 
   render() {
       const { props: { post } } = this;
-      const title = RichText.asText(post.data.title);
+      const title = 'Interview with ' + post.data.guest_name + ': ' + post.data.guest_job_title + ', ' + RichText.asText(post.data.company_name);
       const image = post.data.banner && post.data.banner.url;
       const image2x = post.data.banner2x && post.data.banner2x.url;
       const image4x = post.data.banner4x && post.data.banner4x.url;
@@ -84,7 +84,7 @@ export default class TheComponent extends Component {
                     />
                     )}
                     <title>
-                        {title} - Feature Flag Platform Blog - Flagsmith
+                        {title} - Feature Flag Platform Podcast - Flagsmith
                     </title>
                 </Head>
                 <Mailerlite/>
