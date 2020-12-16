@@ -72,11 +72,7 @@ export default class BlogItem extends Component {
                                         With our guest{post.data.multiple_guests ? 's' : ''} {post.data.guest_name}, {post.data.guest_job_title} @ {RichText.asText(post.data.company_name)}
                                             </strong>
                                         </p>
-                                        <RichText
-                                          render={post.data.summary}
-                                          linkResolver={linkResolver}
-                                          serializeHyperlink={customLink}
-                                        />
+                                        
                                         <div className="tags mt-2">
                                             {post.tags && post.tags.map(t => (
                                                 <BlogTag key={t} tag={t}/>
