@@ -52,7 +52,7 @@ export default class OpenSource extends Component {
                         >
                             <div className="mb-5">
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-api" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-api" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -68,7 +68,7 @@ Python REST API for Flagsmith.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-frontend" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-frontend" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -83,7 +83,7 @@ Python REST API for Flagsmith.
                                     </div>
                                 </a>
 
-                                <a className="open-source-card" href="https://github.com/Flagsmith/bullet-train-docker">
+                                <a className="open-source-card" href="https://github.com/Flagsmith/flagsmith-docker">
                                     <div className="panel panel-default panel--open-source mt-4">
                                         <div className="panel-content">
                                             <h2>flagsmith-docker</h2>
@@ -97,7 +97,7 @@ Docker Compose file to run the entire Flagsmith stack locally.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-docs" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-docs" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -122,7 +122,7 @@ This is the documentation repository for the Docs of Flagsmith.
                         >
                             <div className="mb-5">
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-js-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-js-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -137,7 +137,7 @@ This is the documentation repository for the Docs of Flagsmith.
                                     </div>
                                 </a>
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-js-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-js-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -152,7 +152,7 @@ This is the documentation repository for the Docs of Flagsmith.
                                     </div>
                                 </a>
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-nodejs-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-nodejs-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -168,7 +168,7 @@ Node.js client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-dotnet-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-dotnet-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -184,7 +184,7 @@ Node.js client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-ruby-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-ruby-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -200,7 +200,7 @@ Ruby client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-python-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-python-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -216,7 +216,7 @@ Python client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-java-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-java-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -232,7 +232,7 @@ Java/Android client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-ios-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-ios-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -248,7 +248,7 @@ iOS/Swift client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-php-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-php-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -264,7 +264,7 @@ PHP client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-go-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-go-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
@@ -280,7 +280,23 @@ Go client.
                                 </a>
 
                                 <a
-                                  className="open-source-card" href="https://github.com/Flagsmith/bullet-train-flutter-client" target="_blank"
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-rust-client" target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                    <div className="panel panel-default panel--open-source mt-4">
+                                        <div className="panel-content">
+                                            <h2>rust-client</h2>
+                                            <p className="m-0">
+Rust client.
+                                            </p>
+                                            <div className="colour-block colour-block--small colour-block--java"/>
+                                            <small className="technology-name">Rust</small>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a
+                                  className="open-source-card" href="https://github.com/Flagsmith/flagsmith-flutter-client" target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                     <div className="panel panel-default panel--open-source mt-4">
