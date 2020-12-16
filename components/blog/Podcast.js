@@ -9,6 +9,7 @@ import BlogBody from './BlogBody';
 import Mailerlite from '../Mailerlite';
 import { linkResolver } from '../../prismic-configuration';
 import { customLink } from '../../prismic-functions';
+import Share from '../Share';
 
 export default class TheComponent extends Component {
   static displayName = 'BlogPost';
@@ -99,6 +100,7 @@ export default class TheComponent extends Component {
                                 {dateFormatted}
                             </div>
                         </div>
+                        <Share url={typeof document !== 'undefined' && document.location.href} text={title}/>
                     </Row>
                 </div>
 
@@ -114,10 +116,10 @@ export default class TheComponent extends Component {
                 </div>
                 )}
                 {post.data.audio_url && (
-                  <div className="mb-4 audio">
-                      <span>Listen now</span>
-                      <audio ref="audio_tag" src={post.data.audio_url} controls/>
-                  </div>
+                <div className="mb-4 audio">
+                    <span>Listen now</span>
+                    <audio ref="audio_tag" src={post.data.audio_url} controls/>
+                </div>
                 )}
                 <h2>Episode Overview</h2>
 

@@ -7,6 +7,7 @@ import { RichText } from 'prismic-reactjs';
 import moment from 'moment/min/moment.min';
 import BlogBody from './BlogBody';
 import Mailerlite from '../Mailerlite'
+import Share from '../Share';
 
 export default class TheComponent extends Component {
   static displayName = 'BlogPost';
@@ -84,6 +85,7 @@ export default class TheComponent extends Component {
                                 {dateFormatted}
                             </div>
                         </div>
+                        <Share url={typeof document !== 'undefined' && document.location.href} text={title}/>
                     </Row>
                 </div>
                 {image && <div className="text-center blog-image"><img src={image}/></div>}

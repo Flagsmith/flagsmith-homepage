@@ -8,7 +8,35 @@
     overflow-x: visible !important;
     overflow-y: visible !important;
 }
-
+.share {
+    justify-content: flex-end;
+    flex:1;
+    .share-inner {
+        background: #f0f3f3;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    .btn {
+        margin-right:5px;
+        margin-left:5px;
+        background-color: $bt-brand-primary;
+        width:32px;
+        height:32px;
+        line-height:32px;
+        padding:0;
+        text-align: center;
+        &:hover, &:active {
+            background-color: darken($bt-brand-primary, 10);
+        }
+        svg {
+            width:18px;
+            height:18px;
+            path {
+                fill:white;
+            }
+        }
+    }
+}
 a.link-dark {
     color: $body-text;
     font-weight: bold;

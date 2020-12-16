@@ -6,6 +6,14 @@ const Utils = global.Utils = Object.assign({}, BaseUtils, {
         $('html,body').animate({ scrollTop: 0 }, timeout);
     },
 
+    shareTwitter(url, text) {
+        window.open(`http://twitter.com/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+    },
+
+    shareFacebook(url, text) {
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&description=${encodeURIComponent(text)}%2F&amp;src=sdkpreparse`, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+    },
+
     scrollToElement: (element, duration = 500) => {
         const elementY = window.pageYOffset + element.getBoundingClientRect().top;
         const startingY = window.pageYOffset;
