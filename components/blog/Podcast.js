@@ -104,7 +104,7 @@ export default class TheComponent extends Component {
 
                 <div className="mb-4">
                     <h1>
-                        Interview with {post.data.guest_name}: {Utils.capitalize(post.data.guest_job_title)}, {RichText.asText(post.data.company_name)}
+                        Interview with {post.data.guest_name}: {post.data.guest_job_title}, {RichText.asText(post.data.company_name)}
                     </h1>
                 </div>
 
