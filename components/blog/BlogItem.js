@@ -40,7 +40,7 @@ export default class BlogItem extends Component {
                   <div className="blog-item-content">
                       {post.type === 'podcast_episode' ? (
                         <>
-                            <Row>
+                            <Row style={{ alignItems: 'flex-start' }}>
                                 <img
                                   className="mr-4 avatar"
                                   src={post.data.thumbnail.url || '/static/images/default-avatar.svg'}
@@ -72,7 +72,7 @@ export default class BlogItem extends Component {
                                         With our guest{post.data.multiple_guests ? 's' : ''} {post.data.guest_name}, {post.data.guest_job_title} @ {RichText.asText(post.data.company_name)}
                                             </strong>
                                         </p>
-                                        
+
                                         <div className="tags mt-2">
                                             {post.tags && post.tags.map(t => (
                                                 <BlogTag key={t} tag={t}/>
