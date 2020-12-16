@@ -12,16 +12,6 @@ import Project from '../common/project';
 import Header from '../components/Header';
 import Button from '../components/base/forms/Button';
 
-const gtm = () => {
-    if (typeof window !== 'undefined' && !document.location.origin.includes('localhost')) {
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({ 'gtm.start':
-          new Date().getTime(),
-            event: 'gtm.js' }); const f = d.getElementsByTagName(s)[0];
-            const j = d.createElement(s); const dl = l != 'dataLayer' ? `&l=${l}` : ''; j.async = true; j.src = `https://www.googletagmanager.com/gtm.js?id=${i}${dl}`; f.parentNode.insertBefore(j, f);
-        }(window, document, 'script', 'dataLayer', Project.gtm));
-    }
-};
 
 global.Project = {
     ...global.Project,
@@ -45,9 +35,6 @@ class MyDocument extends Document {
                     <link rel="shortcut icon" href="/static/images/favicon.ico"/>
                     <meta name="theme-color" content="#1d2d3f"/>
                     <script type="text/javascript" src="/static/chromefix.js"/>
-                    <script>
-                        {Project.gtm && (gtm(Project.gtm))}
-                    </script>
                 </Head>
                 <body>
                     <Main />
