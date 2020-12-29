@@ -4,73 +4,9 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import { ButtonWhite } from '../components/base/forms/Button';
 import data from '../common/utils/_data';
 import { Google } from '../project/auth';
-
-class Delay extends React.Component {
-  static displayName = 'Delay';
-
-  static propTypes = {};
-
-  constructor(props) {
-      super(props);
-      this.state = {};
-  }
-
-  componentWillMount() {
-      setTimeout(() => {
-          this.setState({ visible: true });
-      }, 100);
-  }
-
-  render() {
-      // const { props } = this;
-      return this.state.visible ? this.props.children : (
-          <div className="loading"/>
-      );
-  }
-}
-
-const Guide = props => (
-    <div style={{
-        textAlign: 'center',
-        display: 'flex',
-        alignItems: 'center',
-        marginBottom: 20,
-        flexDirection: 'column',
-    }}
-    >
-        <div
-          onClick={() => window.location = props.href} style={{
-              cursor: 'pointer',
-              color: 'white',
-              width: 360,
-              alignItems: 'center',
-              height: 183,
-              backgroundColor: '#1d2d3f',
-              display: 'flex',
-              justifyContent: 'center',
-              flexDirection: 'column',
-          }}
-        >
-            <Delay delay={500}>
-                <img style={{ marginBottom: props.title ? 10 : 0 }} alt="Feature flags in JavaScript" src={props.image}/>
-            </Delay>
-            {props.title && (
-            <h4 style={{ fontSize: 14 }}>
-                {props.title}
-            </h4>
-            )}
-        </div>
-        <a style={{ color: '#1c2b3d', textAlign: 'center', display: 'block' }} href={props.href}>
-            <strong>
-                {props.description}
-            </strong>
-        </a>
-    </div>
-);
-
+import Delay from '../components/Delay';
 
 const HomePage = class extends React.Component {
   static displayName = 'HomePage';
