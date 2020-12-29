@@ -1,107 +1,22 @@
 import React from 'react';
-import Link from 'next/link';
-import Header from '../components/Header';
 import Head from 'next/head';
-import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import Button from '../components/base/forms/Button';
-import data from '../common/utils/_data';
 import { Google } from '../project/auth';
+import Delay from '../components/Delay';
+import { ContactForm } from '../components/PricingPanel';
 
-class Delay extends React.Component {
-    static displayName = 'Delay';
-
-    static propTypes = {};
-
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
-
-    componentWillMount() {
-        setTimeout(() => {
-            this.setState({ visible: true });
-        }, 100);
-    }
-
-    render() {
-        // const { props } = this;
-        return this.state.visible ? this.props.children : (
-            <div className="loading"/>
-        );
-    }
-}
 
 const EnterprisePage = class extends React.Component {
     static displayName = 'EnterprisePage';
 
-    constructor(props, context) {
-        super(props, context);
-        this.state = {};
-    }
-
     componentDidMount() {
-        API.trackPage(Constants.pages.HOME);
-        if (Project.gaAPIKey) {
-            Google.init(Project.gaAPIKey, Project.gaClientId);
-        }
-        this.checkSignup();
+        API.trackPage(Constants.pages.ENTERPRISE);
+
     }
 
-    componentWillReceiveProps(nextProps, nextContext) {
-        this.checkSignup();
-    }
-
-    checkSignup = () => {
-        if (!this.signup) {
-            const isSignup = document.location.href.includes('?signup');
-            if (isSignup) {
-                this.signup = true;
-                setTimeout(() => {
-                    Utils.scrollToSignUp();
-                }, 200);
-            }
-        }
-    };
-
-    google = () => {
-        API.trackEvent(Constants.events.REGISTER_GOOGLE);
-        Google.login().then((res) => {
-            if (res) {
-                document.location = `https://app.flagsmith.com/oauth/google?code=${res}`;
-            }
-        });
-    }
-
-    register = (details) => {
-        const { email, password, first_name, last_name, organisation_name = 'Default Organisation' } = details;
-        this.setState({ isSaving: true });
-        const referrer = API.getReferrer();
-        let query = '';
-        if (referrer) {
-            query = `${Utils.toParam(Utils.fromParam())}`;
-        }
-
-        data.post(`${Project.api}auth/users/`, {
-            email,
-            password,
-            first_name,
-            last_name,
-            query,
-        })
-            .then((res) => {
-                API.setEvent(JSON.stringify({ tag: 'registrations', event: `User register${email} ${first_name} ${last_name}` }));
-                API.trackEvent(Constants.events.REGISTER);
-                API.setStoredToken(res.key);
-                document.location = Project.appUrl + query;
-            })
-            .catch((error) => {
-                this.setState({ error, isSaving: false });
-            });
-    };
 
     render = () => {
-        const { email, password, organisation_name, first_name, last_name, error, isLoading, isSaving } = this.state;
         return (
             <>
                 <div className="homepage">
@@ -127,7 +42,16 @@ const EnterprisePage = class extends React.Component {
                                                 <Button className="d-block mt-5">
                                                     <a href="https://www.flagsmith.com/?signup">Start now</a>
                                                 </Button>
-                                                <Button className="d-block mt-4">
+                                                <Button
+                                                  onClick={() => openModal(
+                                                    <h3>Contact Sales</h3>,
+                                                    <ContactForm onComplete={() => {
+                                                        closeModal();
+                                                        this.goSignup();
+                                                    }}
+                                                    />,
+                                                  )}
+                                                  className="d-block mt-4">
                                                     Talk to sales
                                                 </Button>
                                             </div>
