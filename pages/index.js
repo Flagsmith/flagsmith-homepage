@@ -82,6 +82,9 @@ const HomePage = class extends React.Component {
 
   componentDidMount() {
       API.trackPage(Constants.pages.HOME);
+      if (Project.gaAPIKey) {
+          Google.init(Project.gaAPIKey, Project.gaClientId);
+      }
       this.checkSignup();
   }
 
