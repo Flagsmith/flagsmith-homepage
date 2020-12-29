@@ -1,40 +1,12 @@
 import React from 'react';
-import Link from 'next/link';
-import Header from '../components/Header';
 import Head from 'next/head';
-import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import Button from '../components/base/forms/Button';
-import data from '../common/utils/_data';
-import { Google } from '../project/auth';
 
-class Delay extends React.Component {
-    static displayName = 'Delay';
-  
-    static propTypes = {};
-  
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
-  
-    componentWillMount() {
-        setTimeout(() => {
-            this.setState({ visible: true });
-        }, 100);
-    }
-  
-    render() {
-        // const { props } = this;
-        return this.state.visible ? this.props.children : (
-            <div className="loading"/>
-        );
-    }
-}
 
 const DevopsPage = class extends React.Component {
     static displayName = 'DevopsPage';
-  
+
     constructor(props, context) {
         super(props, context);
         this.state = {
@@ -59,20 +31,10 @@ const DevopsPage = class extends React.Component {
             ],
         };
     }
-  
-    componentDidMount() {
-        API.trackPage(Constants.pages.HOME);
-        if (Project.gaAPIKey) {
-            Google.init(Project.gaAPIKey, Project.gaClientId);
-        }
-        this.checkSignup();
-        this.interval = setInterval(this.toggleText, 3300);
-    }
 
-    componentWillUnmount() {
-        if (this.interval) {
-            clearInterval(this.interval);
-        }
+    componentDidMount() {
+        API.trackPage(Constants.pages.DEVOPS);
+        this.interval = setInterval(this.toggleText, 3300);
     }
 
     toggleText = () => {
@@ -86,66 +48,13 @@ const DevopsPage = class extends React.Component {
         }, 100);
     }
 
-    componentWillReceiveProps(nextProps, nextContext) {
-        this.checkSignup();
-    }
-  
-    checkSignup = () => {
-        if (!this.signup) {
-            const isSignup = document.location.href.includes('?signup');
-            if (isSignup) {
-                this.signup = true;
-                setTimeout(() => {
-                    Utils.scrollToSignUp();
-                }, 200);
-            }
-        }
-    };
-  
-    google = () => {
-        API.trackEvent(Constants.events.REGISTER_GOOGLE);
-        Google.login().then((res) => {
-            if (res) {
-                document.location = `https://app.flagsmith.com/oauth/google?code=${res}`;
-            }
-        });
-    }
-  
-    register = (details) => {
-        const { email, password, first_name, last_name, organisation_name = 'Default Organisation' } = details;
-        this.setState({ isSaving: true });
-        const referrer = API.getReferrer();
-        let query = '';
-        if (referrer) {
-            query = `${Utils.toParam(Utils.fromParam())}`;
-        }
-  
-        data.post(`${Project.api}auth/users/`, {
-            email,
-            password,
-            first_name,
-            last_name,
-            query,
-        })
-            .then((res) => {
-                API.setEvent(JSON.stringify({ tag: 'registrations', event: `User register${email} ${first_name} ${last_name}` }));
-                API.trackEvent(Constants.events.REGISTER);
-                API.setStoredToken(res.key);
-                document.location = Project.appUrl + query;
-            })
-            .catch((error) => {
-                this.setState({ error, isSaving: false });
-            });
-    };
-  
+
     render = () => {
-        const { email, password, organisation_name, first_name, last_name, error, isLoading, isSaving } = this.state;
-        const redirect = ''; // todo: fixme
         const value = this.state.values[this.state.index];
         return (
             <>
                 <div className="homepage">
-    
+
                     <Head>
                         <title>
                             DevOps, CI/CD, OpenSourceDeliver
@@ -167,9 +76,6 @@ const DevopsPage = class extends React.Component {
                                                 </p>
                                                 <Button className="d-block mt-5">
                                                     <a href="https://www.flagsmith.com/?signup">Start now</a>
-                                                </Button>
-                                                <Button className="d-block mt-4">
-                                                    Learn more
                                                 </Button>
                                             </div>
                                         </div>
@@ -194,15 +100,15 @@ const DevopsPage = class extends React.Component {
                                 </div>
                             </div>
                             <svg
-                            width={1440}
-                            height={204}
-                            viewBox="0 0 1440 204"
-                            className="homepage-wave"
+                              width={1440}
+                              height={204}
+                              viewBox="0 0 1440 204"
+                              className="homepage-wave"
                             >
                                 <g clipPath="url(#prefix__clip0)">
                                     <path
-                                    d="M0 206c.005-.003 354.003-149 718-73 364 76 722-27 722-27v100H0z"
-                                    fill="#fff"
+                                      d="M0 206c.005-.003 354.003-149 718-73 364 76 722-27 722-27v100H0z"
+                                      fill="#fff"
                                     />
                                 </g>
                                 <defs>
@@ -220,19 +126,21 @@ const DevopsPage = class extends React.Component {
                                 <div className="col-md-6">
                                     <div className="enterprise-item">
                                         <h3 className="item-header">Manage features without deployments</h3>
-                                        <div class="item-body">
+                                        <div className="item-body">
                                             <p>Flagsmith combines the concepts of feature toggleswith the
                                             flexibility of remote config. Rather than justswitching
                                             features on and off, you can configurethem for individual
-                                            segments, users anddevelopment environments.</p>
+                                            segments, users anddevelopment environments.
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="enterprise-item">
                                         <h3 className="item-header">Open Source</h3>
-                                        <div class="item-body">
+                                        <div className="item-body">
                                             <p>Don’t let us just tell you about it. We’re open source,
                                             check it out yourself at <br/>
-                                            <a className="item__link" href="https://github.com/Flagsmith​">https://github.com/Flagsmith</a>​.</p>
+                                                <a className="item__link" href="https://github.com/Flagsmith​">https://github.com/Flagsmith</a>​.
+                                            </p>
                                             <p>We love pull requests too!</p>
                                         </div>
                                     </div>
@@ -240,12 +148,14 @@ const DevopsPage = class extends React.Component {
                                 <div className="col-md-6 d-flex align-items-center">
                                     <div className="enterprise-item">
                                         <h3 className="item-header">Intelligent Integrations</h3>
-                                        <div class="item-body">
+                                        <div className="item-body">
                                             <p>Get more from Flagsmith by integrating with
                                             thetools you already use for customer data,
-                                            monitoring, and data analysis.</p>
+                                            monitoring, and data analysis.
+                                            </p>
                                             <p>Flagsmith natively integrates with Segment,
-                                            Datadog, Amplitude and more​.</p>
+                                            Datadog, Amplitude and more​.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -276,8 +186,8 @@ const DevopsPage = class extends React.Component {
                                         </div>
                                         <div className="col-4">
                                             <img
-                                            className="pad" src="/static/images/companies/financial-times.svg" alt="Financial times"
-                                            title="Financial times"
+                                              className="pad" src="/static/images/companies/financial-times.svg" alt="Financial times"
+                                              title="Financial times"
                                             />
                                         </div>
                                         <div className="col-4">
@@ -285,14 +195,14 @@ const DevopsPage = class extends React.Component {
                                         </div>
                                         <div className="col-4">
                                             <img
-                                            className="pad" src="/static/images/companies/starbucks.svg" alt="Starbucks"
-                                            title="Starbucks"
+                                              className="pad" src="/static/images/companies/starbucks.svg" alt="Starbucks"
+                                              title="Starbucks"
                                             />
                                         </div>
                                         <div className="col-4">
                                             <img
-                                            className="pad" src="/static/images/companies/the-home-depot.svg" alt="The Home Depot"
-                                            title="The Home Depot"
+                                              className="pad" src="/static/images/companies/the-home-depot.svg" alt="The Home Depot"
+                                              title="The Home Depot"
                                             />
                                         </div>
                                     </div>
@@ -302,91 +212,90 @@ const DevopsPage = class extends React.Component {
                     </div>
 
                     <div className="feature-container alt">
-                    <div className="text-center tech margin-auto col-md-12 text-center">
-                        <h2>We currently support these popular languages</h2>
-                        <div style={{ justifyContent: 'center' }} className="row">
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/java/">
-                                    <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/javascript/">
-                                    <img
-                                        src="/static/images/tech-logos/javascript.png" alt="JavaScript"
-                                        title="JavaScript Feature Flags"
-                                    />
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/javascript/">
-                                    <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS Feature Flags"/>
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/node/">
-                                    <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js Feature Flags"/>
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/python/">
-                                    <img
-                                        src="/static/images/tech-logos/python.png" alt="Python Feature Flags"
-                                        title="Python"
-                                    />
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/ruby/">
-                                    <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby Feature Flags"/>
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/dotnet/">
-                                    <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET Feature Flags"/>
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/java/">
-                                    <img src="/static/images/tech-logos/android2x.png" alt="android" title="android Feature Flags"/>
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/ios/">
-                                    <img src="/static/images/tech-logos/bt-IOS.png" alt="iOS" title="iOS Feature Flags"/>
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/flutter/">
-                                    <img src="/static/images/tech-logos/flutter.png" alt="Flutter" title="Flutter Feature Flags"/>
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/php/">
-                                    <img src="/static/images/tech-logos/php.png" alt="PHP" title="PHP Feature Flags"/>
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/go/">
-                                    <img src="/static/images/tech-logos/golang.png" alt="Go" title="Go Feature Flags"/>
-                                </a>
-                            </div>
-                            <div className="col">
-                                <a href="https://docs.flagsmith.com/clients/rust/">
-                                    <img src="/static/images/tech-logos/rust.png" alt="Rust" title="Rust Feature Flags"/>
-                                </a>
+                        <div className="text-center tech margin-auto col-md-12 text-center">
+                            <h2>We currently support these popular languages</h2>
+                            <div style={{ justifyContent: 'center' }} className="row">
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/java/">
+                                        <img src="/static/images/tech-logos/java.png" alt="Java" title="Java"/>
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/javascript/">
+                                        <img
+                                          src="/static/images/tech-logos/javascript.png" alt="JavaScript"
+                                          title="JavaScript Feature Flags"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/javascript/">
+                                        <img src="/static/images/tech-logos/react.png" alt="React JS" title="React JS Feature Flags"/>
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/node/">
+                                        <img src="/static/images/tech-logos/node.png" alt="Node.js" title="Node.js Feature Flags"/>
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/python/">
+                                        <img
+                                          src="/static/images/tech-logos/python.png" alt="Python Feature Flags"
+                                          title="Python"
+                                        />
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/ruby/">
+                                        <img src="/static/images/tech-logos/ruby.png" alt="Ruby" title="Ruby Feature Flags"/>
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/dotnet/">
+                                        <img src="/static/images/tech-logos/dotnet.png" alt=".NET" title=".NET Feature Flags"/>
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/java/">
+                                        <img src="/static/images/tech-logos/android2x.png" alt="android" title="android Feature Flags"/>
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/ios/">
+                                        <img src="/static/images/tech-logos/bt-IOS.png" alt="iOS" title="iOS Feature Flags"/>
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/flutter/">
+                                        <img src="/static/images/tech-logos/flutter.png" alt="Flutter" title="Flutter Feature Flags"/>
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/php/">
+                                        <img src="/static/images/tech-logos/php.png" alt="PHP" title="PHP Feature Flags"/>
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/go/">
+                                        <img src="/static/images/tech-logos/golang.png" alt="Go" title="Go Feature Flags"/>
+                                    </a>
+                                </div>
+                                <div className="col">
+                                    <a href="https://docs.flagsmith.com/clients/rust/">
+                                        <img src="/static/images/tech-logos/rust.png" alt="Rust" title="Rust Feature Flags"/>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-    
+
                     <Footer className="homepage feature-container alt" pageType="landing"/>
                 </div>
-            
+
             </>
-            );
+        );
     };
-  };
-  
-  export default DevopsPage;
-  
+};
+
+export default DevopsPage;

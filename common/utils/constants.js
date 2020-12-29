@@ -11,6 +11,7 @@ const Constants = global.Constants = {
         FORCE_LANGUAGE: false, // set to "en" etc to specify a language
     },
     pages: {
+        'DEVOPS': 'Devops',
         'ACCOUNT': 'Account Page',
         'AUDIT_LOG': 'Audit Log Page',
         'BLOG': 'Blog Page',
