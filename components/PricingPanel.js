@@ -166,7 +166,7 @@ const PricingPanel = class extends React.Component {
                                       <p className="text-small text-center">more flags than the UN</p>
                                       <Link href={`/${redirect}#sign-up`}>
                                           <a className="pricing-cta" onClick={Utils.scrollToSignUp}>
-                                        Try It Free
+                                        Get Started
                                           </a>
                                       </Link>
                                   </div>
