@@ -36,9 +36,9 @@ const EnterprisePage = class extends React.Component {
                                       <div className="col-md-7">
                                           <div className="px-2 enterprise-hero-text">
                                               <p class="w-full">
-                                                  Meet your feature toggling and remote config goals today withthe
-                                                  most elegant, affordable, and fastest to production offeringavailable.
-                                                  Empower your next product release with easy-to-useA/B Testing and
+                                                  Meet your feature toggling and remote config goals today with the
+                                                  most elegant, affordable, and fastest to production offering available.
+                                                  Empower your next product release with easy-to-use A/B Testing and
                                                   Multivariate experiments.
                                               </p>
                                               <Button className="d-block mt-5">
@@ -122,7 +122,7 @@ const EnterprisePage = class extends React.Component {
                                       <div class="item-body">
                                           <p>Create an organization, start a project, and invite
                                               collaborators to join you in minutes.</p>
-                                          <p>Flagsmith is straightforward and well
+                                          <p>Flagsmith is straight forward and well
                                               documented so you can start deploying with
                                               feature toggles today.</p>
                                       </div>

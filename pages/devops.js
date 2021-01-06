@@ -70,9 +70,9 @@ const DevopsPage = class extends React.Component {
                                         <div className="col-md-7">
                                             <div className="pl-2 pr-4 enterprise-hero-text">
                                                 <p className="w-full">
-                                                Meet your CI/CD goals with the feature toggling and remoteconfig
-                                                service that is fastest to production. Setup and access viaour API
-                                                or our front end, and integrate with over a dozen clientSDKs.
+                                                Meet your CI/CD goals with the feature toggling and remote config
+                                                service that is fastest to production. Setup and access via our API
+                                                or our front end, and integrate with over a dozen client SDKs.
                                                 </p>
                                                 <Button className="d-block mt-5">
                                                     <a href="https://www.flagsmith.com/?signup">Start now</a>
@@ -127,10 +127,10 @@ const DevopsPage = class extends React.Component {
                                     <div className="enterprise-item">
                                         <h3 className="item-header">Manage features without deployments</h3>
                                         <div className="item-body">
-                                            <p>Flagsmith combines the concepts of feature toggleswith the
-                                            flexibility of remote config. Rather than justswitching
-                                            features on and off, you can configurethem for individual
-                                            segments, users anddevelopment environments.
+                                            <p>Flagsmith combines the concepts of feature toggles with the
+                                            flexibility of remote config. Rather than just switching
+                                            features on and off, you can configure them for individual
+                                            segments, users and development environments.
                                             </p>
                                         </div>
                                     </div>
@@ -150,7 +150,7 @@ const DevopsPage = class extends React.Component {
                                         <h3 className="item-header">Intelligent Integrations</h3>
                                         <div className="item-body">
                                             <p>Get more from Flagsmith by integrating with
-                                            thetools you already use for customer data,
+                                            the tools you already use for customer data,
                                             monitoring, and data analysis.
                                             </p>
                                             <p>Flagsmith natively integrates with Segment,
