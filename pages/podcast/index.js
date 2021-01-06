@@ -51,19 +51,10 @@ const getBlog = async (ref) => {
         },
     );
 
-
     posts.results = sortBy(posts.results, (res) => {
         const date = moment(res.data.date, 'YYYY-MM-DD');
         return date.valueOf() * -1;
     });
-
-    let episode_number = 1;
-    posts.results.slice().reverse()
-        .forEach((res) => {
-            if (res.type === 'podcast_episode') {
-                res.data.episode_number = episode_number++;
-            }
-        });
 
     const authors = await client.query(
         [
