@@ -54,14 +54,6 @@ const getBlog = async (ref) => {
         }
     });
 
-    let episode_number = 1;
-    posts.results.slice().reverse()
-        .forEach((res) => {
-            if (res.type === 'podcast_episode') {
-                res.data.episode_number = episode_number++;
-            }
-        });
-
     const authors = await client.query(
         [
             Prismic.Predicates.at('document.type', 'author'),
