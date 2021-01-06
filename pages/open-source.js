@@ -30,7 +30,7 @@ export default class OpenSource extends Component {
                 <div className="pt-5 hero__open-source text-center">
                     <h1 className="text-center margin-bottom">Open Source</h1>
                     <p className="pb-3">
-                        Flagsmith is 100% Open Source Software.
+                        Flagsmith is Open Source Software.
                         We welcome pull requests!
                     </p>
                 </div>

@@ -1,0 +1,62 @@
+.enterprise-hero-text {
+    button {
+        font-size: 1.2em !important;
+        text-transform: capitalize;
+        font-weight: 700;
+
+        a {
+            color: #fff;
+            font-size: inherit;
+            text-transform: capitalize;
+            font-weight: 700;
+    
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.enterprise-item + .enterprise-item {
+    margin-top: 4rem;
+}
+
+.enterprise-item {
+    padding: 0 3rem;
+}
+
+p.quote {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.quote__caption {
+    color: $body-text-faint;
+    font-size: 1rem;
+
+    span {
+        margin: 0 1rem;
+    }
+}
+
+.navbar--white {
+    background: #fff !important;
+}
+
+.w-full {
+    width: 100% !important;
+}
+
+.nav-link--login {
+    color: #674ea7;
+    font-weight: bold;
+}
+
+.footer__link {
+    line-height: 24px !important;
+}
+
+.footer__header {
+    font-weight: normal !important;
+}
