@@ -244,11 +244,6 @@ const PricingPanel = class extends React.Component {
                                                 Team Members
                                               </p>
                                           </li>
-                                          <li>
-                                              <p>
-                                                    Unlimited Projects
-                                              </p>
-                                          </li>
                                           <li><p>Unlimited Environments</p></li>
                                           <li><p>Unlimited Feature Flags</p></li>
                                           <li><p>Unlimited Identities and Segments</p></li>
@@ -286,7 +281,6 @@ const PricingPanel = class extends React.Component {
                                               </p>
                                             </li>
                                             <li><p><strong>5</strong>{' '}Team Members</p></li>
-                                            <li><p>Unlimited Projects</p></li>
                                             <li><p>Unlimited Environments</p></li>
                                             <li><p>Unlimited Feature Flags</p></li>
                                             <li><p>Unlimited Identities and Segments</p></li>
@@ -334,7 +328,6 @@ const PricingPanel = class extends React.Component {
                                                 Over <strong>5</strong> Team Members
                                             </p>
                                         </li>
-                                        <li><p>Unlimited Projects</p></li>
                                         <li><p>Unlimited Environments</p></li>
                                         <li><p>Unlimited Feature Flags</p></li>
                                         <li><p>Unlimited Identities and Segments</p></li>
