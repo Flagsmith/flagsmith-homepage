@@ -100,6 +100,13 @@ export class ContactForm extends React.Component {
                   onChange={e => this.setState({ email: Utils.safeParseEventValue(e) })}
                 />
                 <InputGroup
+                  title="Telephone Number"
+                  inputProps={{
+                      className: 'full-width modal-input mb-2',
+                  }}
+                  onChange={e => this.setState({ telephoneNumber: Utils.safeParseEventValue(e) })}
+                />
+                <InputGroup
                   title="Expected requests per month (optional)"
                   inputProps={{
                       className: 'full-width modal-input mb-2',
