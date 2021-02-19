@@ -72,6 +72,7 @@ const Footer = class extends React.Component {
                               >Contact Us
                               </a>
                               </li>
+                              <li><a href="https://help.flagsmith.com/en/" target="_blank">Help Center / FAQ</a></li>
                               <li><a href="https://product-hub.io/roadmap/5d81f2406180537538d99f28" target="_blank">Product Roadmap</a></li>
                           </ul>
                       </div>
