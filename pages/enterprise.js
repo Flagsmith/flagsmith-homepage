@@ -5,6 +5,7 @@ import Button from '../components/base/forms/Button';
 import { Google } from '../project/auth';
 import Delay from '../components/Delay';
 import { ContactForm } from '../components/PricingPanel';
+import Companies from '../components/Companies';
 
 
 const EnterprisePage = class extends React.Component {
@@ -137,51 +138,7 @@ const EnterprisePage = class extends React.Component {
                     </div>
 
                     <div className="hero">
-                        <div className="companies">
-                            <div className="container">
-                                <div className="text-center margin-auto col-md-12 text-center">
-                                    <p>Trusted by top development teams.</p>
-                                    <div className="row">
-                                        <div className="col-4">
-                                            <img src="/static/images/companies/aer-lingus.svg" alt="Aer Lingus" title="Aer Lingus"/>
-                                        </div>
-                                        <div className="col-4">
-                                            <img src="/static/images/companies/amway.svg" alt="Amway" title="Amway"/>
-                                        </div>
-                                        <div className="col-4">
-                                            <img src="/static/images/companies/axis-communications.svg" alt="Axis Communications" title="Axis Communications"/>
-                                        </div>
-                                        <div className="col-4">
-                                            <img src="/static/images/companies/capita.svg" alt="Capita" title="Capita"/>
-                                        </div>
-                                        <div className="col-4">
-                                            <img src="/static/images/companies/cognizant.svg" alt="Cognizant" title="Cognizant"/>
-                                        </div>
-                                        <div className="col-4">
-                                            <img
-                                            className="pad" src="/static/images/companies/financial-times.svg" alt="Financial times"
-                                            title="Financial times"
-                                            />
-                                        </div>
-                                        <div className="col-4">
-                                            <img src="/static/images/companies/nike.svg" alt="Nike" title="Nike"/>
-                                        </div>
-                                        <div className="col-4">
-                                            <img
-                                            className="pad" src="/static/images/companies/starbucks.svg" alt="Starbucks"
-                                            title="Starbucks"
-                                            />
-                                        </div>
-                                        <div className="col-4">
-                                            <img
-                                            className="pad" src="/static/images/companies/the-home-depot.svg" alt="The Home Depot"
-                                            title="The Home Depot"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Companies/>
                     </div>
 
                     <div className="feature-container feature-container alt">
