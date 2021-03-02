@@ -10,431 +10,126 @@ const TermsOfService = props => (
         </Head>
         <div className="legal-container">
             <div className="container">
-                <h1>Terms of Service</h1>
-                <p>
-                These Flagsmith terms of service ("agreement") contains the terms for use of the Flagsmith service
-                and is between Bullet Train Ltd ("Flagsmith"), a London based company having a place of business
-                at 86-90 Paul St, London, EC2A 4NE and the party agreeing to the terms of this agreement ("customer").
-                By executing an order form that references this agreement, clicking an "accept" or similar button, or
-                otherwise downloading or using the Flagsmith service, the person performing any of the foregoing
-                represents that is authorized to do so on behalf of customer and customer agrees to be bound by the
-                terms of this agreement. Customer may not use the Flagsmith service without agreeing to this
-                agreement first. If a written agreement regarding customer's use of the Flagsmith service exists
-                between and has been executed by both Flagsmith and customer, the terms of that written agreement
-                shall take precedence over this agreement.
-                </p>
-                <h3>1. Definitions</h3>
-                <ul>
-                    <li>
-                        <strong>"Affiliate"</strong>
-                        {' '}
-                    means, with respect to a party, any entity which directly or indirectly Controls, is Controlled by,
-                    or is under common Control with such party.
-                    </li>
-                    <li>
-                        <strong>"Confidential Information"</strong>
-                        {' '}
-                    has the meaning set forth in Section 8.
-                    </li>
-                    <li>
-                        <strong>"Control"</strong>
-                        {' '}
-                    means ownership or control, directly or indirectly, of at least 50% of the voting interests of the
-                    subject entity.
-                    </li>
-                    <li>
-                        <strong>"Customer Data"</strong>
-                        {' '}
-                    means all electronic data or information submitted by Customer or any of its Affiliates in the
-                    Flagsmith Service.
-                    </li>
-                    <li>
-                        <strong>"Customer Equipment"</strong>
-                        {' '}
-                    means Customer's and its Affiliates' computer hardware, software and network infrastructure used to
-                    access the Flagsmith Service.
-                    </li>
-                    <li>
-                        <strong>"Data Protection Laws and Regulations"</strong>
-                        {' '}
-                    means all EU/Swiss applicable legislations with respect to the processing of Personal Data,
-                    including but not limited to the EU Data Protection Directive (95/46/EC).
-                    </li>
-                    <li>
-                        <strong>"Documentation"</strong>
-                        {' '}
-                    means the published specifications of the Flagsmith Service, as may be updated or amended from
-                    time to time as necessary due to updates and enhancements, as determined and provided by Flagsmith to Customer.
-                    </li>
-                    <li>
-                        <strong>"Extension Term"</strong>
-                        {' '}
-                    means each renewal subscription period for which the subscription term applicable to an Order Form
-                    is extended pursuant to Section 10.
-                    </li>
-                    <li>
-                        <strong>"Force Majeure Event"</strong>
-                        {' '}
-                    means a natural disaster, actions or decrees of governmental bodies or communications line failure
-                    which (i) hinders, delays or prevents a party from performing its obligations, and (ii) is beyond
-                    the reasonable control of, and without the fault or negligence of, such party, and (iii) by the
-                    exercise of reasonable diligence such party is unable to prevent or provide against.
-                    </li>
-                    <li>
-                        <strong>"Initial Term"</strong>
-                        {' '}
-                    means the first subscription term period for the Flagsmith Service defined on an Order Form, or
-                    if no such term period is defined, twelve (12) months, commencing on the date Customer executes such
-                    Order Form.
-                    </li>
-                    <li>
-                        <strong>"Order Form"</strong>
-                        {' '}
-                    means a paper-based or online ordering document for the Flagsmith Service accepted by Flagsmith and Customer.
-                    </li>
-                    <li>
-                        <strong>"Flagsmith Service"</strong>
-                        {' '}
-                    means the Flagsmith online, cloud-based feature flag management tool as further described in the
-                    Documentation, including the Flagsmith SDK.
-                    </li>
-                    <li>
-                        <strong>"SDK"</strong>
-                        {' '}
-                    means Flagsmith's software development kit for use with Customer's products in accordance with
-                    the Documentation.
-                    </li>
-                    <li>
-                        <strong>"Subscription Fees"</strong>
-                        {' '}
-                    mean the fees paid by Customer for the right to access and use the Flagsmith Service and receive
-                    standard support during the Term.
-                    </li>
-                    <li>
-                        <strong>"Taxes"</strong>
-                        {' '}
-                    means any direct or indirect local, state, federal or foreign value-added, sales, use or withholding
-                    taxes.
-                    </li>
-                    <li>
-                        <strong>"Term"</strong>
-                        {' '}
-                    as it relates to an Order Form means the Initial Term and any Extension Term applicable to each
-                    Order Form, and as it relates to this Agreement, is as defined in Section 10.1 below.
-                    </li>
-                    <li>
-                        <strong>"Users"</strong>
-                        {' '}
-                    means Customer's and its Affiliates and their respective employees, agents, contractors, service
-                    providers or consultants who are authorized by Customer to use the Flagsmith Service and who have
-                    been supplied user identifications and passwords by Customer or by Flagsmith at Customer's or its
-                    Affiliates' request.
-                    </li>
-                </ul>
-                <h3>2. Terms of Flagsmith Service</h3>
-                <p>
-Flagsmith shall make the Flagsmith Service available to Customer and its Affiliates in accordance
-                with this Agreement, and each Order Form mutually entered into and, to the extent not in conflict with
-                this Agreement or an Order Form or the Documentation. Subject to the terms of this Agreement, Flagsmith grants Customer and its Affiliates a world-wide, fully-paid, royalty-free, limited term,
-                non-sublicensable, non-transferable (except as otherwise provided herein), and non-exclusive license to
-                access, use, and download (for the SDK only) the Flagsmith Service solely for its internal business
-                purposes. The license granted hereunder is limited to the maximum number of Users specified in each
-                Order Form and is subject to any additional terms and conditions specified on an Order Form. Any third
-                party component embedded, included or provided by Flagsmith for use with the Flagsmith Service may
-                only be used in conjunction with the Flagsmith Service, and such use is subject to this
-                Agreement.
-                </p>
-                <h3>3. Customer Responsabilities Relatings to Use of the Flagsmith Service</h3>
-                <ol>
-                    <li>
-Customer is responsible for obtaining and maintaining any Customer Equipment and any ancillary
-                    services needed to connect to, access or otherwise use the Flagsmith Service.
-                    </li>
-                    <li>
-Customer agrees to use the Flagsmith Service in compliance with applicable law, and not: (a)
-                    resell, sublicense, lease, time-share or otherwise make the Flagsmith Service available to any
-                    third party other than as contemplated or allowed by this Agreement; or (b) use the Flagsmith
-                    Service to intentionally send or store infringing or unlawful material or material containing
-                    software viruses, worms, Trojan horses or other harmful computer code, files, scripts, agents or
-                    programs.
-                    </li>
-                    <li>
-Customer agrees to not (a) modify, copy or create derivative works of the Flagsmith Service; (b)
-                    reverse engineer the Flagsmith Service; (c) access the Flagsmith Service for the purpose of
-                    building a competitive product or service; (d) do any "mirroring" or "framing" of any part of the
-                    Service, or create Internet links to the Service which include log-in information, user names,
-                    Flagsmith Master Subscription Agreement (Click-through) May 2017 passwords, and/or secure
-                    cookies; (e) use the Flagsmith Service, for purposes of product evaluation, benchmarking or other
-                    comparative analysis intended for publication without Flagsmith's prior written consent; or (f)
-                    provide access to the Flagsmith Service by a known direct competitor of Flagsmith.
-                    </li>
-                    <li>
-In addition, Customer acknowledges that the SDK is subject to the Apache 2.0 license (or successor
-                    version as indicated by Flagsmith).
-                    </li>
-                    <li>
-If customer fails to comply with the obligations set forth in this section 3 Flagsmith shall
-                    inform customer thereof in writing and reserves the right to suspend the Flagsmith service if the
-                    failure is not remedied within five (5) business days. Flagsmith also reserves the right to
-                    throttle or suspend the service if Flagsmith reasonably determines that customer is using the
-                    service in excess of the volumes intended by Flagsmith or such use overloads the services as a
-                    whole.
-                    </li>
-                </ol>
-                <h3>4. Ownership</h3>
-                <ol>
-                    <li>
-As between the parties, Flagsmith shall retain all ownership rights in the Flagsmith Service,
-                    the technology, software, hardware, products, processes, algorithms, user interfaces and know-how
-                    related to the Flagsmith Service and all work developed or created by Flagsmith during the
-                    course of providing support or the Flagsmith Service to Customer ("Work Product") in each to the
-                    extent not constituting Customer Information (as defined below). Customer shall have or retain all
-                    ownership rights in the Customer Data and all data, text, files, data, output, programs, files,
-                    information, or other information material that Customer or its Affiliates provides, develops,
-                    generates, creates, makes available or uses in conjunction with the Flagsmith Service
-                    (collectively, "Customer Information'). As applicable, Flagsmith hereby assigns and will assign
-                    all Customer Information to Customer. No license, right or interest in any Flagsmith or Customer
-                    trademark, copyright, trade name or service mark is granted hereunder.
-                    </li>
-                    <li>
-Flagsmith shall own any suggestions, enhancement requests, recommendations or other feedback
-                    provided by Customer or its Users relating to the operation of the Flagsmith Service.
-                    </li>
-                </ol>
-                <h3>5. Fees</h3>
-                <ol>
-                    <li>
-Unless otherwise specified on an Order Form, the Fees (if any) shall be as stated in each Order and
-                    shall be payable in advance. In the event Customer issues purchase orders in its normal course of
-                    business, Customer shall provide Flagsmith with a purchase order within five (5) days of the
-                    Effective Date, or if Customer does not provide Flagsmith with such purchase order, Customer
-                    authorizes Flagsmith to accept this Agreement in lieu of a purchase order. In the event Customer
-                    is paying by credit card as indicated in an Order Form, Customer acknowledges that Flagsmith uses
-                    a third-party for the processing of such payments and that Flagsmith's credit card processor will
-                    have access to certain information provided by Customer as a result.
-                    </li>
-                    <li>
-For payments made by credit card, Customer's credit card will be charged at the time the Order Form
-                    is placed and thereafter, at the frequency listed in the Order Form, which will continue until this
-                    Agreement is terminated. For all other payment methods, fees shall be due and payable within thirty
-                    (30) days of receipt of invoice. Any payment not received from Customer by the due date may result
-                    in suspension of Customer's ability to access the Flagsmith Service until payment is made,
-                    provided that Flagsmith notifies Customer in writing of the delinquency and such delinquency is
-                    not corrected within ten (10) business days.
-                    </li>
-                    <li>
-Unless otherwise provided, Flagsmith's fees do not include any Taxes, and Customer is responsible
-                    for paying all Taxes arising from its purchases hereunder, excluding Taxes based on Flagsmith's
-                    net income, employees, or property. If Flagsmith has the legal obligation to pay or collect Taxes
-                    for which Customer is responsible, the appropriate amount of such Taxes shall be invoiced to and
-                    paid by Customer, unless Customer provides a valid tax exemption certificate authorized by the
-                    appropriate taxing authority.
-                    </li>
-                    <li>
-The license granted hereunder is limited to the maximum number of Users licensed (where applicable)
-                    and any additional terms and conditions specified on an Order Form. In the event Customer exceeds
-                    such usage, Flagsmith may charge Customer for such excess usage.
-                    </li>
-                </ol>
-                <h3>6. Representations and Warranties</h3>
-                <ol>
-                    <li>
-Each party represents and warrants that it has all necessary right, title and authority to enter
-                    into and perform under this Agreement. Customer warrants that it has the rights to provide and use
-                    any and all Customer Data in accordance with the terms of the Agreement and the foregoing and its
-                    performance hereunder doesn't violate any laws.
-                    </li>
-                    <li>
-Except as expressly provided herein, neither party nor its licensors or suppliers makes any
-                    warranties of any kind, whether implied, statutory or otherwise, including any warranties of
-                    merchantability or fitness for a particular purpose. Flagsmith does not warrant the operation of
-                    the Flagsmith service will be uninterrupted or error-free.
-                    </li>
-                </ol>
-                <h3>7. Indemnification by Customer</h3>
-                <p>
-Customer shall defend, indemnify and hold Flagsmith and its Affiliates (collectively, "Flagsmith
-                Group") harmless against any loss, damage or costs (including reasonable attorneys' fees) incurred in
-                connection with Claims made or brought against Flagsmith any member of Flagsmith Group, by a third
-                party alleging that the Customer Data created and stored by Customer in the Flagsmith Service or
-                otherwise provided to Flagsmith in connection with the Agreement (i) violates any applicable law or
-                regulation; or (ii) infringes any U.S. patent, copyright or other intellectual property right of a third
-                party. Flagsmith agrees to (a) promptly give written notice of the Claim to Customer (provided that
-                the obligations under this Section 7 shall not be reduced by the failure to give such notice except to
-                the extent Customer is materially prejudiced by such failure); (b) give Customer sole control of the
-                defense and settlement of the Claim (provided that Customer may not settle any Claim unless it
-                unconditionally releases Flagsmith of all liability and obligation); and (c) provide to Customer, at
-                Customer's cost, all reasonable assistance.
-                </p>
-                <h3>8. Confidentiality</h3>
-                <ol>
-                    <li>
-As used herein, "Confidential Information" means all confidential and proprietary information of a
-                    party ("Disclosing Party") disclosed to the other party ("Receiving Party"), whether orally or in
-                    writing, that is designated as confidential or that reasonably Flagsmith Master Subscription
-                    Agreement (Click-through) May 2017 should be understood to be confidential given the nature of the
-                    information and the circumstances of disclosure, including the terms and conditions of this
-                    Agreement, Customer Data, business and marketing plans, technology and technical information,
-                    product designs, and business processes. Confidential Information shall not include any information
-                    that: (i) is or becomes generally known to the public without breach of any obligation owed to
-                    Disclosing Party; (ii) was known to Receiving Party prior to its disclosure by Disclosing Party
-                    without breach of any confidentiality obligation owed to Disclosing Party; (iii) was independently
-                    developed by Receiving Party without breach of any confidentiality obligation owed to Disclosing
-                    Party or access to or reliance on Disclosing Party's Confidential Information; or (iv) is received
-                    from a third party without breach of any confidentiality obligation owed to Disclosing Party.
-                    </li>
-                    <li>
-Receiving Party shall not disclose any Confidential Information of Disclosing Party for any purpose
-                    outside the scope of this Agreement, except as allowed by the terms of this Agreement or with
-                    Disclosing Party's prior written consent. Receiving Party shall protect the confidentiality of
-                    Disclosing Party's Confidential Information in the same manner that it protects the confidentiality
-                    of its own Confidential Information of like kind (but in no event using less than reasonable care).
-                    Flagsmith represents and warrants that it will maintain the confidentiality of Customer Data and,
-                    except as required by applicable law, will not disclose Customer Data to any third party for any
-                    purpose other than to provide the Flagsmith Service and to otherwise improve the Flagsmith
-                    Service. However, Flagsmith may compile aggregate data related to Customer' s usage of the Flagsmith Service and may use and/or disclose such aggregate data to third parties, to the extent that
-                    Customer is not identified as the source of such data and as long as the data does not reveal the
-                    identity, whether directly or indirectly, of any individual, or specific data entered by or relating
-                    to any individual. Receiving Party shall promptly notify Disclosing Party if it becomes aware of any
-                    actual or reasonably suspected breach of confidentiality of Disclosing Party's Confidential
-                    Information.
-                    </li>
-                    <li>
-If Receiving Party is compelled by law to disclose Confidential Information of Disclosing Party, it
-                    shall provide Disclosing Party with (a) prior written notice of such compelled disclosure (to the
-                    extent legally permitted) and (b) reasonable assistance in contesting the disclosure, at Disclosing
-                    Party's option and cost. Any actual disclosure shall be limited to the minimum amount of information
-                    necessary to comply with the disclosure demand as advised by legal counsel.
-                    </li>
-                    <li>
-If Receiving Party discloses (or threatens to disclose) any Confidential Information of Disclosing
-                    Party in breach of confidentiality protections hereunder, Disclosing Party shall have the right, in
-                    addition to any other remedies available to it, to seek injunctive relief to enjoin such acts, it
-                    being acknowledged by the parties that any other available remedies are inadequate.
-                    </li>
-                    <li>
-Upon any termination of this Agreement, the Receiving Party shall continue to maintain the
-                    confidentiality of the Disclosing Party's Confidential Information and, upon request and to the
-                    extent practicable, return to the Disclosing Party or destroy (at the Disclosing Party's election)
-                    all materials containing such Confidential Information.
-                    </li>
-                    <li>
-Flagsmith has in place reasonable security procedures in accordance with industry standards.
-                    Flagsmith will provide the Flagsmith Service in accordance with its standard security policy,
-                    disaster recovery plan, and resilience plan. Flagsmith will also undergo a penetration test
-                    performed by a third-party at least twice a year. To the extent Customer Data comprises "personal
-                    data" within the meaning of applicable Data Protection Laws and Regulations, it is acknowledged that
-                    Flagsmith is acting on behalf of Customer as Data Processor. As Data Processor, Flagsmith
-                    shall: a) process Customer Data in accordance with this Agreement, Customer's instructions, and
-                    applicable Data Protection Laws and Regulations, b) take and maintain appropriate organizational,
-                    administrative, physical and technical safeguards for the protection of the security,
-                    confidentiality and integrity of Customer Data, c) set up and maintain security measures against
-                    unauthorized access to or unauthorized alteration, disclosure, destruction or loss of Customer Data,
-                    d) not access Customer's User accounts, including Customer Data, except as to respond to service or
-                    technical problems or otherwise at Customer's request, and e) take reasonable steps to ensure that
-                    personnel used by Flagsmith to provide the Flagsmith Service are under strict confidentiality
-                    provisions and are aware of and are suitably trained in any such technical, organizational and
-                    security measures.
-                    </li>
-                </ol>
-                <h3>9. Limitation of Liability</h3>
-                <ol>
-                    <li>
-Except for the parties' indemnification obligations (the "exclusions"), in no event shall either
-                    party's aggregate liability arising out of this agreement, whether in contract, tort or under any
-                    other theory of liability, exceed the fees paid or payable to Flagsmith during the (12) twelve
-                    months prior to when the claim accrued.
-                    </li>
-                    <li>
-To the maximum extent permitted by law, in no event shall either party or its licensors or suppliers
-                    have any liability to the other party for any lost profits or for any special, incidental, punitive,
-                    or consequential damages however caused and, whether in contract, tort or under any other theory of
-                    liability, whether or not the party has been advised of the possibility of such damages.
-                    </li>
-                </ol>
-                <h3>10. Term and Termination</h3>
-                <ol>
-                    <li>
-This Agreement commences on the Effective Date and continues until all Order Forms entered into
-                    under this Agreement have expired or been terminated unless terminated as otherwise provided herein.
-                    The Initial Term applicable to each Order Form commences upon Customer's execution of such Order
-                    Form and upon expiration of the Initial Term, the Flagsmith Service subscription term applicable
-                    to such Order Form shall continue to renew for Extension Terms equal to the term of the most recent
-                    Term, unless either party gives notice to the other party of its desire to not renew at least thirty
-                    (30) days prior to the end of the then- current Term.
-                    </li>
-                    <li>
-A party may terminate this Agreement for cause: (i) upon 30 days written notice to the other party
-                    of a material breach of this Agreement if such breach remains uncured at the expiration of such
-                    period; (ii) immediately upon written notice if the other party becomes the subject of a bankruptcy,
-                    insolvency, receivership, liquidation, assignment for the benefit of creditors or similar
-                    proceeding; or (iii) as otherwise provided herein.
-                    </li>
-                    <li>
-The parties' rights and obligations under Sections 4, 5, 6.2, 7-19, 10.3, and 11 shall survive
-                    termination of this Agreement.
-                    </li>
-                    <li>
-Upon the effective date of termination of this Agreement Customer's license to use the Flagsmith
-                    Service will cease. After such 30 day period Flagsmith will have no obligation to maintain any
-                    Customer Data.
-                    </li>
-                </ol>
-                <h3>11. General</h3>
-                <ol>
-                    <li>
-The parties are independent contractors, and no partnership, franchise, joint venture, agency,
-                    fiduciary or employment Flagsmith Master Subscription Agreement (Click-through) May 2017
-                    relationship between the parties is created hereby. There are no third party beneficiaries to this
-                    Agreement.
-                    </li>
-                    <li>
-Notices shall be in writing and delivered by nationally recognized overnight delivery service or
-                    certified or registered U.S. Mail, and are effective upon receipt.
-                    </li>
-                    <li>
-To the extent of any conflict between this Agreement and any other Exhibit or document referenced
-                    herein, this Agreement shall prevail unless expressly stated otherwise. Notwithstanding any language
-                    to the contrary therein, no terms stated in a purchase order or similar ordering document (other
-                    than a Statement of Work or other mutually executed order document expressly incorporated herein)
-                    shall be incorporated into this Agreement, and all such terms shall be void. This Agreement
-                    represents the entire agreement of the parties, and supersedes all prior or contemporaneous
-                    agreements, proposals or representations, written or oral, concerning its subject matter.
-                    </li>
-                    <li>
-Either party may include the other's name or logo in customer or vendor lists in accordance with the
-                    other's standard guidelines. In addition, Flagsmith may refer to Customer's intended use of the
-                    Flagsmith Service in its marketing materials and on its websites as well as in discussions with
-                    Flagsmith customers, prospective customers, and industry and financial analysts.
-                    </li>
-                    <li>
-No failure or delay in exercising any right hereunder shall constitute a waiver of such right.
-                    Except as otherwise provided, remedies provided herein are in addition to, and not exclusive of, any
-                    other remedies of a party at law or in equity. If any provision of this Agreement is held by a court
-                    of competent jurisdiction to be contrary to law, such provision shall be modified by the court and
-                    interpreted so as best to accomplish the objectives of the original provision to the fullest extent
-                    permitted by law, and the remaining provisions shall remain in effect.
-                    </li>
-                    <li>
-Neither party shall be liable to the other for any delay or failure to perform hereunder (excluding
-                    payment obligations) due to a natural disaster, actions or decrees of governmental bodies or
-                    communications failure which (i) hinders, delays or prevents a party in performing any of its
-                    obligations, (ii) is beyond the control of, and without the fault or negligence of, such party, or
-                    (iii) by the exercise of reasonable diligence such party is unable to prevent or provide against
-                    ("Force Majeure Event").
-                    </li>
-                    <li>
-Neither party may assign any of its rights or obligations hereunder, whether by operation of law or
-                    otherwise, without the prior written consent of the other (not to be unreasonably withheld).
-                    Notwithstanding the foregoing, (i) either party may assign this Agreement in its entirety (including
-                    all Order Forms hereunder), upon written notice to the other party, to an Affiliate or, to its
-                    successor in interest resulting from a merger, reorganization, or sale of all or substantially all
-                    assets or equity not involving a direct competitor of the other party and (ii) Flagsmith may use
-                    subcontractors in the ordinary course of business. Any attempted assignment in breach of this
-                    Section shall be void. This Agreement shall bind and inure to the benefit of the parties, their
-                    respective successors and permitted assigns.
-                    </li>
-                </ol>
+<h1>FLAGSMITH</h1>
+<p><strong>Terms of Service</strong></p>
+<p>These terms of service (&quot;<strong>Terms</strong>&quot;) contain the terms for use for the Service (as defined below) operated by Bullet Train Limited trading as Flagsmith (&quot;<strong>Flagsmith</strong>&quot;), a company incorporated in England and Wales with registered number 12353266 with its registered address at 4<sup>th</sup> Floor, 86-90 Paul St, London, EC2A 4NE. </p>
+<p><strong>1. Definitions</strong></p>
+<ul>
+<li><strong>&quot;Affiliate&quot;</strong> means, with respect to a party, any entity which directly or indirectly Controls, is Controlled by, or is under common Control with such party.</li>
+<li><strong>&quot;Confidential Information&quot;</strong> has the meaning set forth in Section 8.</li>
+<li>“<strong>Customer, “you”, “your</strong>” means the person, company, corporation or other legal entity agreeing to these Terms or (if applicable) entering into a MSA with Flagsmith.</li>
+<li><strong>&quot;Control&quot;</strong> means ownership or control, directly or indirectly, of at least 50% of the voting interests of the subject entity.</li>
+<li><strong>&quot;Customer Data&quot;</strong> means all electronic data or information submitted or input by Customer or any of its Team Members to the Service.</li>
+<li><strong>&quot;Customer Equipment&quot;</strong> means Customer&#39;s and its Affiliates&#39; and Team Members’ computer hardware, software and network infrastructure used to access the Service.</li>
+<li>“<strong>Customer Output</strong>” means all data, text, or other information output by the Service to the Customer and its Team Members in the course of using the Service. </li>
+<li><strong>&quot;Data Protection Laws&quot;</strong> means all applicable data protection and privacy legislation in force from time to time in the UK including but not limited to the Data Protection Act 2018; the Privacy and Electronic Communications Regulations 2003 (SI 2003/2426); the General Data Protection Regulation ((EU) 2016/679); and the Privacy and Electronic Communications Directive 2002/58/EC (as updated by Directive 2009/136/EC) or any UK legislation enacted to conform with the EU regulations or directives mentioned above, following Brexit on 31 December 2020; </li>
+<li><strong>&quot;Documentation&quot;</strong> means the published specifications of the Service (including as made available at www.flagsmith.com), including the Service Level Agreement and including as such specifications may be updated or amended from time to time as necessary due to updates and enhancements, as determined and provided by Flagsmith.</li>
+<li><strong>&quot;Fees&quot;</strong> mean the fees paid by Customer for the right to access and use the Service during the Term in accordance with these Terms.</li>
+<li>“<strong>MSA</strong>” means a master services agreement or similar agreement entered into between Flagsmith and the Customer in relation to the use of the Service by the Customer and its Team Members.</li>
+<li><strong>&quot;Service&quot;</strong> means the Flagsmith service as further described in clause 3 and the Documentation, including but not limited to the SDK and the support services specified in the Documentation.</li>
+<li>“<strong>Service Level Agreement</strong>” means the service level agreement set out at www.flagsmith.com/legal/sla as applicable to the Subscription.</li>
+<li><strong>&quot;SDK&quot;</strong> means Flagsmith&#39;s software development kit(s) for use with Customer&#39;s products in accordance with the Documentation.</li>
+<li><strong>&quot;Subscription”</strong> means the Customer’s subscription to the Service in accordance with these Terms.</li>
+<li><strong>&quot;Team Members&quot;</strong> means the Customer&#39;s and its Affiliates’ respective employees, agents, contractors, service providers or consultants who are authorized by Customer to use the Service and who have been supplied user identifications and passwords by Customer or by Flagsmith at Customer&#39;s or its Affiliates&#39; request.</li>
+<li><strong>&quot;Term&quot;</strong> means the term of the Customer’s Subscription, as set out in Section 10.1 below.</li>
+</ul>
+<p><strong>2. Access to the Service</strong></p>
+<ol>
+<li>The person accepting these Terms or otherwise using the Service represents that they are authorized to do so as a Team Member on behalf of the Customer and the Customer agrees to be bound by these Terms. The Customer and any Team Member may not use the Service without agreeing to this these Terms first. </li>
+<li>In the event of inconsistency between these Terms and the terms of the MSA, the terms of the MSA shall take precedence to the extent of such inconsistency.</li>
+</ol>
+<p><strong>3. The Service</strong></p>
+<ol>
+<li>Flagsmith shall make the Service available to Customer and its Team Members in accordance with the Documentation and these Terms.</li>
+<li>Subject to these Terms (including the payment of any applicable Fees), Flagsmith grants Customer and its Team Members a world-wide, non-sublicensable (except as otherwise provided herein), non-transferable and non-exclusive licence to access and use the Service, and to download the SDK solely for its internal business purposes. </li>
+<li>The licence granted hereunder and the scope of the Service is limited according to the applicable level of Subscription ordered by the Customer, as set out in the Documentation. In particular, the Service is limited to the maximum number of Team Members and the level of support services specified in the Documentation (including the Service Level Agreement). The Customer may be subject to additional terms and conditions specified in the Documentation, for example regarding the number of API calls/requests; Projects; Environments; Feature Flags; Identities and Segments; and User Permissions. In the event the Customer or any Team Member exceeds such limitations, Flagsmith will contact Customer and may charge Customer for such excess usage and/or upgrade the Customer to an appropriate level of Subscription.</li>
+<li>Any third party component embedded, included or provided by Flagsmith for use with the Service may only be used in conjunction with the Service, and such use is subject to this these Terms.</li>
+<li>Flagsmith may update the Service from time to time, and may change the content and/or functionality provided through the Service at any time. </li>
+</ol>
+<p><strong>3. Customer Responsibilities </strong></p>
+<ol>
+<li>Customer is responsible for obtaining and maintaining any Customer Equipment and any ancillary services needed to connect to, access, host or otherwise use the Service.</li>
+<li>Customer agrees to use the Service in compliance with all applicable laws, and in particular not to use the Service to intentionally send or store or otherwise process infringing or unlawful material or material containing software viruses, worms, Trojan horses or other harmful computer code, files, scripts, agents or programs.</li>
+<li>Customer agrees not to and not to attempt to (a) modify, copy, decompile, analyse, adapt, make error corrections or create derivative works of the Service (please note that components of the source code of the Flagsmith API are available from GitHub, <a href="https://github.com/Flagsmith/flagsmith-api">https://github.com/Flagsmith/flagsmith-api</a>, under BSD-3 licence terms, <a href="https://github.com/Flagsmith/flagsmith-api/blob/master/License">https://github.com/Flagsmith/flagsmith-api/blob/master/License</a>); (b) reverse engineer the Service; (c) access the Service for the purpose of building a competitive product or service or to resell, sublicense, lease, time-share or otherwise make the Service available to any third party other than as contemplated or allowed by these Terms; (d) do any &quot;mirroring&quot; or &quot;framing&quot; of any part of the Service, or create Internet links to the Service which include log-in information, user names, passwords, and/or secure cookies; (e) use the Service for purposes of product evaluation, benchmarking or other comparative analysis intended for publication without Flagsmith&#39;s prior written consent; (f) provide access to the Service by a known direct competitor of Flagsmith or to any third party who is not a Team Member; (g) impersonate any other Team Members; (h) access without authority, penetrate, interfere with, damage or disrupt the accounts of other Team Members or any part of the Service or its security measures. </li>
+</ol>
+<p><strong>4. Ownership and Intellectual Property Rights</strong></p>
+<ol>
+<li>Flagsmith or its licensors shall own and shall retain all ownership rights (including intellectual property rights) in the Service and the technology, software, hardware, products, processes, algorithms, user interfaces and know-how related to the Service and all data, information, software, content and other work developed or created by Flagsmith during the course of providing the Service to Customer (&quot;<strong>Work Product</strong>&quot;) in each case to the extent not constituting Customer Data or Customer Output (as defined below). </li>
+<li>Customer or its licensors owns all rights in Customer Data and Customer Output. The Customer (i) hereby grants to Flagsmith a licence to use Customer Data and Customer Output in accordance with these Terms of Use including in order to provide the Service; and (ii) confirms that the Customer and/or the Team Member submitting Customer Data is/are duly licensed to submit the Submitted Content to the Service and that the use of Customer Data by Flagsmith will not breach a third party’s rights including without limitation any intellectual property rights or rights in confidential information or data privacy. The Customer agrees to indemnify Flagsmith in respect of any loss or damage (including legal fees) incurred by Flagsmith in the event of a breach of this clause 4(2).</li>
+<li>Except as expressly stated in these Terms of Use (including subclause (5) below), no licence, right or interest in any Flagsmith or Customer trademark, copyright, trade name or service mark is granted by either party to the other under these Terms of Use.</li>
+<li>Flagsmith shall own, and shall be free to use in its sole discretion, any suggestions, enhancement requests, recommendations or other feedback that are provided by Customer or its Team Members to Flagsmith in relation to the Service.</li>
+<li>The Customer consents to Flagsmith making use of the Customer&#39;s corporate name and logo (in accordance with any reasonable guidance provided by you) on its website, marketing and publicity materials to indicate that the Customer is a user of the Service. </li>
+</ol>
+<p><strong>5. Fees</strong></p>
+<ol>
+<li>The applicable Fees (if any) shall be as stated in the Documentation and shall be payable in advance using Flagsmith’s payment provider notified to the Customer.</li>
+<li>Customer&#39;s credit or debit card will be charged at the time the Subscription order is placed and thereafter, at the frequency listed in the Documentation, which will continue until the Subscription ends or is terminated. For the avoidance of doubt, the Service will not commence until payment details have been received for the Services and Flagsmith may suspend the Service in the event that subsequent fee payments are not received by the applicable time. Please note that no refunds of Fees will be paid if the Subscription ends or terminates.</li>
+<li>Unless otherwise provided, Flagsmith&#39;s fees do not include any taxes, and Customer is responsible for paying all applicable taxes arising from its subscription to the Service. </li>
+</ol>
+<p><strong>6. Security and Data Privacy</strong></p>
+<ol>
+<li>Flagsmith has in place reasonable security procedures in accordance with industry standards. Flagsmith will provide the Service and will hold Customer Data in accordance with its standard security policy, disaster recovery plan, and resilience plan. Flagsmith will also undergo a penetration test performed by a third-party at least once a year.</li>
+<li>To the extent Customer Data comprises &quot;personal data&quot; within the meaning of applicable Data Protection Laws, it is acknowledged that the Customer is the “data controller” of such personal data and that Flagsmith is acting on behalf of Customer as “data processor”.  Accordingly, Flagsmith shall process such personal data in accordance with the Data Processor Appendix to these Terms. The terms “personal data”, “data controller”, ”data processor” and “process/processing” shall be defined according to the Data Protection Laws.   </li>
+<li>To the extent that Flagsmith collects and controls “personal data” within the meaning of applicable Data Protection Laws in the course of providing the Services, Flagsmith shall be the “data controller” of such personal data which shall be processed in accordance with Flagsmith’s Privacy Policy available here <a href="www.flagsmith.com/legal/privacy-policy">www.flagsmith.com/legal/privacy-policy</a>.</li>
+</ol>
+<p><strong>7. Limitation of Liability</strong></p>
+<ol>
+<li>Nothing in these Terms excludes or limits Flagsmith’s liability for death or personal injury arising from its negligence, or for fraud or fraudulent misrepresentation, or any other liability that cannot be excluded or limited by applicable law. </li>
+<li>The Customer acknowledges and agrees that Flagsmith does not monitor Customer Data and that the Customer is responsible for ensuring that it has the necessary rights to submit Customer Data to the Service and to ensure that the use made of such Customer Data complies with all applicable laws, including but not limited to Data Protection Laws.</li>
+<li>The Customer acknowledges and agrees that the quality of the Customer Output and the accuracy and proper functioning of the Service is reliant on the provision of accurate and complete Customer Data, for which the Customer takes sole responsibility. Any reliance by the Customer or Team Members on Customer Output is at the Customer’s risk and no guarantee is made by Flagsmith that such use will benefit the Customer or its business. </li>
+<li>Except as expressly provided herein, to the extent permitted by law, Flagsmith makes no warranties of any kind in relation to the Service, whether implied, statutory or otherwise, including any warranties of merchantability or fitness for a particular purpose. In particular, Flagsmith does not warrant the operation of the Service will be uninterrupted or error-free, except as provided in the Service Level Agreement.</li>
+<li>Flagsmith uses industry standard measures to remove bugs or viruses but does not guarantee that the Service will be secure or free from bugs or viruses. The Customer and Team Members should use their own virus protection software. Flagsmith will not be liable for any loss or damage caused by a virus, distributed denial-of-service attack or other technologically harmful material that may infect the Customer’s or its Team Members’ computer equipment, computer programs, data or other proprietary material due to its use of the Service.</li>
+<li>To the maximum extent permitted by law, Flagsmith or its licensors or suppliers shall not have any liability to the Customer or any Team Member (whether in contract, tort including negligence or under any other theory of liability, whether or not the party has been advised of the possibility of such damages) for any (i) lost profits, sales, business or revenue; (ii) loss of agreements or contracts; (iii) business interruption; (iv) loss of anticipated savings; (v) loss of business opportunity, goodwill or reputation; (vi) loss of use or corruption of data, software or information; (vii) cost of procurement of substitute services or technology; or (viii) for any special, incidental, punitive, indirect or consequential damages, however caused. </li>
+<li>Subject to the express provisions of these Terms (including this clause 7), Flagsmith’s aggregate liability arising out of this these Terms and the provision of the Service, whether in contract, tort or under any other theory of liability, shall be limited to the Fees paid to Flagsmith during the twelve (12) months prior to the liability in question arising.</li>
+</ol>
+<p><strong>8. Term and Termination</strong></p>
+<ol>
+<li>The Subscription begins once the Customer has provided its payment details (if relevant) and started its receipt of the Service and shall continue for the period set out in the Documentation. Unless stated otherwise in the Documentation, the Subscription will automatically renew for further periods of the same duration unless either the Customer or Flagsmith gives the other notice that it wishes the Subscription to end after the then-current renewal period. Please note that no refunds of Fees will be paid in the event of non-renewal of the Subscription. </li>
+<li>Flagsmith will determine, in its discretion, whether there has been a breach of these Terms through any use of the Service by the Customer or its Team Members. If such a breach has occurred, Flagsmith may take such action as it deems appropriate, including all or any of the following actions: (i) immediate, temporary or permanent withdrawal of any relevant Team Member account and/or the termination of the Customer’s Subscription and/or access to the Service; (ii) immediate, temporary or permanent removal of any Customer Data; (iii) the issue of a warning to the Customer and/or any Team Member; and (iv) legal action against the Customer and/or any Team Member.</li>
+<li>Upon expiry or termination of the Subscription, the Customer&#39;s and its Team Members’ licence to use the Service will immediately cease. Flagsmith will have no obligation to maintain any Customer Data or Customer Output.</li>
+<li>The provisions of this clause 8 are subject to agreement otherwise in an MSA.</li>
+</ol>
+<p><strong>9. General</strong></p>
+<ol>
+<li>The Customer will be asked to read and accept these Terms at the time the Customer first accesses the Service. Flagsmith may revise these Terms at any time and in the event of such a revision, the Customer may be asked to read and accept the revised Terms at the next time the Customer accesses the Service.  No other variation to these Terms may be made unless in writing signed by the Customer and Flagsmith. </li>
+<li>A person who is not a party to these Terms (including Team Members) shall not have any rights under the Contracts (Rights of Third Parties) Act 1999 to enforce any term of these Terms of Use, but this does not affect any right or remedy of a third party which exists, or is available, apart from that Act. </li>
+<li>Notwithstanding any language to the contrary therein, no terms stated in a purchase order or similar ordering document (other than an MSA or other mutually signed order document expressly incorporated herein) shall be incorporated into these Terms, and all such terms shall be void. </li>
+<li>These Terms and the documents referred to in these Terms (including any MSA, the Flagsmith Privacy Policy and the Service Level Agreement) represent the entire agreement of the parties, and supersede all prior or contemporaneous agreements, proposals or representations, written or oral, concerning its subject matter.</li>
+<li>Either party may include the other&#39;s name or logo in customer or vendor lists in accordance with the other&#39;s standard guidelines. In addition, Flagsmith may refer to Customer&#39;s intended use of the Service in its marketing materials and on its websites as well as in discussions with Flagsmith customers, prospective customers, and industry and financial analysts. </li>
+<li>No failure or delay in exercising any right under these Terms shall constitute a waiver of such right. Except as otherwise provided, remedies provided herein are in addition to, and not exclusive of, any other remedies of a party at law or in equity. </li>
+<li>If any provision of this these Terms is held by a court of competent jurisdiction to be contrary to law, such provision shall be modified by the court and interpreted so as best to accomplish the objectives of the original provision to the fullest extent permitted by law, and the remaining provisions shall remain in effect.</li>
+<li>Neither party shall be liable to the other for any delay or failure to perform its obligations (excluding payment obligations) due to circumstances which are beyond its reasonable control.</li>
+<li>These Terms, their subject matter and their formation (including the provision of the Service), are governed by English law. The parties agree to the exclusive jurisdiction of the courts of England and Wales.</li>
+<li>“Flagsmith” and the associated logo are trade marks of Bullet Train Limited </li>
+<li><p>To contact Flagsmith, including with any comments or complaints regarding the Service, please contact <a href="support@flagsmith.com">support@flagsmith.com</a>.</p>
+<p><strong>APPENDIX</strong></p>
+</li>
+</ol>
+<h2>DATA PROCESSOR TERMS</h2>
+<ol>
+<li>Due to the nature of the Service, where it is made available by the Customer, the parties acknowledge that Flagsmith may have access to personal data of any kind that is held by the Customer.  </li>
+<li>The Customer confirms that it has all necessary appropriate consents and/or notices in place to enable lawful transfer of any personal data to Flagsmith to enable Flagsmith to provide the Service under these Terms.  </li>
+<li>The Customer consents to Flagsmith appointing such third party processors as may be necessary to provide the Service and as are notified to the Customer from time to time, details of which are also available on request.  If there is any proposed replacement of or addition to such third party processors, Flagsmith shall inform the Customer and the Customer shall have the opportunity to object on reasonable grounds to such changes during a 4 week period after such notification.  If no objection has been received during that time, any proposed changes shall be deemed accepted. Flagsmith confirms that it has entered into a written agreement with any such third party processor which Flagsmith confirms reflect and will continue to reflect the requirements of the Data Protection Laws. In any event, as between the Customer and Flagsmith, Flagsmith shall remain fully liable for all acts or omissions of any third-party processor appointed by it pursuant to this Appendix.  </li>
+<li>Flagsmith confirms that when processing personal data under the Terms,<strong> </strong>it will process such data as “data processor” for the Customer, and Flagsmith shall:<ol>
+<li>subject to any law applicable to Flagsmith requiring them to process personal data for other purposes, only process that personal data on the documented instructions of the Customer (which shall include the provision of the Service as provided for in these Terms);</li>
+<li>ensure that it has in place appropriate technical and organisational measures, to protect against unauthorised or unlawful processing of personal data and against accidental loss or destruction of, or damage to, personal data, appropriate to the harm that might result from the unauthorised or unlawful processing or accidental loss, destruction or damage and the nature of the data to be protected, having regard to the state of technological development and the cost of implementing any measures; </li>
+<li>ensure that all personnel who have access to and/or process personal data are obliged to keep the personal data confidential; and</li>
+<li>not transfer any personal data outside the United Kingdom unless the following conditions are fulfilled:<ol>
+<li>there are appropriate safeguards in place in relation to the transfer;</li>
+<li>the data subject has enforceable rights and effective legal remedies;</li>
+<li>there is an adequate level of protection (as provided for in the Data Protection Law) to any personal data that is transferred; and</li>
+<li>Flagsmith complies with reasonable instructions notified to it in advance by the Customer with respect to the processing of the personal data;</li>
+</ol>
+</li>
+<li>provide the Customer with reasonable assistance in responding to any request from a data subject and in ensuring compliance with its obligations under the Data Protection Laws with respect to security, breach notifications, impact assessments and consultations with supervisory authorities or regulators;</li>
+<li>notify the Customer without undue delay on becoming aware of a “personal data breach” (as that is defined in Data Protection Laws);</li>
+<li>delete personal data and copies thereof on termination or expiry of these Terms unless required by any law applicable to Flagsmith in the UK to store the personal data beyond that period; </li>
+<li>maintain complete and accurate records and information to demonstrate its compliance with this Appendix; and</li>
+<li>promptly inform the Customer if, in its opinion, the Customer&#39;s instructions would be in breach of Data Protection Law.</li>
+</ol>
+</li>
+</ol>
+
             </div>
         </div>
     </div>
